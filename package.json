@@ -1,0 +1,23 @@
+{
+  "name": "fsd-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksandrLaktionov/FSD-frontend.git"
+  },
+  "author": "AleksandrLaktionov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksandrLaktionov/FSD-frontend/issues"
+  },
+  "homepage": "https://github.com/AleksandrLaktionov/FSD-frontend#readme",
+  "devDependencies": {
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.1.0"
+  }
+}
