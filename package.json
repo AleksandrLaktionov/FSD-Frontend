@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AleksandrLaktionov/FSD-frontend.git"
   },
   "author": "AleksandrLaktionov",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AleksandrLaktionov/FSD-frontend/issues"
   },
