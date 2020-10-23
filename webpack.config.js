@@ -1,8 +1,8 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {
     CleanWebpackPlugin
-} = require('clean-webpack-plugin')
+} = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -43,5 +43,5 @@ module.exports = {
             filename: '[name].html',
         }),
         new CleanWebpackPlugin()
-    ],
+    ]
 }
