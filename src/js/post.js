@@ -1,2 +1,3 @@
-let add = (a,b) => a+b
-console.log(add(2,5))
+const Add = (a,b) => a+b
+
+export default Add
