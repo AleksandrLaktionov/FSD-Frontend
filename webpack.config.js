@@ -14,7 +14,7 @@ module.exports = {
     },
     module: {
         rules: [{
-                test: /\.js$/,
+                test: /\.js$/i,
                 exclude: /node_modules/,
                 use: [
                     'babel-loader'
@@ -32,9 +32,11 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-                type: 'asset/resource',
-            }
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    'file-loader'
+                ],
+            },
         ]
     },
     plugins: [
