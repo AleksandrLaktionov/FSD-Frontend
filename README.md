@@ -1,2 +1,2 @@
 # FSD-frontend
-<a href="./dist/index.html">test<a/>
+<a href="./dist/main.html">test<a/>
