@@ -28,18 +28,30 @@ module.exports = {
                     'sass-loader',
                 ],
             },
-            {
+           {
                 test: /\.(png|jpe?g|gif)$/i,
                 use: [
                     'file-loader'
                 ],
             },
+            {
+                test: /\.(ttf|woff|svg)$/i,
+                use: [
+                    'file-loader'
+                ],
+            },
+            {
+                test: /\.pug$/i,
+                use: [
+                    'pug-loader'
+                ],
+            }, 
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'webpack Boilerplate',
-            template: path.resolve(__dirname, './src/index.html'),
+            template: path.resolve(__dirname, './src/pug/index.pug'),
             filename: '[name].html',
         }),
         new CleanWebpackPlugin()
