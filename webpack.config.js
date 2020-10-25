@@ -51,7 +51,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'webpack Boilerplate',
-            template: path.resolve(__dirname, './src/pug/index.pug'),
+            template: path.resolve(__dirname, './src/index.pug'),
             filename: '[name].html',
         }),
         new CleanWebpackPlugin()
