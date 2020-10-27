@@ -1,0 +1,72 @@
+.Colors_Type {
+    display: grid;
+    grid-area: Colors_Type;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 10px;
+}
+.TypeText {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 10px;
+}
+.Colors {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 10px;
+}
+%Dark {
+    margin: 0 auto;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    font-optical-sizing: 2px;
+}
+
+.Dark100 {
+    @extend %Dark;
+    background: rgba(31, 32, 65, 1);
+}
+.Dark75 {
+    @extend %Dark;
+    background: rgba(31, 32, 65, 0.75);
+}
+.Dark50 {
+    @extend %Dark;
+    background: rgba(31, 32, 65, 0.5);
+}
+.Dark25 {
+    @extend %Dark;
+    background: rgba(31, 32, 65, 0.25);
+}
+.Dark05 {
+    @extend %Dark;
+    background: rgba(31, 32, 65, 0.05);
+}
+.Purple {
+    @extend %Dark;
+    background: rgba(188, 156, 255, 1);
+}
+.Green {
+    @extend %Dark;
+    background: rgba(111, 207, 151, 1);
+}
+.Colors_Type p {
+    font-family: Quicksand;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    top: 100px;
+    font-family: Quicksand;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}

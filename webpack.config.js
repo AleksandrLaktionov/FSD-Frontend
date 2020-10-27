@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
@@ -23,7 +24,9 @@ module.exports = {
             {
                 test: /\.(s[ac]ss|css)$/i,
                 use: [
-                    'style-loader',
+                    process.env.NODE_ENV !== 'production'
+                    ? 'style-loader'
+                    : MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader',
                 ],
@@ -54,6 +57,10 @@ module.exports = {
             template: path.resolve(__dirname, './src/index.pug'),
             filename: '[name].html',
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin({
+            template: path.resolve(__dirname, './src/style/index.scss'),
+            filename: '[name].css',
+          }),
     ]
 }
