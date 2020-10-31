@@ -1,22 +1,22 @@
 .Colors_Type {
     display: grid;
-    grid-area: Colors_Type;
+    // grid-area: Colors_Type;
     grid-template-columns: 2fr 2fr;
-    grid-gap: 10px;
-    margin-top: 78px;
-    margin-left: 78px;
+    // grid-gap: 10px;
+    margin-top: 60px;
+    // margin-left: 78px;
 }
 
 .TypeText {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-gap: 10px;
+    // grid-gap: 10px;
 }
 
 .Colors {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-gap: 10px;
+    // grid-gap: 10px;
 }
 
 %Dark {
