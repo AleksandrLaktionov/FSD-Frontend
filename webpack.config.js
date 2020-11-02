@@ -4,10 +4,8 @@ const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
 
 module.exports = {
-    mode: 'development',
     entry: {
         main: path.resolve(__dirname, './src/index.js'),
     },
@@ -53,25 +51,16 @@ module.exports = {
             }, 
         ]
     },
-    devServer: {
-        historyApiFallback: true,
-        contentBase: path.resolve(__dirname, './dist'),
-        open: true,
-        compress: true,
-        hot: true,
-        port: 8080,
-    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'webpack Boilerplate',
             template: path.resolve(__dirname, './src/index.pug'),
             filename: '[name].html',
         }),
-        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             template: path.resolve(__dirname, './src/style/index.scss'),
             filename: '[name].css',
           }),
-        new webpack.HotModuleReplacementPlugin(),
+        new CleanWebpackPlugin(),
     ]
 }
