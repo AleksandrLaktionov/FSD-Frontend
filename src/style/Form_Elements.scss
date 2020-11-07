@@ -1,0 +1,176 @@
+.Form_Elements {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin: 60px;
+}
+
+.Form_Elements label {
+    margin: 5px;
+    float: left;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $dark100;
+    text-transform: uppercase;
+}
+
+.Form_Elements #label_right {
+    font-weight: normal;
+    float: right;
+    text-align: right;
+    color: $dark50;
+}
+
+%Form {
+    margin: 30px;
+    padding: 5px;
+    width: 320px;
+}
+
+%Input {
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    border: 1px solid $dark25;
+    background: rgba(255, 255, 255, 1);
+    width: 320px;
+    height: 44px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+%Input_placeholder {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $dark25;
+}
+
+%hover_focus {
+    background: #ffffff;
+    border: 1px solid $dark50;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+}
+
+$arrow: url("./../Font/keyboard_arrow_down-24px.svg") no-repeat;
+
+%select {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    border: 1px solid $dark25;
+    background-color: rgba(255, 255, 255, 1);
+    width: 320px;
+    height: 44px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    appearance: none;
+    background: $arrow;
+    background-position: 290px 12px;
+}
+
+%select_optional {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $dark75;
+}
+
+.Form_Elements .Form .Form1 {
+    @extend %Form;
+}
+
+.Form_Elements .Form .Form1 .Form1_input {
+    @extend %Input;
+}
+
+.Form_Elements .Form .Form1 ::-webkit-input-placeholder {
+    @extend %Input_placeholder;
+}
+
+.Form_Elements .Form .Form2 {
+    @extend %Form;
+}
+
+.Form_Elements .Form .Form2 .Form2_input {
+    @extend %Input;
+}
+
+.Form_Elements .Form .Form2 ::-webkit-input-placeholder {
+    @extend %Input_placeholder;
+    color: $dark75;
+}
+
+.Form_Elements .Form .Form2 .Form2_input:hover {
+    @extend %hover_focus;
+}
+
+.Form_Elements .Form .Form2 .Form2_input:focus {
+    @extend %hover_focus;
+}
+
+.Form_Elements .Form .Form3 {
+    @extend %Form;
+}
+
+.Form_Elements .Form .Form3 .Form3_select {
+    @extend %select;
+}
+
+.Form_Elements .Form .Form3 .Form3_select:optional {
+    @extend %select_optional;
+}
+
+.Form_Elements .Form .Form4 {
+    @extend %Form;
+}
+
+.Form_Elements .Form .Form4 .Form4_input {
+    @extend %Input;
+}
+
+.Form_Elements .Form .Form4 ::-webkit-input-placeholder {
+    @extend %Input_placeholder;
+}
+
+.Form_Elements .Form .Form5 {
+    @extend %Form;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.Form_Elements .Form .Form5 .Form5_1_select {
+    @extend %select;
+    width: 150px;
+    background-position: 120px 10px;
+}
+
+.Form_Elements .Form .Form5 .Form5_2_select {
+    @extend %select;
+    width: 150px;
+    background-position: 120px 10px;
+}
+
+.Form_Elements .Form .Form5 .Form5_1_select:optional {
+    @extend %select_optional;
+    line-height: 18px;
+}
+
+.Form_Elements .Form .Form5 .Form5_2_select:optional {
+    @extend %select_optional;
+}
