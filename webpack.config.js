@@ -4,6 +4,7 @@ const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack')
 
 module.exports = {
     entry: {
@@ -12,6 +13,12 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, './dist')
+    },
+    devServer: {
+        contentBase: path.resolve(__dirname, './dist'),
+        open: true,
+        overlay: true,
+        port: 4000,
     },
     module: {
         rules: [{
@@ -62,5 +69,10 @@ module.exports = {
             filename: '[name].css',
           }),
         new CleanWebpackPlugin(),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
     ]
 }

@@ -20,7 +20,7 @@ div
             .Form4
                 form
                     label(for="Form4_input") masked text field
-                    input(type="text" class="Form4_input"  name="Form4_input" placeholder="ДД.ММ.ГГГГ")
+                    input(type="text" class="Form4_input" name="Form4_input" placeholder="ДД.ММ.ГГГГ")
             .Form5
                 form
                     label(for="Form5_1_select") date dropdown
@@ -30,12 +30,31 @@ div
                     label(for="Form5_2_select") date dropdown
                     select(name="Form5_2_select" class="Form5_2_select")
                         option(value="#") 19.08.2019
+            .Form6
+                form(action="#")
+                    label(for="Form6_select") filter date dropdown
+                    select(name="Form6_select" class="Form6_select")
+                        option(value="#") 19 авг - 23 авг
+            .Form7
+                form(action="#")
+                    label(for="Form7_input") subscription text field
+                    input(type="text" name="Form7_input" class="Form7_input" placeholder="Email")
+            .Form8
+                form(action="#")
+                    label(for="Form8_select") dropdown
+                    label(for="Form8_select" id="label_right") Default
+                    select(name="Form8_select" class="Form8_select")
+                        option(value="#") 2 спальни, 2 кровати...
+            .Form9
+                div(class="iqdropdown")
+                    p(class="iqdropdown-selection")
+                    div(class="iqdropdown-menu")
+                        div(class="iqdropdown-menu-option" data-id="item1" data-mincount="0" data-maxcount="10")
+                            p(class="iqdropdown-item") спальни
+                        div(class="iqdropdown-menu-option" data-id="item2" data-mincount="0" data-maxcount="10")
+                            p(class="iqdropdown-item") кровати
+                        div(class="iqdropdown-menu-option" data-id="item3" data-mincount="0" data-maxcount="5")
+                            p(class="iqdropdown-item") ванные комнаты
+            .Form10
+                
             
-            //- .Form5
-
-            //-     form(action="#")
-            //-         label(for="date")
-            //-         input(type="date", name="date")
-            //-     form(action="#")
-            //-         label(for="time")
-            //-         input(type="time", name="time")

@@ -5,7 +5,7 @@
 }
 
 .Form_Elements label {
-    margin: 5px;
+    margin-bottom: 5px;
     float: left;
     font-family: Montserrat;
     font-size: 12px;
@@ -62,11 +62,11 @@
     outline: none;
 }
 
-$arrow: url("./../Font/keyboard_arrow_down-24px.svg") no-repeat;
+$arrow50: url("./../Font/keyboard_arrow_down-24px50.svg") no-repeat;
 
 %select {
     display: block;
-    margin: 0 auto;
+    margin: 0;
     padding: 10px;
     position: relative;
     border: 1px solid $dark25;
@@ -76,8 +76,8 @@ $arrow: url("./../Font/keyboard_arrow_down-24px.svg") no-repeat;
     box-sizing: border-box;
     border-radius: 4px;
     appearance: none;
-    background: $arrow;
-    background-position: 290px 12px;
+    background: $arrow50;
+    background-position: 286px 10px;
 }
 
 %select_optional {
@@ -157,13 +157,13 @@ $arrow: url("./../Font/keyboard_arrow_down-24px.svg") no-repeat;
 .Form_Elements .Form .Form5 .Form5_1_select {
     @extend %select;
     width: 150px;
-    background-position: 120px 10px;
+    background-position: 116px 10px;
 }
 
 .Form_Elements .Form .Form5 .Form5_2_select {
     @extend %select;
     width: 150px;
-    background-position: 120px 10px;
+    background-position: 116px 10px;
 }
 
 .Form_Elements .Form .Form5 .Form5_1_select:optional {
@@ -173,4 +173,182 @@ $arrow: url("./../Font/keyboard_arrow_down-24px.svg") no-repeat;
 
 .Form_Elements .Form .Form5 .Form5_2_select:optional {
     @extend %select_optional;
+}
+
+.Form_Elements .Form .Form6 {
+    @extend %Form;
+    width: 266px;
+}
+
+.Form_Elements .Form .Form6 .Form6_select {
+    @extend %select;
+    width: 266px;
+    background-position: 232px 10px;
+}
+
+.Form_Elements .Form .Form6 .Form6_select:optional {
+    @extend %select_optional;
+}
+
+.Form_Elements .Form .Form7 {
+    @extend %Form;
+    width: 266px;
+}
+
+$arrow_right: url("./../Font/arrow_forward-24px.svg") no-repeat;
+
+.Form_Elements .Form .Form7 .Form7_input {
+    @extend %Input;
+    background: $arrow_right;
+    width: 266px;
+    background-position: 232px 10px;
+}
+
+.Form_Elements .Form .Form7 ::-webkit-input-placeholder {
+    @extend %Input_placeholder;
+    line-height: 24px;
+}
+
+.Form_Elements .Form .Form8 {
+    @extend %Form;
+    width: 266px;
+}
+
+$arrow75: url("./../Font/keyboard_arrow_down-24px75.svg") no-repeat;
+
+.Form_Elements .Form .Form8 .Form8_select {
+    @extend %select;
+    width: 266px;
+    border-radius: 4px 4px 0px 0px;
+    background: $arrow75;
+    background-position: 232px 10px;
+}
+
+.Form_Elements .Form .Form8 .Form8_select:optional {
+    @extend %select_optional;
+}
+
+.Form_Elements .Form .Form9 {
+    @extend %Form;
+    width: 266px;
+}
+
+.Form_Elements .Form .Form9 .iqdropdown {
+    position: relative;
+    @extend %select;
+    background: $arrow75;
+    width: 266px;
+    border-radius: 4px 4px 0px 0px;
+    background-position: 232px 10px;
+
+    &:focus,
+    &:hover {
+    @extend %hover_focus;
+    border-radius: 4px 4px 0px 0px;
+    background: $arrow75;
+    background-position: 232px 10px;
+    border: 1px solid $dark50;
+    }
+}
+
+.Form_Elements .Form .Form9 .iqdropdown .iqdropdown-menu {
+    
+    margin: 0 auto;
+    margin-top: -7px;
+    margin-left: -1px;
+    padding: 0;
+    width: 266px;
+    box-shadow: none;
+    border: 1px solid $dark25;
+    border-radius: 0px 0px 4px 4px;
+    .iqdropdown-menu-option{
+        height: 40px;
+    };
+    &:hover,
+    &:focus {
+        margin: 0 auto;
+        margin-top: -7px;
+        margin-left: -1px;
+        padding: 0;
+        box-shadow: none;
+        border: 1px solid $dark50;
+        border-radius: 0px 0px 4px 4px;
+    }
+}
+
+.Form_Elements .Form .Form9 .iqdropdown .iqdropdown-menu p{
+    @extend label;
+    width: 266px;
+    margin: 0 auto;
+    margin-left: -3px;
+    padding: 0;
+}
+
+.Form_Elements .Form .Form9 .iqdropdown .iqdropdown-selection::after {
+    display: none;
+}
+
+.Form_Elements .Form .Form9 .iqdropdown .iqdropdown-item-controls {
+    margin: 0 auto;
+    margin-right: -7px;
+    padding: 0;
+    align-items: flex-end;
+
+    .counter {
+        margin: 6px auto;
+        padding: 9px;
+        border: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $dark100;
+    };
+
+    & button {
+        align-items: center;
+        border: 1px solid $dark25;
+        width: 30px;
+        height: 30px;
+        margin: 7px auto;
+        padding: 0;
+
+        &:hover,
+        &:focus {
+            background: none;
+            background-color: none;
+            border: 1px solid $dark50;
+        };
+
+        &.button-decrement {
+            border-radius: 22px;
+            background: url('./../Font/remove-black-18dp.svg') no-repeat;
+            background-position: 7px 7px;
+            .icon-decrement {
+
+                &::after,
+                &::before {
+                    display: none;
+                }
+
+                
+            }
+        };
+
+        &.button-increment {
+            border-radius: 22px;
+            background: url('./../Font/add-black-18dp.svg') no-repeat;
+            background-position: 7px 7px;
+            .icon-increment {
+
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
 }
