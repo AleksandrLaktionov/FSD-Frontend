@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     margin: 60px;
+    padding: 0;
 }
 %label {
     margin: 0;
@@ -27,9 +28,6 @@
 
 %Form {
     margin: 20px;
-    // padding: 5px;
-    // margin: 0;
-    // padding: 0;
     width: 320px;
 }
 
@@ -99,7 +97,7 @@ $arrow50: url("./../Font/keyboard_arrow_down-24px50.svg") no-repeat;
         @extend %label;
     };
     #label_right {
-        @extend %label_right
+        @extend %label_right;
     }
 }
 
@@ -385,112 +383,195 @@ $arrow75: url("./../Font/keyboard_arrow_down-24px75.svg") no-repeat;
     }
 }
 .Form_Elements .Form .Form10 {
-    // position: relative;
     @extend %Form;
     p {
         @extend %label;
         width: 266px;
         float: none;
-        // margin: 0 auto;
         background: $arrow50;
         background-position: 232px;
     };
 }
-.Form_Elements .Form .Form11 {
-    // position: relative;
+.Form_Elements .Form .Form10 .Form11 {
     @extend %Form;
+    margin: 0;
     p {
         @extend %label;
         width: 266px;
         float: none;
-        // margin: 0 auto;
+        // margin: 0;
         background: url('./../Font/expand_more.svg') no-repeat;
         background-position: 238px;
     };
+};
+%Checkbox_label {
+    @extend %label;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+    // font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark50;
+    text-transform: none;
+    float: none;
 }
-
-.Form_Elements .Form .Form_checkbox{
+%Checkbox_input {
+    margin: 0;
+    position: relative;
+    // padding: 10px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 4px;
+}
+%Checkbox_before {
+    content: "";
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    // float: left;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid $dark25;
+    border-radius: 4px;
+}
+%Checkbox_after {
+    content: "";
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    // float: left;
+    // bottom: 128px;
+    // right: 89px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $purple;
+    border-radius: 4px;
+    // background-position: 1 ;
+    background: url("./../img/Vector.svg") no-repeat;
+    background-position: 4px 2px;
+}
+.Form_Elements .Form .Form10 .Form_checkbox1{
     @extend %Form;
-    form{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+        #Checkbox1_label {
+            @extend %Checkbox_label
+        };
+        #Checkbox1_input {
+            @extend %Checkbox_input
+        };
+        #Checkbox1_label::before {
+            @extend %Checkbox_before;
+        };
+        #Checkbox1_input:checked + #Checkbox1_label::after {
+            @extend %Checkbox_after;
+            right: 92.5px;
+        };
+    }
+.Form_Elements .Form .Form10 .Form_checkbox2{
+    @extend %Form;
+    margin: 0;
+    padding: 0;
+        #Checkbox2_label {
+            @extend %Checkbox_label
+        };
+        #Checkbox2_input {
+            @extend %Checkbox_input
+        };
+        #Checkbox2_label::before {
+            @extend %Checkbox_before;
+        };
+        #Checkbox2_input:checked + #Checkbox2_label::after {
+            @extend %Checkbox_after;
+            right: 167px;
+        };
+    };
+.Form_Elements .Form .Form10 .Form_checkbox3{
+    @extend %Form;
+    margin: 0;
+    padding: 0;
+        #Checkbox3_label {
+            @extend %Checkbox_label
+        };
+        #Checkbox3_input {
+                @extend %Checkbox_input
+        };
+        #Checkbox3_label::before {
+            @extend %Checkbox_before;
+        };
+        #Checkbox3_input:checked + #Checkbox3_label::after {
+            @extend %Checkbox_after;
+            right: 185px;
+        };
+    };
+.Form_Elements .Form .Form10 .Form_checkbox4{
+        @extend %Form;
         margin: 0;
         padding: 0;
-        label {
-            @extend %label;
-            // margin: 0 auto;
-            // padding: 0;
-            position: relative;
-            right: 10px;
-            bottom: 5px;
-            // font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 18px;
-            color: $dark50;
-            text-transform: none;
-            float: none;
+            #Checkbox4_label {
+                @extend %Checkbox_label
+            };
+            #Checkbox4_input {
+                    @extend %Checkbox_input
+            };
+            #Checkbox4_label::before {
+                @extend %Checkbox_before;
+            };
+            #Checkbox4_input:checked + #Checkbox4_label::after {
+                @extend %Checkbox_after;
+                right: 102.5px;
+            };
         };
-        input + label::before {
-            content: "";
-            margin: 0;
-            // display: -moz-inline-box;
-            display: inline-block;
-            position: relative;
-            right: 10px;
-            top: 5px;
-            height: 20px;
-            width: 20px;
-            border: 1px solid $dark25;
-            border-radius: 4px;
+.Form_Elements .Form .Form10 .Form_checkbox5{
+        @extend %Form;
+        margin: 0;
+        padding: 0;
+            #Checkbox5_label {
+                @extend %Checkbox_label
+            };
+            #Checkbox5_input {
+                    @extend %Checkbox_input
+            };
+            #Checkbox5_label::before {
+                @extend %Checkbox_before;
+            };
+            #Checkbox5_input:checked + #Checkbox5_label::after {
+                @extend %Checkbox_after;
+                right: 112.5px;
+            };
         };
-        input:checked + label::after {
-            content: "";
-            display: inline-block;
-            margin: 0;
-            position: relative;
-            right: 89px;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            border: 1px solid $purple;
-            border-radius: 4px;
-            background-position: 1 ;
-            background: url("./../img/Vector.svg") no-repeat;
-            background-position: 4px 2px;
-        }
-        #Checkbox2::after{
-            // position: relative;
-            right: 163px;
-        }
-        #Checkbox3::after{
-            // position: relative;
-            right: 181px;
-        }
-        #Checkbox4::after{
-            // position: relative;
-            right: 98.5px;
-        }
-        #Checkbox5::after{
-            // position: relative;
-            right: 108px;
-        }
-        #Checkbox6::after{
-            // position: relative;
-            right: 100px;
-        }
-        input {
-            margin: 0;
-            position: relative;
-            padding: 10px;
-            width: 20px;
-            height: 20px;
-            float: left;
-            opacity: 0;
-            z-index: 1;
-            border-radius: 4px;
-        }
-    }
-}
+.Form_Elements .Form .Form10 .Form_checkbox6{
+        @extend %Form;
+        margin: 0;
+        padding: 0;
+            #Checkbox6_label {
+                @extend %Checkbox_label
+            };
+            #Checkbox6_input {
+                    @extend %Checkbox_input
+            };
+            #Checkbox6_label::before {
+                @extend %Checkbox_before;
+            };
+            #Checkbox6_input:checked + #Checkbox6_label::after {
+                @extend %Checkbox_after;
+                right: 103.5px;
+            };
+        };
 .Form_Elements .Form .Form12 {
     @extend %Form;
     #Form12_2 {
@@ -594,5 +675,172 @@ $arrow75: url("./../Font/keyboard_arrow_down-24px75.svg") no-repeat;
                 text-align: left;
             }
         }
+    }
+}
+.Form_Elements .Form_2 .Form1 {
+    @extend %Form;
+    p {
+        @extend %label;
+        width: 266px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    };
+    form {
+        float: left;
+        margin: 5px;
+        #Checkbox1_label {
+            @extend %Checkbox_label;
+        };
+        #Checkbox2_label {
+            @extend %Checkbox_label;
+        };
+        #Checkbox3_label {
+            @extend %Checkbox_label;
+        };
+        #Checkbox1_label::before {
+            @extend %Checkbox_before;
+        };
+        #Checkbox2_label::before {
+            @extend %Checkbox_before;
+        };
+        #Checkbox3_label::before {
+            @extend %Checkbox_before;
+        };
+        input {
+            @extend %Checkbox_input;
+        };
+        input:checked + #Checkbox1_label::after {
+            @extend %Checkbox_after;
+            right: 136.5px;
+        };
+        input:checked + #Checkbox2_label::after {
+            @extend %Checkbox_after;
+            right: 183px;
+        };
+        input:checked + #Checkbox3_label::after {
+            @extend %Checkbox_after;
+            right: 224px;
+        };
+        span {
+            @extend %Checkbox_label;
+            margin-left: 40px;
+        }
+    }
+}
+.Form_Elements .Form_2 .Form2{
+    @extend %Form;
+    p {
+        @extend %label;
+        width: 266px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    };
+    form {
+        float: left;
+        margin: 15px;
+        #RadioButtons_m_label {
+            @extend %Checkbox_label;
+            bottom: 0px;
+            right: 0px;
+        };
+        #RadioButtons_m_label :active {
+            @extend %Checkbox_label;
+            bottom: 0px;
+            right: 0px;
+            font-family: Montserrat;
+            font-weight: bold;
+            font-style: normal;
+            // font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+        };
+        #RadioButtons_m {
+            @extend %Checkbox_input;
+            right: 10px;
+            border-radius: 10px;
+            background: #FFFFFF;
+            border: 1px solid $dark25;
+            opacity: 1;
+            z-index: 0;
+        };
+        #RadioButtons_m:checked + #RadioButtons_m_label {
+            @extend %Checkbox_label;
+            bottom: 0px;
+            right: 0px;
+            color: $dark75;
+        };
+        #RadioButtons_m:checked + #RadioButtons_m_label::before {
+            @extend %Checkbox_before;
+            position: absolute;
+            right: 79px;
+            top: -1px;
+            margin: 0;
+            padding: 0;
+            border-radius: 10px;
+            box-sizing: border-box;
+            border: 1px solid $purple;
+            background: #FFFFFF;
+            z-index: 1;
+        };
+        #RadioButtons_m:checked + #RadioButtons_m_label::after {
+            @extend %Checkbox_after;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 12px;
+            height: 12px;
+            top: 3px;
+            right: 83px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            z-index: 1;
+        };
+        #RadioButtons_w_label {
+            @extend %Checkbox_label;
+            bottom: 0px;
+            right: 0px;
+        };
+        #RadioButtons_w {
+            @extend %Checkbox_input;
+            right: 10px;
+            border-radius: 10px;
+            background: #FFFFFF;
+            border: 1px solid $dark25;
+            opacity: 1;
+            z-index: 0;
+        };
+        #RadioButtons_w:checked + #RadioButtons_w_label {
+            @extend %Checkbox_label;
+            bottom: 0px;
+            right: 0px;
+            color: $dark75;
+        };
+        #RadioButtons_w:checked + #RadioButtons_w_label::before {
+            @extend %Checkbox_before;
+            position: absolute;
+            right: 82.5px;
+            top: -1px;
+            margin: 0;
+            padding: 0;
+            border-radius: 10px;
+            box-sizing: border-box;
+            border: 1px solid $purple;
+            background: #FFFFFF;
+            z-index: 1;
+        };
+        #RadioButtons_w:checked + #RadioButtons_w_label::after {
+            @extend %Checkbox_after;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 12px;
+            height: 12px;
+            top: 3px;
+            right: 86.5px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            z-index: 1;
+        };
     }
 }

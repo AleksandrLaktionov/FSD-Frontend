@@ -62,27 +62,6 @@ div
             br
             .Form10    
                 p expandable checkbox list
-            .Form11
-                p expandable checkbox list
-            .Form_checkbox
-                form(action="")
-                    input(type='checkbox' name='Checkbox1')
-                    label(for="Checkbox1" id='Checkbox1') Завтрак
-                form(action="")
-                    input(type='checkbox' name='Checkbox2')
-                    label(for="Checkbox2" id='Checkbox2') Письменный стол
-                form(action="")
-                    input(type='checkbox' name='Checkbox3')
-                    label(for="Checkbox3" id='Checkbox3') Стул для кормления
-                form(action="")
-                    input(type='checkbox' name='Checkbox4')
-                    label(for="Checkbox4" id='Checkbox4') Кроватка
-                form(action="")
-                    input(type='checkbox' name='Checkbox5')
-                    label(for="Checkbox5" id='Checkbox5') Телевизор
-                form(action="")
-                    input(type='checkbox' name='Checkbox6')
-                    label(for="Checkbox6" id='Checkbox6') Шампунь
             .Form12
                 #Form12_1
                     #Form12_1_1
@@ -97,3 +76,32 @@ div
                         p(id='Form13_2_1') Удобство
                         p(id='Form13_2_2') Окно в каждой из спален
                 #Form13_2
+        .Form_2
+            .Form1
+                p Checkbox Buttons
+                form(action="")
+                    input(type='checkbox' name='CheckboxButtons_1' id='Checkbox1_input')
+                    label(for='CheckboxButtons_1' id='Checkbox1_label') Можно курить
+                form(action="")
+                    input(type='checkbox' name='CheckboxButtons_2')
+                    label(for='CheckboxButtons_3' id='Checkbox2_label') Можно с питомцами
+                form(action="")
+                    input(type='checkbox' name='CheckboxButtons_3')
+                    label(for='CheckboxButtons_3' id='Checkbox3_label') Можно пригласить гостей
+                    <br><span>(до 10 человек)</span>
+            //- br
+            //- br
+            //- br
+            //- br
+            //- br
+            //- br
+            //- br
+            //- br
+            .Form2
+                p Radio Buttons
+                form(action="")
+                    input(type="radio" name='RadioButtons_m' id='RadioButtons_m')
+                    label(for="RadioButtons_m" id='RadioButtons_m_label') Мужчина
+                form(action="")
+                    input(type="radio" name='RadioButtons_w' id='RadioButtons_w')
+                    label(for="RadioButtons_w" id='RadioButtons_w_label') Женщина
