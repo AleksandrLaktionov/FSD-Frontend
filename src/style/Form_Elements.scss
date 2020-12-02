@@ -3,8 +3,8 @@
     grid-template-columns: 2fr 2fr 2fr;
     margin: 60px;
 }
-
-.Form_Elements label {
+%label {
+    margin: 0;
     margin-bottom: 5px;
     float: left;
     font-family: Montserrat;
@@ -17,8 +17,8 @@
     color: $dark100;
     text-transform: uppercase;
 }
-
-.Form_Elements #label_right {
+%label_right {
+    @extend %label;
     font-weight: normal;
     float: right;
     text-align: right;
@@ -26,8 +26,10 @@
 }
 
 %Form {
-    margin: 30px;
-    padding: 5px;
+    margin: 20px;
+    // padding: 5px;
+    // margin: 0;
+    // padding: 0;
     width: 320px;
 }
 
@@ -93,6 +95,12 @@ $arrow50: url("./../Font/keyboard_arrow_down-24px50.svg") no-repeat;
 
 .Form_Elements .Form .Form1 {
     @extend %Form;
+    label {
+        @extend %label;
+    };
+    #label_right {
+        @extend %label_right
+    }
 }
 
 .Form_Elements .Form .Form1 .Form1_input {
@@ -105,6 +113,12 @@ $arrow50: url("./../Font/keyboard_arrow_down-24px50.svg") no-repeat;
 
 .Form_Elements .Form .Form2 {
     @extend %Form;
+    label {
+        @extend %label;
+    };
+    #label_right {
+        @extend %label_right
+    };
 }
 
 .Form_Elements .Form .Form2 .Form2_input {
@@ -126,6 +140,9 @@ $arrow50: url("./../Font/keyboard_arrow_down-24px50.svg") no-repeat;
 
 .Form_Elements .Form .Form3 {
     @extend %Form;
+    label {
+        @extend %label;
+    }
 }
 
 .Form_Elements .Form .Form3 .Form3_select {
@@ -138,6 +155,9 @@ $arrow50: url("./../Font/keyboard_arrow_down-24px50.svg") no-repeat;
 
 .Form_Elements .Form .Form4 {
     @extend %Form;
+    label {
+        @extend %label;
+    }
 }
 
 .Form_Elements .Form .Form4 .Form4_input {
@@ -152,6 +172,9 @@ $arrow50: url("./../Font/keyboard_arrow_down-24px50.svg") no-repeat;
     @extend %Form;
     display: grid;
     grid-template-columns: 2fr 2fr;
+    label {
+        @extend %label;
+    }
 }
 
 .Form_Elements .Form .Form5 .Form5_1_select {
@@ -178,6 +201,9 @@ $arrow50: url("./../Font/keyboard_arrow_down-24px50.svg") no-repeat;
 .Form_Elements .Form .Form6 {
     @extend %Form;
     width: 266px;
+    label {
+        @extend %label;
+    }
 }
 
 .Form_Elements .Form .Form6 .Form6_select {
@@ -193,6 +219,9 @@ $arrow50: url("./../Font/keyboard_arrow_down-24px50.svg") no-repeat;
 .Form_Elements .Form .Form7 {
     @extend %Form;
     width: 266px;
+    label {
+        @extend %label;
+    }
 }
 
 $arrow_right: url("./../Font/arrow_forward-24px.svg") no-repeat;
@@ -212,6 +241,9 @@ $arrow_right: url("./../Font/arrow_forward-24px.svg") no-repeat;
 .Form_Elements .Form .Form8 {
     @extend %Form;
     width: 266px;
+    label {
+        @extend %label;
+    }
 }
 
 $arrow75: url("./../Font/keyboard_arrow_down-24px75.svg") no-repeat;
@@ -252,10 +284,10 @@ $arrow75: url("./../Font/keyboard_arrow_down-24px75.svg") no-repeat;
 }
 
 .Form_Elements .Form .Form9 .iqdropdown .iqdropdown-menu {
-    
+    position: relative;
     margin: 0 auto;
-    margin-top: -7px;
-    margin-left: -1px;
+    margin-top: -38px;
+    margin-left: -11px;
     padding: 0;
     width: 266px;
     box-shadow: none;
@@ -267,8 +299,8 @@ $arrow75: url("./../Font/keyboard_arrow_down-24px75.svg") no-repeat;
     &:hover,
     &:focus {
         margin: 0 auto;
-        margin-top: -7px;
-        margin-left: -1px;
+        margin-top: -38px;
+        margin-left: -11px;
         padding: 0;
         box-shadow: none;
         border: 1px solid $dark50;
@@ -348,6 +380,218 @@ $arrow75: url("./../Font/keyboard_arrow_down-24px75.svg") no-repeat;
                 &::before {
                     display: none;
                 }
+            }
+        }
+    }
+}
+.Form_Elements .Form .Form10 {
+    // position: relative;
+    @extend %Form;
+    p {
+        @extend %label;
+        width: 266px;
+        float: none;
+        // margin: 0 auto;
+        background: $arrow50;
+        background-position: 232px;
+    };
+}
+.Form_Elements .Form .Form11 {
+    // position: relative;
+    @extend %Form;
+    p {
+        @extend %label;
+        width: 266px;
+        float: none;
+        // margin: 0 auto;
+        background: url('./../Font/expand_more.svg') no-repeat;
+        background-position: 238px;
+    };
+}
+
+.Form_Elements .Form .Form_checkbox{
+    @extend %Form;
+    form{
+        margin: 0;
+        padding: 0;
+        label {
+            @extend %label;
+            // margin: 0 auto;
+            // padding: 0;
+            position: relative;
+            right: 10px;
+            bottom: 5px;
+            // font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: $dark50;
+            text-transform: none;
+            float: none;
+        };
+        input + label::before {
+            content: "";
+            margin: 0;
+            // display: -moz-inline-box;
+            display: inline-block;
+            position: relative;
+            right: 10px;
+            top: 5px;
+            height: 20px;
+            width: 20px;
+            border: 1px solid $dark25;
+            border-radius: 4px;
+        };
+        input:checked + label::after {
+            content: "";
+            display: inline-block;
+            margin: 0;
+            position: relative;
+            right: 89px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $purple;
+            border-radius: 4px;
+            background-position: 1 ;
+            background: url("./../img/Vector.svg") no-repeat;
+            background-position: 4px 2px;
+        }
+        #Checkbox2::after{
+            // position: relative;
+            right: 163px;
+        }
+        #Checkbox3::after{
+            // position: relative;
+            right: 181px;
+        }
+        #Checkbox4::after{
+            // position: relative;
+            right: 98.5px;
+        }
+        #Checkbox5::after{
+            // position: relative;
+            right: 108px;
+        }
+        #Checkbox6::after{
+            // position: relative;
+            right: 100px;
+        }
+        input {
+            margin: 0;
+            position: relative;
+            padding: 10px;
+            width: 20px;
+            height: 20px;
+            float: left;
+            opacity: 0;
+            z-index: 1;
+            border-radius: 4px;
+        }
+    }
+}
+.Form_Elements .Form .Form12 {
+    @extend %Form;
+    #Form12_2 {
+        margin-left: 0;
+        width: 280px;
+        height: 1px;
+        background: $dark10;
+    };
+    #Form12_1 {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        #Form12_1_1 {
+            // position: relative;
+            float: left;
+            margin: 0 auto;
+            margin-right: 10px;
+            padding: 0;
+            width: 48px;
+            height: 48px;
+            background: url('./../img/insert_emoticon.svg') no-repeat;
+            background-position: center;
+        };
+        #Form12_1_2 {
+            // position: relative;
+            margin: 0;
+            padding: 0;
+            
+            // float: left;
+            #Form12_2_1 {
+                margin: 0 auto;
+                padding: 0;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+            };
+            #Form12_2_2 {
+                margin: 0 auto;
+                padding: 0;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+            };
+        }
+    }
+}
+.Form_Elements .Form .Form13 {
+    @extend %Form;
+    #Form13_2 {
+        margin-left: 0;
+        width: 280px;
+        height: 1px;
+        background: $dark10;
+    };
+    #Form13_1 {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        #Form13_1_1 {
+            // position: relative;
+            float: left;
+            // top: 100px;
+            margin: 0;
+            margin-right: 10px;
+            padding: 0;
+            width: 48px;
+            height: 48px;
+            background: url('./../img/location_city.svg') no-repeat;
+            background-position: center;
+        };
+        #Form13_1_2 {
+            // position: relative;
+            // left: 100px;
+            // float: left;
+            margin: 0 auto;
+            padding: 0;
+            #Form13_2_1{
+                margin: 0 auto;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+            };
+            #Form13_2_2{
+                margin: 0 auto;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
             }
         }
     }

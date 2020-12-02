@@ -2,145 +2,150 @@ import './../../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.m
 import './../../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css';
 
 $(document).ready(() => {
-  $('.iqdropdown').iqDropdown(['options']);
-});
-
-(function ($) {
-  
-  const defaults = {
+  $('.iqdropdown').iqDropdown({
     maxItems: 10,
     minItems: 0,
     selectionText: ['спальня', 'кровать', 'ванная'],
     textPlural: ['спальни', 'кровати', 'ванные'],
-    controls: {
-      position: 'right',
-      displayCls: 'iqdropdown-content',
-      controlsCls: 'iqdropdown-item-controls',
-      counterCls: 'counter',
-    },
-    items: {},
-    onChange: (id, count, totalItems) => {},
-    beforeDecrement: (id, itemCount) => true,
-    beforeIncrement: (id, itemCount) => true,
-    setSelectionText(itemCount, totalItems) {
-      const usePlural = totalItems !== 1 && this.textPlural.length > 0;
-      const text = usePlural ? this.textPlural : this.selectionText;
-      return `${totalItems} ${text}`;
-    },
-  };
+  });
+});
 
-  $.fn.iqDropdown = function (options) {
-    this.each(function () {
-      const $this = $(this);
-      const $selection = $this.find('p.iqdropdown-selection').last();
-      const $menu = $this.find('div.iqdropdown-menu');
-      const $items = $menu.find('div.iqdropdown-menu-option');
-      const dataAttrOptions = {
-        selectionText: $selection.data('selection-text'),
-        textPlural: $selection.data('text-plural'),
-      };
-      const settings = $.extend(true, {}, defaults, dataAttrOptions, options);
-      const itemCount = {};
-      let totalItems = 0;
+// (function ($) {
+  
+//   const defaults = {
+//     maxItems: 10,
+//     minItems: 0,
+//     selectionText: ['спальня', 'кровать', 'ванная'],
+//     textPlural: ['спальни', 'кровати', 'ванные'],
+//     controls: {
+//       position: 'right',
+//       displayCls: 'iqdropdown-content',
+//       controlsCls: 'iqdropdown-item-controls',
+//       counterCls: 'counter',
+//     },
+//     items: {},
+//     onChange: (id, count, totalItems) => {},
+//     beforeDecrement: (id, itemCount) => true,
+//     beforeIncrement: (id, itemCount) => true,
+//     setSelectionText(itemCount, totalItems) {
+//       const usePlural = totalItems !== 1 && this.textPlural.length > 0;
+//       const text = usePlural ? this.textPlural : this.selectionText;
+//       return `${totalItems} ${text}`;
+//     },
+//   };
 
-      function updateDisplay() {
-        $selection.html(settings.setSelectionText(itemCount, totalItems));
-      }
+//   $.fn.iqDropdown = function (options) {
+//     this.each(function () {
+//       const $this = $(this);
+//       const $selection = $this.find('p.iqdropdown-selection').last();
+//       const $menu = $this.find('div.iqdropdown-menu');
+//       const $items = $menu.find('div.iqdropdown-menu-option');
+//       const dataAttrOptions = {
+//         selectionText: $selection.data('selection-text'),
+//         textPlural: $selection.data('text-plural'),
+//       };
+//       const settings = $.extend(true, {}, defaults, dataAttrOptions, options);
+//       const itemCount = {};
+//       let totalItems = 0;
 
-      function setItemSettings(id, $item) {
-        const minCount = Number($item.data('mincount'));
-        const maxCount = Number($item.data('maxcount'));
+//       function updateDisplay() {
+//         $selection.html(settings.setSelectionText(itemCount, totalItems));
+//       }
 
-        settings.items[id] = {
-          minCount: Number.isNaN(Number(minCount)) ? 0 : minCount,
-          maxCount: Number.isNaN(Number(maxCount)) ? Infinity : maxCount,
-        };
-      }
+//       function setItemSettings(id, $item) {
+//         const minCount = Number($item.data('mincount'));
+//         const maxCount = Number($item.data('maxcount'));
 
-      function addControls(id, $item) {
-        const $controls = $('<div />').addClass(settings.controls.controlsCls);
-        const $decrementButton = $(`
-          <button class="button-decrement">
-          </button>
-        `);
-        const $incrementButton = $(`
-          <button class="button-increment">
-          </button>
-        `);
-        const $counter = $(`<span>${itemCount[id]}</span>`).addClass(settings.controls.counterCls);
+//         settings.items[id] = {
+//           minCount: Number.isNaN(Number(minCount)) ? 0 : minCount,
+//           maxCount: Number.isNaN(Number(maxCount)) ? Infinity : maxCount,
+//         };
+//       }
 
-        $item.children('div').addClass(settings.controls.displayCls);
-        $controls.append($decrementButton, $counter, $incrementButton);
+//       function addControls(id, $item) {
+//         const $controls = $('<div />').addClass(settings.controls.controlsCls);
+//         const $decrementButton = $(`
+//           <button class="button-decrement">
+//           </button>
+//         `);
+//         const $incrementButton = $(`
+//           <button class="button-increment">
+//           </button>
+//         `);
+//         const $counter = $(`<span>${itemCount[id]}</span>`).addClass(settings.controls.counterCls);
 
-        if (settings.controls.position === 'right') {
-          $item.append($controls);
-        } else {
-          $item.prepend($controls);
-        }
+//         $item.children('div').addClass(settings.controls.displayCls);
+//         $controls.append($decrementButton, $counter, $incrementButton);
 
-        $decrementButton.click((event) => {
-          const {
-            items,
-            minItems,
-            beforeDecrement,
-            onChange
-          } = settings;
-          const allowClick = beforeDecrement(id, itemCount);
+//         if (settings.controls.position === 'right') {
+//           $item.append($controls);
+//         } else {
+//           $item.prepend($controls);
+//         }
 
-          if (allowClick && totalItems > minItems && itemCount[id] > items[id].minCount) {
-            itemCount[id] -= 1;
-            totalItems -= 1;
-            $counter.html(itemCount[id]);
-            updateDisplay();
-            onChange(id, itemCount[id], totalItems);
-          }
+//         $decrementButton.click((event) => {
+//           const {
+//             items,
+//             minItems,
+//             beforeDecrement,
+//             onChange
+//           } = settings;
+//           const allowClick = beforeDecrement(id, itemCount);
 
-          event.preventDefault();
-        });
+//           if (allowClick && totalItems > minItems && itemCount[id] > items[id].minCount) {
+//             itemCount[id] -= 1;
+//             totalItems -= 1;
+//             $counter.html(itemCount[id]);
+//             updateDisplay();
+//             onChange(id, itemCount[id], totalItems);
+//           }
 
-        $incrementButton.click((event) => {
-          const {
-            items,
-            maxItems,
-            beforeIncrement,
-            onChange
-          } = settings;
-          const allowClick = beforeIncrement(id, itemCount);
+//           event.preventDefault();
+//         });
 
-          if (allowClick && totalItems < maxItems && itemCount[id] < items[id].maxCount) {
-            itemCount[id] += 1;
-            totalItems += 1;
-            $counter.html(itemCount[id]);
-            updateDisplay();
-            onChange(id, itemCount[id], totalItems);
-          }
+//         $incrementButton.click((event) => {
+//           const {
+//             items,
+//             maxItems,
+//             beforeIncrement,
+//             onChange
+//           } = settings;
+//           const allowClick = beforeIncrement(id, itemCount);
 
-          event.preventDefault();
-        });
+//           if (allowClick && totalItems < maxItems && itemCount[id] < items[id].maxCount) {
+//             itemCount[id] += 1;
+//             totalItems += 1;
+//             $counter.html(itemCount[id]);
+//             updateDisplay();
+//             onChange(id, itemCount[id], totalItems);
+//           }
 
-        $item.click(event => event.stopPropagation());
+//           event.preventDefault();
+//         });
 
-        return $item;
-      }
+//         $item.click(event => event.stopPropagation());
 
-      $this.click(() => {
-        $this.toggleClass('menu-open');
-      });
+//         return $item;
+//       }
 
-      $items.each(function () {
-        const $item = $(this);
-        const id = $item.data('id');
-        const defaultCount = Number($item.data('defaultcount') || '0');
+//       $this.click(() => {
+//         $this.toggleClass('menu-open');
+//       });
 
-        itemCount[id] = defaultCount;
-        totalItems += defaultCount;
-        setItemSettings(id, $item);
-        addControls(id, $item);
-      });
+//       $items.each(function () {
+//         const $item = $(this);
+//         const id = $item.data('id');
+//         const defaultCount = Number($item.data('defaultcount') || '0');
 
-      updateDisplay();
-    });
+//         itemCount[id] = defaultCount;
+//         totalItems += defaultCount;
+//         setItemSettings(id, $item);
+//         addControls(id, $item);
+//       });
 
-    return this;
-  };
-}(jQuery));
+//       updateDisplay();
+//     });
+
+//     return this;
+//   };
+// }(jQuery));

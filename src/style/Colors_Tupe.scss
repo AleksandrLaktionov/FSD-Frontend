@@ -54,7 +54,7 @@ $dark25: rgba(31, 32, 65, 0.25);
     @extend %Dark;
     background: $dark25;
 }
-
+$dark10: rgba(31, 32, 65, 0.1);
 $dark05: rgba(31, 32, 65, 0.05);
 
 .Dark05 {
@@ -119,12 +119,9 @@ $green: rgba(111, 207, 151, 1);
 }
 
 .Colors_Type .TypeText .TypeTextH1 p {
-    font-family: Montserrat;
+    @extend %body;
     font-size: 24px;
-    font-style: normal;
-    font-weight: normal;
     line-height: 29px;
-    letter-spacing: 0em;
     text-align: center;
     color: $dark25;
 
