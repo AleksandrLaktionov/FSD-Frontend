@@ -1,2 +1,2 @@
 # FSD-frontend
-<a href="./dist/main.html">test<a/>
+<a href="https://aleksandrlaktionov.github.io/FSD-frontend/dist/main">test<a/>
