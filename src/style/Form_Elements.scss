@@ -429,6 +429,7 @@ $arrow75: url("./../Font/keyboard_arrow_down-24px75.svg") no-repeat;
     float: left;
     opacity: 0;
     z-index: 1;
+    border: 1px solid $dark25;
     border-radius: 4px;
 }
 %Checkbox_before {
@@ -843,4 +844,128 @@ $arrow75: url("./../Font/keyboard_arrow_down-24px75.svg") no-repeat;
             z-index: 1;
         };
     }
+}
+.Form_Elements .Form_2 .Form3{
+    @extend %Form;
+    width: 400px;
+    p {
+        @extend %label;
+        width: 266px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    };
+    form {
+        float: left;
+        margin: 5px;
+        label {
+            @extend %Checkbox_label;
+        };
+        label::before {
+            @extend %Checkbox_before;
+            width: 40px;
+            height: 20px;
+            background: url('./../img/Toggle_off.svg') no-repeat;
+            background-position: 4px;
+            border: 1px solid $dark25;
+            box-sizing: border-box;
+            border-radius: 10px;
+        };
+        input {
+            @extend %Checkbox_input;
+        };
+        input:checked + label::before {
+            opacity: 0;
+        }
+        input:checked + label::after {
+            @extend %Checkbox_after;
+            right: 262px;
+            width: 40px;
+            height: 20px;
+            background: url('./../img/Toggle_on.svg') no-repeat;
+            background-position: 22px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+    }
+}
+
+.Form_Elements .Form_2 .Form4 {
+    @extend %Form;
+    p {
+        @extend %label;
+        margin-top: 10px;
+    };
+    .button{
+        width: 100px;
+        .button_deactive {
+            margin: 5px;
+            margin-left: 0;
+            padding: 0;
+            width: 40px;
+            height: 20px;
+            background: #FFFFFF;
+            border: 1px solid $dark25;
+            box-sizing: border-box;
+            border-radius: 10px;
+            span {
+            position: relative;
+            // bottom: 1px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+            color: $dark25;
+            };
+            span::before {
+                position: relative;
+                top: 2.5px;
+                right: 7px;
+                content: "";
+                margin: 0;
+                padding: 0;
+                width: 10px;
+                height: 10px;
+                box-sizing: border-box;
+                display: inline-block;
+                background: url('./../img/favorite_border.svg') no-repeat;
+            };
+        };
+        .button_active {
+            margin: 5px;
+            padding: 0;
+            width: 39.72px;
+            height: 20px;
+            background: #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: none;
+            background-image: url('./../img/Border_like.svg');
+            span {
+                position: relative;
+                // bottom: 1px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 12px;
+                text-align: center;
+                color: $purple;
+            };
+            span::before {
+                position: relative;
+                top: 2.5px;
+                right: 5px;
+                content: "";
+                width: 10px;
+                height: 10px;
+                box-sizing: border-box;
+                display: inline-block;
+                background: url('./../img/favorite.svg') no-repeat;
+                // z-index: 1;
+            };
+        }
+    };
 }

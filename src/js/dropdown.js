@@ -149,3 +149,75 @@ $(document).ready(() => {
 //     return this;
 //   };
 // }(jQuery));
+// $(document).ready(function () {
+  
+//   allWordsMap = {
+//     'guests'    : {
+//       'all'   : ['гость', 'гостя', 'гостей'],
+//       'one'   : ['взрослый', 'взрослых', 'взрослых'],
+//       'two'   : ['ребенок', 'ребенка','детей'],
+//       'three' : ['младенец', 'младенца', 'младенцев'],
+//       'text' : 'Сколько гостей'
+//     },
+//     'facilities' : {
+//       'all'   : ['спальная', 'спальные', 'спальных'],
+//       'one'   : ['спальная', 'спальные', 'спальных'],
+//       'two'   : ['кровать', 'кровати', 'кроватей'],
+//       'three' : ['ванная', 'ванные','ванных'],
+//       'text' : 'Сколько помещений'
+//     },
+//   }
+  
+//   const wordToPlural = (number, wordsMap) => {
+//     if (number % 10 === 1 && number != 11) {return number + ' ' + wordsMap[0];}
+//     if (number < 5) {return number + ' ' + wordsMap[1]}
+//     return number + ' ' + wordsMap[2];
+// }
+  
+//   funcSelectionText = (totalItems, oneCount, twoCount, threeCount, mapArea) => {
+//       if (!totalItems) { return allWordsMap[mapArea].text }
+    
+//       let one = ''
+//       if (oneCount) one = wordToPlural(oneCount, allWordsMap[mapArea].one) + ', ';
+    
+//       let two = ''
+//       if (twoCount) two = wordToPlural(twoCount, allWordsMap[mapArea].two) + ', ';
+    
+//       let three = ''
+//       if (threeCount) three = wordToPlural(threeCount, allWordsMap[mapArea].three)  + ', ';
+    
+//       const res = one + two + three;
+//       return res.substring(0, res.length - 2);
+//   } 
+  
+//   function setDropDown(setClass, itemClass) {
+//     $(setClass).iqDropdown({
+//     setSelectionText: (itemCount, totalItems) => funcSelectionText(totalItems, itemCount[itemClass+'-item1'], itemCount[itemClass+'-item2'], itemCount[itemClass+'-item3'], itemClass),
+//     onChange: function (id, count, totalItems) {
+      
+//       //toggle minus
+//       const $thisMenuOption = $(setClass + ' .iqdropdown-menu-option[data-id="' + id + '"]');
+//       if (count === $thisMenuOption.data('mincount') || count === 0) {    
+//         $($thisMenuOption).find('.button-decrement').prop('disabled', true);
+//       } else {
+//         $($thisMenuOption).find('.button-decrement').prop('disabled', false);
+//       }
+      
+//       //show and hide buttons
+//       $(setClass + ' .dropdown__buttons').removeClass('hidden');
+//       $(setClass + ' .dropdown__button_apply').prop('disabled', false);
+      
+      
+//       //enable and diseble reset
+//       (totalItems) 
+//         ? $(setClass + ' .dropdown__button_reset').prop('disabled', false)
+//         : $(setClass + ' .dropdown__button_reset').prop('disabled', true);
+//     }
+  
+//   })
+//   }
+  
+//   setDropDown('.iqdropdown-guests', 'guests')
+//   setDropDown('.iqdropdown-facilities', 'facilities')
+//   setDropDown('.iqdropdown-guests2', 'guests')
+// })
