@@ -1,0 +1,12 @@
+.Form_Element_2 {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    row-gap: 20px;
+    @import './Checkbox_Buttons/Checkbox_Buttons.scss';
+    @import './Radio_Buttons/Radio_Buttons.scss';
+    @import './Toggle/Toggle.scss';
+    @import './like_button/like_button.scss';
+    @import './rate_button/rate_button.scss';
+    @import './dropdown/dropdown.scss';
+    @import './richCheckboxButtons/richCheckboxButtons.scss';
+}

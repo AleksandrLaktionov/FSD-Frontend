@@ -1,0 +1,56 @@
+.rate_button {
+
+    h3 {
+        padding-bottom: 15px;
+        // letter-spacing: -0.7px;
+    }
+
+    .rate_button_stars_form1 {
+        margin-right: 9px;
+    }
+
+    .rate_button_stars_form2 {
+        margin-left: 9px;
+    }
+
+    .rate_button_stars_form1,
+    .rate_button_stars_form2 {
+        display: inline-block;
+
+        .rate_button_stars_1,
+        .rate_button_stars_2 {
+            width: 108px;
+            font-size: 24px;
+            line-height: 20,4px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+
+            .rate_button_item {
+                display: none;
+
+                &:checked,
+                &:checked~.rate_button_label::before {
+                    content: url('./../image/star.svg');
+                    cursor: pointer;
+                }
+            }
+
+            .rate_button_label {
+
+                &::before {
+                    content: url('./../image/star_border.svg');
+                    cursor: pointer;
+                }
+
+                // &:hover,
+                // &:hover~ ::before {
+                //     content: url('./../image/star.svg');
+                //     cursor: pointer;
+                //     align-items: center;
+                //     text-align: center;
+                // }
+            }
+        }
+    }
+}

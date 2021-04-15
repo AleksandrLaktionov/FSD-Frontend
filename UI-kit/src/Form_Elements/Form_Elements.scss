@@ -1,0 +1,10 @@
+.Form_Elements {
+    margin: 90px;
+    padding: (140px - 90px) / 1440px * 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+    @import './Text_Field/Text_Field.scss';
+    @import './Form_Element_2/Form_Element_2.scss';
+    @import './Form_Element_3/form-element_3.scss';
+}

@@ -1,0 +1,1264 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,700);
+@charset "UTF-8";
+.Form_Elements .Text_Field .Form_1 .Form_Input, .Form_Elements .Text_Field .Form_2 .Form_Input, .Form_Elements .Text_Field .Form_3 .Form_Input, .Form_Elements .Text_Field .Form_4 .Form_Input,
+.Form_Elements .Text_Field .Form_4 .masked_text_field, .Form_Elements .Text_Field .Form_5 .Form_Input, .Form_Elements .Text_Field .Form_6 .Form_Input, .Form_Elements .Text_Field .Form_7 .Form_Input, .Form_Elements .Text_Field .Form_8 .Form_Input {
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 320px;
+  height: 44px;
+  border-radius: 4px; }
+
+/* Обнуление */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 320px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(31, 32, 65, 0.75); }
+
+h1 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2041; }
+
+h2 {
+  font-family: Montserrat;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2041; }
+
+h3 {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2041;
+  text-transform: uppercase; }
+
+input::-ms-clear {
+  display: none; }
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+button,
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+/* =========================== */
+.logo {
+  background-image: url(.././img/Group.svg);
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  left: 30px;
+  top: 30px; }
+
+.Colors_Type .Colors {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 40px; }
+  .Colors_Type .Colors .Colors_Block {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 20px;
+    justify-items: center;
+    align-items: center; }
+    .Colors_Type .Colors .Colors_Block #Dark100 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: #1f2041; }
+    .Colors_Type .Colors .Colors_Block #Dark75 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: rgba(31, 32, 65, 0.75); }
+    .Colors_Type .Colors .Colors_Block #Dark50 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: rgba(31, 32, 65, 0.5); }
+    .Colors_Type .Colors .Colors_Block #Dark25 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: rgba(31, 32, 65, 0.25); }
+    .Colors_Type .Colors .Colors_Block #Dark05 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: rgba(31, 32, 65, 0.05); }
+    .Colors_Type .Colors .Colors_Block #Purple {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: #bc9cff; }
+    .Colors_Type .Colors .Colors_Block #Green {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: #6fcf97; }
+  .Colors_Type .Colors .Colors_Content {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 20px; }
+    .Colors_Type .Colors .Colors_Content div {
+      margin: auto 0; }
+      .Colors_Type .Colors .Colors_Content div p {
+        font-family: Montserrat;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27.79px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1f2041; }
+        .Colors_Type .Colors .Colors_Content div p span {
+          font-family: Montserrat;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27.79px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1f2041; }
+
+.Colors_Type .TypeFonts {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 30px;
+  max-height: 321px; }
+  .Colors_Type .TypeFonts .Type_Fonts {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 25px; }
+    .Colors_Type .TypeFonts .Type_Fonts #H1 {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29.26px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.25); }
+    .Colors_Type .TypeFonts .Type_Fonts #H2 {
+      font-family: Montserrat;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23.16px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.25); }
+    .Colors_Type .TypeFonts .Type_Fonts #H3 {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14.63px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.25); }
+    .Colors_Type .TypeFonts .Type_Fonts #p {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.25); }
+  .Colors_Type .TypeFonts .Type_Fonts_Text {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 25px; }
+
+.Colors_Type {
+  display: grid;
+  grid-template-columns: fit-content(281.26px) fit-content(436px);
+  column-gap: 28.81944%;
+  margin: 90px 0 90px 90px;
+  padding: 3.81944% 0 0 4.16667%; }
+  @media (max-width: 767px) {
+    .Colors_Type {
+      min-width: 320px;
+      grid-template-columns: 1fr;
+      row-gap: 20px; } }
+
+.Form_Elements {
+  margin: 90px;
+  padding: 3.47222%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 40px; }
+  .Form_Elements .Text_Field {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    row-gap: 20px; }
+    .Form_Elements .Text_Field .Form_1 {
+      width: 320px; }
+      .Form_Elements .Text_Field .Form_1 label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .Text_Field .Form_1 #label_right h3 {
+        margin-bottom: 5px;
+        font-weight: 400;
+        line-height: 14.63px;
+        color: rgba(31, 32, 65, 0.5);
+        float: right; }
+      .Form_Elements .Text_Field .Form_1 .Form_Input::placeholder {
+        color: rgba(31, 32, 65, 0.25);
+        line-height: 18px; }
+    .Form_Elements .Text_Field .Form_2 {
+      width: 320px; }
+      .Form_Elements .Text_Field .Form_2 label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .Text_Field .Form_2 #label_right h3 {
+        margin-bottom: 5px;
+        font-weight: 400;
+        line-height: 14.63px;
+        color: rgba(31, 32, 65, 0.5);
+        float: right; }
+      .Form_Elements .Text_Field .Form_2 .Form_Input {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+        .Form_Elements .Text_Field .Form_2 .Form_Input:hover {
+          border: 1px solid rgba(31, 32, 65, 0.5);
+          border-radius: 4px; }
+        .Form_Elements .Text_Field .Form_2 .Form_Input:focus {
+          border: 1px solid rgba(31, 32, 65, 0.5);
+          border-radius: 4px; }
+    .Form_Elements .Text_Field .Form_3 {
+      width: 320px; }
+      .Form_Elements .Text_Field .Form_3 label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .Text_Field .Form_3 .Form_Input {
+        background: url(.././img/expand_more.svg) no-repeat;
+        background-position: 290px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+    .Form_Elements .Text_Field .Form_4 {
+      width: 320px; }
+      .Form_Elements .Text_Field .Form_4 label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .Text_Field .Form_4 .Form_Input,
+      .Form_Elements .Text_Field .Form_4 .masked_text_field {
+        background: url(.././img/expand_more.svg) no-repeat;
+        background-position: 289px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+        .Form_Elements .Text_Field .Form_4 .Form_Input::placeholder,
+        .Form_Elements .Text_Field .Form_4 .masked_text_field::placeholder {
+          color: rgba(31, 32, 65, 0.25); }
+    .Form_Elements .Text_Field .Form_5 {
+      width: 320px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px; }
+      .Form_Elements .Text_Field .Form_5 label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .Text_Field .Form_5 div {
+        width: 150px; }
+      .Form_Elements .Text_Field .Form_5 .Form_Input {
+        width: 150px;
+        background: url(.././img/expand_more.svg) no-repeat;
+        background-position: 120px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+        .Form_Elements .Text_Field .Form_5 .Form_Input::placeholder {
+          color: rgba(31, 32, 65, 0.25); }
+    .Form_Elements .Text_Field .Form_6 {
+      width: 266px; }
+      .Form_Elements .Text_Field .Form_6 label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .Text_Field .Form_6 .Form_Input {
+        width: 266px;
+        background: url(.././img/expand_more.svg) no-repeat;
+        background-position: 236px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+    .Form_Elements .Text_Field .Form_7 {
+      width: 267px; }
+      .Form_Elements .Text_Field .Form_7 label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .Text_Field .Form_7 .Form_Input {
+        width: 267px;
+        background: url(.././img/arrow_forward.svg) no-repeat;
+        background-position: 231px 13px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+        .Form_Elements .Text_Field .Form_7 .Form_Input::placeholder {
+          color: rgba(31, 32, 65, 0.25); }
+    .Form_Elements .Text_Field .Form_8 {
+      width: 266px; }
+      .Form_Elements .Text_Field .Form_8 label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .Text_Field .Form_8 #label_right h3 {
+        margin-bottom: 5px;
+        font-weight: 400;
+        line-height: 14.63px;
+        color: rgba(31, 32, 65, 0.5);
+        float: right; }
+      .Form_Elements .Text_Field .Form_8 .Form_Input {
+        width: 266px;
+        background: url(.././img/expand_more_75.svg) no-repeat;
+        background-position: 236px 18px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+    .Form_Elements .Text_Field .Form_9 {
+      width: 266px;
+      height: 181.56px; }
+      .Form_Elements .Text_Field .Form_9 .drop_down {
+        width: 266px; }
+        .Form_Elements .Text_Field .Form_9 .drop_down label h3 {
+          margin-bottom: 5px;
+          float: left; }
+        .Form_Elements .Text_Field .Form_9 .drop_down #label_right h3 {
+          margin-bottom: 5px;
+          font-weight: 400;
+          line-height: 14.63px;
+          color: rgba(31, 32, 65, 0.5);
+          float: right; }
+        .Form_Elements .Text_Field .Form_9 .drop_down .input_drop_down {
+          width: 266px;
+          height: 44px;
+          padding: 15px;
+          border: 1px solid rgba(31, 32, 65, 0.5);
+          border-radius: 4px;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+          background: url(.././img/expand_more_75.svg) no-repeat;
+          background-position: 236px 18px;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.75); }
+        .Form_Elements .Text_Field .Form_9 .drop_down div {
+          display: grid;
+          grid-template-rows: repeat(3, auto);
+          align-items: center;
+          margin: auto 0;
+          width: 266px;
+          height: 119px;
+          padding: 7px 7px 8px 15px;
+          border: 1px solid rgba(31, 32, 65, 0.5);
+          border-radius: 4px;
+          border-top-right-radius: 0;
+          border-top-left-radius: 0; }
+          .Form_Elements .Text_Field .Form_9 .drop_down div h3 {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center; }
+            .Form_Elements .Text_Field .Form_9 .drop_down div h3 span {
+              text-align: end; }
+              .Form_Elements .Text_Field .Form_9 .drop_down div h3 span button {
+                vertical-align: middle;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                border: 1px solid rgba(31, 32, 65, 0.25);
+                border-radius: 22px;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: rgba(31, 32, 65, 0.5);
+                background-color: rgba(255, 255, 255, 0); }
+                .Form_Elements .Text_Field .Form_9 .drop_down div h3 span button:disabled {
+                  border: 1px solid rgba(31, 32, 65, 0.1);
+                  color: rgba(31, 32, 65, 0.25); }
+              .Form_Elements .Text_Field .Form_9 .drop_down div h3 span input[type="number"] {
+                vertical-align: middle;
+                width: 32px;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #1f2041; }
+    .Form_Elements .Text_Field .Form_10 {
+      width: 266px;
+      height: 44px; }
+      .Form_Elements .Text_Field .Form_10 .expandable_checkbox_list {
+        width: 266px;
+        height: 44px; }
+        .Form_Elements .Text_Field .Form_10 .expandable_checkbox_list label {
+          display: grid;
+          height: 44px;
+          align-items: center; }
+          .Form_Elements .Text_Field .Form_10 .expandable_checkbox_list label h3 {
+            background: url(.././img/expand_more.svg) no-repeat;
+            background-position: 236px; }
+    .Form_Elements .Text_Field .Form_11 {
+      width: 266px;
+      height: 217.44px; }
+      .Form_Elements .Text_Field .Form_11 .expandable_checkbox_list_activ {
+        width: 266px;
+        height: 44px; }
+        .Form_Elements .Text_Field .Form_11 .expandable_checkbox_list_activ h3 {
+          height: 44px;
+          display: grid;
+          align-items: center;
+          background: url(.././img/expand_more_up.svg) no-repeat;
+          background-position: 236px; }
+        .Form_Elements .Text_Field .Form_11 .expandable_checkbox_list_activ div {
+          display: grid;
+          grid-template-rows: repeat(6, auto);
+          row-gap: 5px; }
+          .Form_Elements .Text_Field .Form_11 .expandable_checkbox_list_activ div span {
+            position: relative; }
+            .Form_Elements .Text_Field .Form_11 .expandable_checkbox_list_activ div span input[type='checkbox'] {
+              width: 20px;
+              height: 20px;
+              border: none;
+              vertical-align: middle;
+              opacity: 0; }
+            .Form_Elements .Text_Field .Form_11 .expandable_checkbox_list_activ div span input[type='checkbox']:checked + ::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 3px;
+              width: 20px;
+              height: 20px;
+              border: 1px solid #bc9cff;
+              border-radius: 4px;
+              background: url(.././img/Vector.svg) no-repeat;
+              background-position: 4px 3px;
+              z-index: -1; }
+            .Form_Elements .Text_Field .Form_11 .expandable_checkbox_list_activ div span::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 3px;
+              width: 20px;
+              height: 20px;
+              border: 1px solid rgba(31, 32, 65, 0.25);
+              border-radius: 4px;
+              z-index: -2; }
+            .Form_Elements .Text_Field .Form_11 .expandable_checkbox_list_activ div span label {
+              padding-left: 10px;
+              line-height: 18px;
+              color: rgba(31, 32, 65, 0.5); }
+    .Form_Elements .Text_Field .Form_12 {
+      width: 291px;
+      height: 158px;
+      display: grid;
+      grid-template-rows: auto auto;
+      row-gap: 18px; }
+      .Form_Elements .Text_Field .Form_12 .insert_emoticon .icon_img, .Form_Elements .Text_Field .Form_12 .location_city .icon_img {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        vertical-align: middle;
+        margin-bottom: 13px; }
+      .Form_Elements .Text_Field .Form_12 .insert_emoticon .content, .Form_Elements .Text_Field .Form_12 .location_city .content {
+        display: inline-block;
+        padding-left: 6px;
+        padding-bottom: 20px;
+        vertical-align: middle; }
+        .Form_Elements .Text_Field .Form_12 .insert_emoticon .content span, .Form_Elements .Text_Field .Form_12 .location_city .content span {
+          font-weight: 700; }
+      .Form_Elements .Text_Field .Form_12 .insert_emoticon hr, .Form_Elements .Text_Field .Form_12 .location_city hr {
+        width: 280px;
+        height: 1px;
+        background: rgba(31, 32, 65, 0.1); }
+  .Form_Elements .Form_Element_2 {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    row-gap: 20px; }
+    .Form_Elements .Form_Element_2 .checkbox__buttons {
+      width: 222px;
+      height: 129.12px; }
+      .Form_Elements .Form_Element_2 .checkbox__buttons h3 {
+        margin-bottom: 16.56px;
+        vertical-align: middle; }
+      .Form_Elements .Form_Element_2 .checkbox__buttons .checkbox_list {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 6px; }
+        .Form_Elements .Form_Element_2 .checkbox__buttons .checkbox_list .checkbox_buttons_list {
+          position: relative; }
+          .Form_Elements .Form_Element_2 .checkbox__buttons .checkbox_list .checkbox_buttons_list input[type='checkbox'] {
+            width: 20px;
+            height: 20px;
+            vertical-align: top;
+            opacity: 0; }
+          .Form_Elements .Form_Element_2 .checkbox__buttons .checkbox_list .checkbox_buttons_list input[type='checkbox']:checked + ::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #bc9cff;
+            border-radius: 4px;
+            background: url(.././img/Vector.svg) no-repeat;
+            background-position: 4px 3px;
+            vertical-align: middle;
+            z-index: -1; }
+          .Form_Elements .Form_Element_2 .checkbox__buttons .checkbox_list .checkbox_buttons_list::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 4px;
+            vertical-align: middle;
+            z-index: -2; }
+          .Form_Elements .Form_Element_2 .checkbox__buttons .checkbox_list .checkbox_buttons_list span {
+            display: inline-block;
+            width: 192px;
+            margin-left: 10px;
+            vertical-align: top;
+            line-height: 18px; }
+            .Form_Elements .Form_Element_2 .checkbox__buttons .checkbox_list .checkbox_buttons_list span label {
+              color: rgba(31, 32, 65, 0.5); }
+    .Form_Elements .Form_Element_2 .Radio_Buttons {
+      width: 220.74px;
+      height: 55px; }
+      .Form_Elements .Form_Element_2 .Radio_Buttons h3 {
+        padding-bottom: 13px; }
+      .Form_Elements .Form_Element_2 .Radio_Buttons div {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px; }
+        .Form_Elements .Form_Element_2 .Radio_Buttons div span {
+          position: relative; }
+          .Form_Elements .Form_Element_2 .Radio_Buttons div span input[type='radio'] {
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+            vertical-align: middle; }
+          .Form_Elements .Form_Element_2 .Radio_Buttons div span input[type='radio']:checked + ::before {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            top: 3px;
+            left: 0;
+            background: url(".././img/Rectangle 2.1.svg") no-repeat;
+            background-position: 3px 3px;
+            border: 1px solid #bc9cff;
+            border-radius: 10px;
+            z-index: -1; }
+          .Form_Elements .Form_Element_2 .Radio_Buttons div span::after {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 10px;
+            top: 3px;
+            left: 0;
+            z-index: -2; }
+          .Form_Elements .Form_Element_2 .Radio_Buttons div span input[type='radio']:checked + label {
+            color: rgba(31, 32, 65, 0.75); }
+          .Form_Elements .Form_Element_2 .Radio_Buttons div span label {
+            padding-left: 10px;
+            vertical-align: middle;
+            color: rgba(31, 32, 65, 0.5); }
+    .Form_Elements .Form_Element_2 .Toggle h3 {
+      font-size: 12px;
+      line-height: 15px;
+      padding-bottom: 13px; }
+    .Form_Elements .Form_Element_2 .Toggle .button_toggle {
+      position: relative;
+      width: 260px;
+      margin-bottom: 10px; }
+      .Form_Elements .Form_Element_2 .Toggle .button_toggle #toggle_button {
+        width: 40px;
+        height: 20px;
+        vertical-align: middle;
+        opacity: 0; }
+      .Form_Elements .Form_Element_2 .Toggle .button_toggle::before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 40px;
+        height: 20px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 10px;
+        background: url(".././img/Rectangle 2.2.svg") no-repeat;
+        background-color: #FFFFFF;
+        background-position: 3px center;
+        z-index: -2; }
+      .Form_Elements .Form_Element_2 .Toggle .button_toggle #toggle_button:checked + ::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 40px;
+        height: 20px;
+        border: 1px solid #bc9cff;
+        border-radius: 10px;
+        background: url(".././img/Rectangle 2.1.svg") no-repeat;
+        background-color: #FFFFFF;
+        background-position: 23px center;
+        z-index: -1; }
+      .Form_Elements .Form_Element_2 .Toggle .button_toggle label {
+        padding-left: 10px;
+        vertical-align: middle; }
+    .Form_Elements .Form_Element_2 .like_button h3 {
+      font-size: 12px;
+      line-height: 15px;
+      padding-bottom: 15px; }
+    .Form_Elements .Form_Element_2 .like_button #like_button_dislike {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      margin-right: 5px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 10px;
+      background-color: white; }
+      .Form_Elements .Form_Element_2 .like_button #like_button_dislike span {
+        padding-left: 10px;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        letter-spacing: 0em;
+        vertical-align: middle;
+        color: rgba(31, 32, 65, 0.25); }
+        .Form_Elements .Form_Element_2 .like_button #like_button_dislike span::before {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          background: url(.././img/favorite_border.svg) no-repeat;
+          background-position: 3px 5px; }
+    .Form_Elements .Form_Element_2 .like_button #like_button_like {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      margin-left: 5px;
+      border: 1px solid #bc9cff;
+      border-radius: 10px;
+      background-color: white; }
+      .Form_Elements .Form_Element_2 .like_button #like_button_like span {
+        padding-left: 10px;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        letter-spacing: 0em;
+        vertical-align: middle;
+        color: #bc9cff; }
+        .Form_Elements .Form_Element_2 .like_button #like_button_like span::before {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          background: url(.././img/favorite.svg) no-repeat;
+          background-position: 3px 5px; }
+    .Form_Elements .Form_Element_2 .rate_button h3 {
+      padding-bottom: 15px; }
+    .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 {
+      margin-right: 9px; }
+    .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 {
+      margin-left: 9px; }
+    .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1,
+    .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 {
+      display: inline-block; }
+      .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_1,
+      .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_2,
+      .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_1,
+      .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_2 {
+        width: 108px;
+        font-size: 24px;
+        line-height: 20,4px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse; }
+        .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_1 .rate_button_item,
+        .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_2 .rate_button_item,
+        .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_1 .rate_button_item,
+        .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_2 .rate_button_item {
+          display: none; }
+          .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_1 .rate_button_item:checked,
+          .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_1 .rate_button_item:checked ~ .rate_button_label::before,
+          .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_2 .rate_button_item:checked,
+          .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_2 .rate_button_item:checked ~ .rate_button_label::before,
+          .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_1 .rate_button_item:checked,
+          .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_1 .rate_button_item:checked ~ .rate_button_label::before,
+          .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_2 .rate_button_item:checked,
+          .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_2 .rate_button_item:checked ~ .rate_button_label::before {
+            content: url(.././img/star.svg);
+            cursor: pointer; }
+        .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_1 .rate_button_label::before,
+        .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form1 .rate_button_stars_2 .rate_button_label::before,
+        .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_1 .rate_button_label::before,
+        .Form_Elements .Form_Element_2 .rate_button .rate_button_stars_form2 .rate_button_stars_2 .rate_button_label::before {
+          content: url(.././img/star_border.svg);
+          cursor: pointer; }
+    .Form_Elements .Form_Element_2 .dropdown {
+      width: 320px; }
+      .Form_Elements .Form_Element_2 .dropdown label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .Form_Element_2 .dropdown .input__dropdown {
+        width: 320px;
+        height: 44px;
+        padding: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-radius: 4px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        background: url(.././img/expand_more_75.svg) no-repeat;
+        background-position: 290px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+      .Form_Elements .Form_Element_2 .dropdown div {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        align-items: center;
+        margin: auto 0;
+        width: 320px;
+        height: 159px;
+        padding: 7px 7px 0px 15px;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-radius: 4px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0; }
+        .Form_Elements .Form_Element_2 .dropdown div h3 {
+          display: grid;
+          grid-template-columns: auto auto;
+          align-items: center; }
+          .Form_Elements .Form_Element_2 .dropdown div h3 span {
+            text-align: end; }
+            .Form_Elements .Form_Element_2 .dropdown div h3 span button {
+              vertical-align: middle;
+              align-items: center;
+              width: 30px;
+              height: 30px;
+              border: 1px solid rgba(31, 32, 65, 0.25);
+              border-radius: 22px;
+              font-family: Montserrat;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 22px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(31, 32, 65, 0.5);
+              background-color: rgba(255, 255, 255, 0); }
+              .Form_Elements .Form_Element_2 .dropdown div h3 span button:disabled {
+                border: 1px solid rgba(31, 32, 65, 0.1);
+                color: rgba(31, 32, 65, 0.25); }
+            .Form_Elements .Form_Element_2 .dropdown div h3 span input[type="number"] {
+              vertical-align: middle;
+              width: 32px;
+              font-family: Montserrat;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 15px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: #1f2041; }
+        .Form_Elements .Form_Element_2 .dropdown div button[type=submit] {
+          display: inline-block;
+          width: 84px;
+          height: 30px;
+          background-color: rgba(255, 255, 255, 0);
+          justify-self: end; }
+          .Form_Elements .Form_Element_2 .dropdown div button[type=submit] h3 {
+            color: #bc9cff; }
+    .Form_Elements .Form_Element_2 .rich__checkbox-buttons {
+      height: 145px;
+      width: 266px; }
+      .Form_Elements .Form_Element_2 .rich__checkbox-buttons h3 {
+        margin-bottom: 16px;
+        vertical-align: middle; }
+      .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 10px; }
+        .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list {
+          position: relative; }
+          .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list input[type='checkbox'] {
+            width: 20px;
+            height: 20px;
+            vertical-align: top;
+            opacity: 0; }
+          .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list input[type='checkbox']:checked + ::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #bc9cff;
+            border-radius: 4px;
+            background: url(.././img/Vector.svg) no-repeat;
+            background-position: 4px 3px;
+            vertical-align: middle;
+            z-index: -1; }
+          .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 4px;
+            vertical-align: middle;
+            z-index: -2; }
+          .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list .checkbox_label_1 {
+            display: inline-block;
+            width: 203px;
+            margin-left: 10px;
+            vertical-align: top; }
+            .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list .checkbox_label_1 label {
+              font-weight: 700;
+              color: rgba(31, 32, 65, 0.75);
+              font-size: 14px;
+              line-height: 18px;
+              letter-spacing: 0em;
+              text-align: left; }
+            .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list .checkbox_label_1 p {
+              font-size: 12px;
+              line-height: 14px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: rgba(31, 32, 65, 0.5); }
+          .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list .checkbox_label_2 {
+            display: inline-block;
+            width: 234px;
+            margin-left: 10px;
+            vertical-align: top; }
+            .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list .checkbox_label_2 label {
+              font-weight: 700;
+              color: rgba(31, 32, 65, 0.75);
+              font-size: 14px;
+              line-height: 18px;
+              letter-spacing: 0em;
+              text-align: left; }
+            .Form_Elements .Form_Element_2 .rich__checkbox-buttons .checkbox_list .checkbox_buttons_list .checkbox_label_2 p {
+              font-size: 12px;
+              line-height: 14px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: rgba(31, 32, 65, 0.5); }
+  .Form_Elements .form-element_3 {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    row-gap: 20px; }
+    .Form_Elements .form-element_3 .multi-range-slider {
+      width: 266px;
+      position: relative; }
+      .Form_Elements .form-element_3 .multi-range-slider label {
+        position: absolute; }
+      .Form_Elements .form-element_3 .multi-range-slider #right_label {
+        position: absolute;
+        right: 0;
+        margin: -4px 0 0 0; }
+        .Form_Elements .form-element_3 .multi-range-slider #right_label p {
+          letter-spacing: 0em;
+          line-height: 14.63px;
+          font-size: 12px;
+          text-align: right;
+          color: rgba(31, 32, 65, 0.5); }
+      .Form_Elements .form-element_3 .multi-range-slider .range-slider {
+        position: relative; }
+        .Form_Elements .form-element_3 .multi-range-slider .range-slider input[type="range"] {
+          position: absolute;
+          top: 30px;
+          pointer-events: none;
+          appearance: none;
+          z-index: 2;
+          height: 6px;
+          width: 100%;
+          opacity: 0; }
+        .Form_Elements .form-element_3 .multi-range-slider .range-slider input[type="range"]::-webkit-slider-thumb {
+          pointer-events: all;
+          cursor: pointer;
+          border-radius: 0;
+          border: 0 none; }
+        .Form_Elements .form-element_3 .multi-range-slider .range-slider .slider {
+          position: relative;
+          top: 30px;
+          z-index: 1;
+          height: 6px; }
+          .Form_Elements .form-element_3 .multi-range-slider .range-slider .slider .range {
+            position: absolute;
+            z-index: 2;
+            left: 25%;
+            right: 25%;
+            top: 0;
+            bottom: 0;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
+          .Form_Elements .form-element_3 .multi-range-slider .range-slider .slider .track {
+            position: absolute;
+            height: 6px;
+            width: 100%;
+            z-index: 1;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 5px;
+            background-color: #ffffff; }
+          .Form_Elements .form-element_3 .multi-range-slider .range-slider .slider .thumb {
+            position: absolute;
+            z-index: 3;
+            width: 12px;
+            height: 12px;
+            top: -3px;
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            border: 2px solid #fff;
+            border-radius: 50%; }
+    .Form_Elements .form-element_3 .buttons_group h3 {
+      margin-bottom: 16px; }
+    .Form_Elements .form-element_3 .buttons_group .buttons {
+      display: grid;
+      grid-template-rows: 44px 44px 15px 44px;
+      row-gap: 30px; }
+      .Form_Elements .form-element_3 .buttons_group .buttons .button_gradient {
+        display: grid;
+        grid-template-columns: 99px 99px;
+        column-gap: 20px; }
+        .Form_Elements .form-element_3 .buttons_group .buttons .button_gradient .button-linear_gradient {
+          width: 99px;
+          height: 44px;
+          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+          border-radius: 22px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 15px;
+          text-transform: uppercase;
+          color: #FFFFFF; }
+          .Form_Elements .form-element_3 .buttons_group .buttons .button_gradient .button-linear_gradient:disabled {
+            opacity: 0.5; }
+      .Form_Elements .form-element_3 .buttons_group .buttons .button-border_gradient {
+        display: grid;
+        grid-template-columns: 99px 99px;
+        column-gap: 20px; }
+        .Form_Elements .form-element_3 .buttons_group .buttons .button-border_gradient .button-border_linear__gradient {
+          width: 99px;
+          height: 44px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 15px;
+          text-transform: uppercase;
+          color: #bc9cff;
+          border-radius: 22px;
+          background: #FFFFFF;
+          background-image: url(.././img/border-gradient.svg); }
+          .Form_Elements .form-element_3 .buttons_group .buttons .button-border_gradient .button-border_linear__gradient:disabled {
+            background-image: url(.././img/border-gradient-disabled.svg); }
+      .Form_Elements .form-element_3 .buttons_group .buttons .button-no_border {
+        display: grid;
+        grid-template-columns: 61px 61px;
+        column-gap: 20px; }
+        .Form_Elements .form-element_3 .buttons_group .buttons .button-no_border .no_border {
+          width: 61px;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: left;
+          text-transform: uppercase;
+          color: #bc9cff;
+          background: #FFFFFF; }
+          .Form_Elements .form-element_3 .buttons_group .buttons .button-no_border .no_border:disabled {
+            color: rgba(31, 32, 65, 0.5); }
+      .Form_Elements .form-element_3 .buttons_group .buttons .button-big {
+        position: relative; }
+        .Form_Elements .form-element_3 .buttons_group .buttons .button-big .big {
+          width: 320px;
+          height: 44px;
+          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+          border-radius: 22px;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF; }
+        .Form_Elements .form-element_3 .buttons_group .buttons .button-big::after {
+          position: absolute;
+          content: '';
+          width: 20px;
+          height: 20px;
+          background: url(.././img/arrow_forward_white.svg) no-repeat;
+          top: 12px;
+          right: 12px;
+          cursor: pointer; }
+    .Form_Elements .form-element_3 .pagination {
+      width: 241px; }
+      .Form_Elements .form-element_3 .pagination h3 {
+        margin-bottom: 16px; }
+      .Form_Elements .form-element_3 .pagination p {
+        margin-top: 11px; }
+      .Form_Elements .form-element_3 .pagination ul {
+        display: flex;
+        position: relative;
+        background: rgba(255, 255, 255, 0); }
+        .Form_Elements .form-element_3 .pagination ul li {
+          width: 40px;
+          height: 40px;
+          font-family: Montserrat;
+          line-height: 14.63px;
+          font-size: 12px;
+          font-weight: 400;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          cursor: pointer;
+          color: rgba(31, 32, 65, 0.5); }
+        .Form_Elements .form-element_3 .pagination ul .number.active, .Form_Elements .form-element_3 .pagination ul .number:hover {
+          font-weight: bold;
+          color: #fff;
+          background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+          border-radius: 50%; }
+        .Form_Elements .form-element_3 .pagination ul .dots {
+          cursor: default; }
+        .Form_Elements .form-element_3 .pagination ul .btn {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+          background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%); }
+          .Form_Elements .form-element_3 .pagination ul .btn:disabled {
+            display: none; }
+        .Form_Elements .form-element_3 .pagination ul::after {
+          content: "";
+          position: absolute;
+          top: 8px;
+          right: 9px;
+          width: 24px;
+          height: 24px;
+          background: url(.././img/arrow_forward_white.svg) no-repeat;
+          background-position: 4px 3px;
+          cursor: pointer; }
+    .Form_Elements .form-element_3 .dropdown {
+      width: 320px; }
+      .Form_Elements .form-element_3 .dropdown label h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Form_Elements .form-element_3 .dropdown .input__dropdown {
+        width: 320px;
+        height: 44px;
+        padding: 15px;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-radius: 4px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        background: url(.././img/expand_more_75.svg) no-repeat;
+        background-position: 290px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+      .Form_Elements .form-element_3 .dropdown .dropdown_list {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        align-items: center;
+        margin: auto 0;
+        width: 320px;
+        height: 159px;
+        padding: 7px 7px 0px 15px;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-radius: 4px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0; }
+        .Form_Elements .form-element_3 .dropdown .dropdown_list h3 {
+          display: grid;
+          grid-template-columns: auto auto;
+          align-items: center; }
+          .Form_Elements .form-element_3 .dropdown .dropdown_list h3 span {
+            text-align: end; }
+            .Form_Elements .form-element_3 .dropdown .dropdown_list h3 span button {
+              vertical-align: middle;
+              align-items: center;
+              width: 30px;
+              height: 30px;
+              border: 1px solid rgba(31, 32, 65, 0.25);
+              border-radius: 22px;
+              font-family: Montserrat;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 22px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: rgba(31, 32, 65, 0.5);
+              background-color: rgba(255, 255, 255, 0); }
+              .Form_Elements .form-element_3 .dropdown .dropdown_list h3 span button:disabled {
+                border: 1px solid rgba(31, 32, 65, 0.1);
+                color: rgba(31, 32, 65, 0.25); }
+            .Form_Elements .form-element_3 .dropdown .dropdown_list h3 span input[type="number"] {
+              vertical-align: middle;
+              width: 32px;
+              font-family: Montserrat;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 15px;
+              letter-spacing: 0em;
+              text-align: center;
+              color: #1f2041; }
+        .Form_Elements .form-element_3 .dropdown .dropdown_list .button_down {
+          display: grid;
+          grid-template-columns: auto auto; }
+          .Form_Elements .form-element_3 .dropdown .dropdown_list .button_down button[type=reset] {
+            display: inline-block;
+            width: 84px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0);
+            justify-self: start; }
+            .Form_Elements .form-element_3 .dropdown .dropdown_list .button_down button[type=reset] h3 {
+              color: #bc9cff; }
+          .Form_Elements .form-element_3 .dropdown .dropdown_list .button_down button[type=submit] {
+            display: inline-block;
+            width: 84px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0);
+            justify-self: end; }
+            .Form_Elements .form-element_3 .dropdown .dropdown_list .button_down button[type=submit] h3 {
+              color: #bc9cff; }
+
+
+/*# sourceMappingURL=UI_kit.css.map*/

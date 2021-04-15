@@ -1,0 +1,116 @@
+.buttons_group {
+    h3 {
+        margin-bottom: 16px;
+    }
+    .buttons {
+
+        display: grid;
+        grid-template-rows: 44px 44px 15px 44px;
+        row-gap: 30px;
+
+        .button_gradient {
+            display: grid;
+            grid-template-columns: 99px 99px;
+            column-gap: 20px;
+
+            .button-linear_gradient {
+                width: 99px;
+                height: 44px;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                border-radius: 22px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+                &:disabled {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .button-border_gradient {
+            display: grid;
+            grid-template-columns: 99px 99px;
+            column-gap: 20px;
+
+            .button-border_linear__gradient {
+                width: 99px;
+                height: 44px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: $purple;
+                border-radius: 22px;
+                background: #FFFFFF;
+                background-image: url('./../image/border-gradient.svg');
+
+                &:disabled {
+                    background-image: url('./../image/border-gradient-disabled.svg');
+                }
+            }
+        }
+
+        .button-no_border {
+            display: grid;
+            grid-template-columns: 61px 61px;
+            column-gap: 20px;
+
+            .no_border {
+                width: 61px;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: left;
+                text-transform: uppercase;
+                color: $purple;
+                background: #FFFFFF;
+
+                &:disabled {
+                    color: $dark50;
+                }
+            }
+        }
+
+        .button-big {
+            // display: grid;
+            position: relative;
+
+            .big {
+                width: 320px;
+                height: 44px;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                border-radius: 22px;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 15px;
+                letter-spacing: 0em;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 20px;
+                height: 20px;
+                background: url('./../image/arrow_forward_white.svg') no-repeat;
+                top: 12px;
+                right: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+}

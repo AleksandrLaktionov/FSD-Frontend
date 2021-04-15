@@ -1,0 +1,9 @@
+.form-element_3 {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    row-gap: 20px;
+    @import './Range_Slider/Range_Slider.scss';
+    @import './buttons/buttons.scss';
+    @import './pagination/pagination.scss';
+    @import './dropdown/dropdown.scss';
+}

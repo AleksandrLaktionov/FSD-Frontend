@@ -1,0 +1,245 @@
+
+
+
+
+
+.Text_Field {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    row-gap: 20px;
+
+    .Form_1 {
+        width: 320px;
+
+        label {
+            h3 {
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        #label_right {
+            h3 {
+                margin-bottom: 5px;
+                font-weight: 400;
+                line-height: 14.63px;
+                color: $dark50;
+                float: right;
+            }
+        }
+
+        .Form_Input {
+            @extend %text_field;
+
+            &::placeholder {
+                color: $dark25;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .Form_2 {
+        width: 320px;
+
+        label {
+            h3 {
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        #label_right {
+            h3 {
+                margin-bottom: 5px;
+                font-weight: 400;
+                line-height: 14.63px;
+                color: $dark50;
+                float: right;
+            }
+        }
+
+        .Form_Input {
+            @extend %text_field;
+            @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+
+            &:hover {
+                border: 1px solid $dark50;
+                border-radius: 4px;
+            }
+
+            &:focus {
+                border: 1px solid $dark50;
+                border-radius: 4px;
+            }
+        }
+
+    }
+
+    .Form_3 {
+        width: 320px;
+
+        label {
+            h3 {
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        .Form_Input {
+            @extend %text_field;
+            background: url('./../image/expand_more.svg') no-repeat;
+            background-position: 290px 18px;
+            @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+        }
+    }
+
+    .Form_4 {
+        width: 320px;
+
+        label {
+            h3 {
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        .Form_Input,
+        .masked_text_field {
+            @extend %text_field;
+            background: url('./../image/expand_more.svg') no-repeat;
+            background-position: 289px 18px;
+            @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+
+            &::placeholder {
+                color: $dark25;
+            }
+        }
+    }
+
+    .Form_5 {
+        width: 320px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+
+        label {
+            h3 {
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        div {
+            width: 150px;
+        }
+
+        .Form_Input {
+            @extend %text_field;
+            width: 150px;
+            background: url('./../image/expand_more.svg') no-repeat;
+            background-position: 120px 18px;
+            @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+
+            &::placeholder {
+                color: $dark25;
+            }
+        }
+    }
+
+    .Form_6 {
+        width: 266px;
+
+        label {
+            h3 {
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        .Form_Input {
+            @extend %text_field;
+            width: 266px;
+            background: url('./../image/expand_more.svg') no-repeat;
+            background-position: 236px 18px;
+            @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+        }
+    }
+
+    .Form_7 {
+        width: 267px;
+
+        label {
+            h3 {
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        .Form_Input {
+            @extend %text_field;
+            width: 267px;
+            background: url('./../image/arrow_forward.svg') no-repeat;
+            background-position: 231px 13px;
+            @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+
+            &::placeholder {
+                color: $dark25;
+            }
+        }
+    }
+
+    .Form_8 {
+        width: 266px;
+
+        label {
+            h3 {
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        #label_right {
+            h3 {
+                margin-bottom: 5px;
+                font-weight: 400;
+                line-height: 14.63px;
+                color: $dark50;
+                float: right;
+            }
+        }
+
+        .Form_Input {
+            @extend %text_field;
+            width: 266px;
+            background: url('./../image/expand_more_75.svg') no-repeat;
+            background-position: 236px 18px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+        }
+    }
+    .Form_9 {
+        width: 266px;
+        height: 181.56px;
+        @import './drop_down/drop_down.scss';
+    }
+    .Form_10 {
+        width: 266px;
+        height: 44px;
+        @import './expandable_checkbox_list/expandable_checkbox_list.scss';
+    }
+    .Form_11 {
+        width: 266px;
+        height: 217.44px;
+        @import './expandable_checkbox_list/expandable_checkbox_list_activ.scss';
+    }
+    .Form_12 {
+        width: 291px;
+        height: 158px;
+        @import './icon_card/icon_card.scss';
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap: 18px;
+        // align-items: center;
+    }
+}

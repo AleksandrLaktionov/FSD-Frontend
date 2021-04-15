@@ -1,0 +1,93 @@
+/* Обнуление */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    max-width: $max_width;
+    min-width: $min_width;
+    @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+}
+
+h1 {
+    @include fontFamily_Montserrat (24px, 700, 29px, left, $dark100);
+}
+
+h2 {
+    @include fontFamily_Montserrat (19px, 700, 23px, left, $dark100);
+}
+
+h3 {
+    @include fontFamily_Montserrat (12px, 700, 15px, left, $dark100);
+    text-transform: uppercase;
+}
+
+
+input::-ms-clear {
+    display: none;
+}
+
+input[type="number"] {
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+button,
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* =========================== */

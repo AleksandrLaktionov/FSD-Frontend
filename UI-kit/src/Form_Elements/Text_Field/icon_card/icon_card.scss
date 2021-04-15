@@ -1,0 +1,25 @@
+.insert_emoticon, .location_city {
+    .icon_img {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        vertical-align: middle;
+        margin-bottom: 13px;
+    }
+
+    .content {
+        display: inline-block;
+        padding-left: 6px;
+        padding-bottom: 20px;
+        vertical-align: middle;
+        span {
+            font-weight: 700;
+        }
+    }
+
+    hr {
+        width: 280px;
+        height: 1px;
+        background: $dark10;
+    }
+}

@@ -1,0 +1,46 @@
+// Ширина 
+$min_width: 320px;
+$max_width: 1920px;
+$body_width: 1440px;
+// ===========
+// Цвета
+$dark100: rgba(31, 32, 65, 1);
+$dark75: rgba(31, 32, 65, 0.75);
+$dark50: rgba(31, 32, 65, 0.5);
+$dark25: rgba(31, 32, 65, 0.25);
+$dark10: rgba(31, 32, 65, 0.1);
+$dark05: rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+
+// =============
+// Шаблоны
+%text_field {
+    padding-left: 15px;
+    border: 1px solid $dark25;
+    width: 320px;
+    height: 44px;
+    border-radius: 4px;
+}
+
+// ===========
+// Миксины
+@mixin fontFamily_Montserrat ($size, $weight, $height, $align, $col) {
+    font-family: Montserrat;
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: 0em;
+    text-align: $align;
+    color: $col;
+}
+
+@mixin Colors_Block ($b_col) {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    background-color: $b_col;
+}
+
+// ===========

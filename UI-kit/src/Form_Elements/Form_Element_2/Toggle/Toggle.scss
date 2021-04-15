@@ -1,0 +1,56 @@
+.Toggle {
+
+    h3 {
+        font-size: 12px;
+        line-height: 15px;
+        padding-bottom: 13px;
+    }
+
+    .button_toggle {
+        position: relative;
+        width: 260px;
+        margin-bottom: 10px;
+
+        #toggle_button {
+            width: 40px;
+            height: 20px;
+            vertical-align: middle;
+            opacity: 0;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            border: 1px solid $dark25;
+            border-radius: 10px;
+            background: url('./../image/Rectangle 2.2.svg') no-repeat;
+            background-color: #FFFFFF;
+            background-position: 3px center;
+            z-index: -2;
+        }
+
+        #toggle_button:checked + ::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            border: 1px solid $purple;
+            border-radius: 10px;
+            background: url('./../image/Rectangle 2.1.svg') no-repeat;
+            background-color: #FFFFFF;
+            background-position: 23px center;
+            z-index: -1;
+        }
+
+        label {
+            padding-left: 10px;
+            vertical-align: middle;
+        }
+    }
+}

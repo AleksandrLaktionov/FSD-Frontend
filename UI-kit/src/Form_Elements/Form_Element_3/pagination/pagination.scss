@@ -1,0 +1,76 @@
+.pagination {
+    width: 241px;
+
+    h3 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        margin-top: 11px;
+    }
+
+    ul {
+        display: flex;
+        position: relative;
+        background: rgba(255, 255, 255, 0);
+
+        li {
+            width: 40px;
+            height: 40px;
+            font-family: Montserrat;
+            line-height: 14.63px;
+            font-size: 12px;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            color: rgba(31, 32, 65, 0.5);
+        }
+
+        .number {
+
+            &.active,
+            &:hover {
+                font-weight: bold;
+                color: #fff;
+                background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+                border-radius: 50%;
+            }
+        }
+
+        .dots {
+            cursor: default;
+        }
+
+        .btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+
+            &:disabled {
+                display: none;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            right: 9px;
+            width: 24px;
+            height: 24px;
+            background: url("./../image/arrow_forward_white.svg") no-repeat;
+            background-position: 4px 3px;
+            cursor: pointer;
+        }
+        // .prev::before {
+        //     content: url("./../image/arrow_forward_white.svg");
+        // }
+
+        // .next::after {
+        //     content: url("./../image/arrow_forward_white.svg");
+        // }
+    }
+}
