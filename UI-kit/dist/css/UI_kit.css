@@ -252,8 +252,7 @@ img {
   margin: 90px;
   padding: 3.47222%;
   display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 40px; }
+  grid-template-columns: 480px 480px 480px; }
   .Form_Elements .Text_Field {
     display: grid;
     grid-template-rows: repeat(12, auto);
@@ -587,7 +586,7 @@ img {
         background: rgba(31, 32, 65, 0.1); }
   .Form_Elements .Form_Element_2 {
     display: grid;
-    grid-template-rows: repeat(12, auto);
+    grid-template-rows: repeat(7, auto);
     row-gap: 20px; }
     .Form_Elements .Form_Element_2 .checkbox__buttons {
       width: 222px;
@@ -745,8 +744,8 @@ img {
         .Form_Elements .Form_Element_2 .like_button #like_button_dislike span::before {
           position: absolute;
           content: '';
-          top: 0;
-          left: 0;
+          top: 1px;
+          left: 1px;
           width: 20px;
           height: 20px;
           background: url(.././img/favorite_border.svg) no-repeat;
@@ -770,8 +769,8 @@ img {
         .Form_Elements .Form_Element_2 .like_button #like_button_like span::before {
           position: absolute;
           content: '';
-          top: 0;
-          left: 0;
+          top: 1px;
+          left: 1px;
           width: 20px;
           height: 20px;
           background: url(.././img/favorite.svg) no-repeat;
@@ -970,9 +969,34 @@ img {
               letter-spacing: 0em;
               text-align: left;
               color: rgba(31, 32, 65, 0.5); }
+    .Form_Elements .Form_Element_2 .reviews {
+      width: 711px;
+      height: 133px; }
+      .Form_Elements .Form_Element_2 .reviews .reviews_top {
+        display: flex;
+        margin-bottom: 10px; }
+        .Form_Elements .Form_Element_2 .reviews .reviews_top .photo {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%; }
+          .Form_Elements .Form_Element_2 .reviews .reviews_top .photo img {
+            width: 100%;
+            height: 100%; }
+        .Form_Elements .Form_Element_2 .reviews .reviews_top p {
+          margin-left: 14px; }
+          .Form_Elements .Form_Element_2 .reviews .reviews_top p span {
+            font-weight: bold; }
+      .Form_Elements .Form_Element_2 .reviews .reviews_bottom {
+        display: flex; }
+        .Form_Elements .Form_Element_2 .reviews .reviews_bottom .like_button #like_button_like {
+          border: none;
+          background-image: url(.././img/like_border.svg);
+          background-position: -1px 0; }
+        .Form_Elements .Form_Element_2 .reviews .reviews_bottom .reviews_text p {
+          margin-left: 14px; }
   .Form_Elements .form-element_3 {
     display: grid;
-    grid-template-rows: repeat(12, auto);
+    grid-template-rows: repeat(10, auto);
     row-gap: 20px; }
     .Form_Elements .form-element_3 .multi-range-slider {
       width: 266px;
@@ -1259,6 +1283,17 @@ img {
             justify-self: end; }
             .Form_Elements .form-element_3 .dropdown .dropdown_list .button_down button[type=submit] h3 {
               color: #bc9cff; }
+    .Form_Elements .form-element_3 .bullet_list {
+      width: 292px;
+      height: 147px;
+      display: grid; }
+      .Form_Elements .form-element_3 .bullet_list ul {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        row-gap: 10px;
+        margin-left: 15px; }
+        .Form_Elements .form-element_3 .bullet_list ul li {
+          list-style: disc outside url(.././img/Ellipse.svg); }
 
 
 /*# sourceMappingURL=UI_kit.css.map*/

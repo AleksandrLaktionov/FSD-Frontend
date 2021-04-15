@@ -1,0 +1,17 @@
+.bullet_list {
+    width: 292px;
+    height: 147px;
+
+    display: grid;
+
+    ul {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        row-gap: 10px;
+        margin-left: 15px;
+
+        li {
+            list-style: disc outside url('./../image/Ellipse.svg');
+        }
+    }
+}

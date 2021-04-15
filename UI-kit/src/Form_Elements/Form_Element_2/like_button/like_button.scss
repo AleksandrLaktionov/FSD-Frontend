@@ -27,8 +27,8 @@
                 position: absolute;
                 content: '';
                 // margin: 0 auto;
-                top: 0;
-                left: 0;
+                top: 1px;
+                left: 1px;
                 width: 20px;
                 height: 20px;
                 background: url('./../image/favorite_border.svg') no-repeat;
@@ -58,8 +58,8 @@
             &::before {
                 position: absolute;
                 content: '';
-                top: 0;
-                left: 0;
+                top: 1px;
+                left: 1px;
                 width: 20px;
                 height: 20px;
                 background: url('./../image/favorite.svg') no-repeat;

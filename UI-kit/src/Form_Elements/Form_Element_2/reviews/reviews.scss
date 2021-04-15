@@ -1,0 +1,46 @@
+.reviews {
+    width: 711px;
+    height: 133px;
+    .reviews_top {
+        display: flex;
+        margin-bottom: 10px;
+
+        .photo {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            margin-left: 14px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .reviews_bottom {
+        display: flex;
+
+        .like_button {
+
+            #like_button_like {
+                border: none;
+                background-image: url('./../image/like_border.svg');
+                background-position: -1px 0;
+            }
+        }
+
+        .reviews_text {
+
+            p {
+                margin-left: 14px;
+            }
+        }
+    }
+}
