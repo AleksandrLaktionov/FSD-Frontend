@@ -1,8 +1,9 @@
-form(action="#" method="method" class="Toggle")
+form(action="#" method="method" class="toggle")
     h3 Toggle
-    .button_toggle 
-        input(type="checkbox" id="toggle_button" name="toggle_button" checked)
-        label(for="toggle_button") Получать спецпредложения
-    .button_toggle
-        input(type="checkbox" id="toggle_button" name="toggle_button")
-        label(for="toggle_button") Получать спецпредложения
+    .toggle-buttons
+        .toggle-button
+            input(type="checkbox" id="toggle-button-1" name="toggle-button" checked)
+            label(for="toggle-button-2") Получать спецпредложения
+        .toggle-button
+            input(type="checkbox" id="toggle-button-2" name="toggle-button")
+            label(for="toggle-button-2") Получать спецпредложения

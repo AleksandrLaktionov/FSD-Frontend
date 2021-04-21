@@ -1,44 +1,44 @@
-.Colors {
+.colors {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 40px;
-    .Colors_Block {
+    .colors-block {
         display: grid;
         grid-template-rows: repeat( 7, 1fr);
         row-gap: 20px;
         justify-items: center;
         align-items: center;
-        #Dark100 {
+        #dark100 {
             @include Colors_Block ($dark100);
         }
 
-        #Dark75 {
+        #dark75 {
             @include Colors_Block ($dark75);
         }
 
-        #Dark50 {
+        #dark50 {
             @include Colors_Block ($dark50);
         }
 
-        #Dark25 {
+        #dark25 {
             @include Colors_Block ($dark25);
         }
 
-        #Dark05 {
+        #dark05 {
             @include Colors_Block ($dark05);
         }
 
-        #Purple {
+        #purple {
             @include Colors_Block ($purple);
         }
 
-        #Green {
+        #green {
             @include Colors_Block ($green);
         }
 
     }
 
-    .Colors_Content {
+    .colors-content {
         display: grid;
         grid-template-rows: repeat( 7, 1fr);
         row-gap: 20px;

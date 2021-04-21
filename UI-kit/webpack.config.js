@@ -60,7 +60,10 @@ module.exports = {
 
             {
                 test: /\.pug$/i,
-                loader: 'pug-loader'
+                loader: 'pug-loader',
+                options: {
+                    pretty: true
+                }
             },
 
             {

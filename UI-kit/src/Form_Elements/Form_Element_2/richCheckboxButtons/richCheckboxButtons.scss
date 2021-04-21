@@ -1,4 +1,4 @@
-.rich__checkbox-buttons {
+.rich-checkbox-buttons {
     height: 145px;
     width: 266px;
 
@@ -7,12 +7,12 @@
         vertical-align: middle;
     }
 
-    .checkbox_list {
+    .checkbox-list {
         display: grid;
         grid-template-rows: repeat(2, auto);
         row-gap: 10px;
 
-        .checkbox_buttons_list {
+        .checkbox-buttons-list {
             position: relative;
 
             input[type='checkbox'] {
@@ -48,7 +48,7 @@
                 z-index: -2;
             }
 
-            .checkbox_label_1 {
+            .checkbox-label-1 {
                 display: inline-block;
                 width: 203px;
                 margin-left: 10px;
@@ -71,9 +71,9 @@
                     color: $dark50;
                 }
             }
-            .checkbox_label_2 {
+            .checkbox-label-2 {
                 display: inline-block;
-                width: 234px;
+                width: 230px;
                 margin-left: 10px;
                 vertical-align: top;
 

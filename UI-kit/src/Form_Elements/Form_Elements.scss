@@ -1,11 +1,24 @@
-.Form_Elements {
+.form-elements {
     margin: 90px;
     padding: (140px - 90px) / 1440px * 100%;
     display: grid;
-    grid-template-columns: 480px 480px 480px;
-    // column-gap: 40px;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    column-gap: 20px;
     // position: relative;
-    @import './Text_Field/Text_Field.scss';
+    @import './Form_Element_1/Text_Field.scss';
     @import './Form_Element_2/Form_Element_2.scss';
     @import './Form_Element_3/form-element_3.scss';
+
+    @media (max-width: 1240px) {
+        min-width: 768px;
+        grid-template-columns: 50% 50%;
+        row-gap: 20px;
+    }
+
+    @media (max-width: 767px) {
+        min-width: $min_width;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+    }
 }

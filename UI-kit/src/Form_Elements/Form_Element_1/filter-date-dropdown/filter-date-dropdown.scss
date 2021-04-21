@@ -1,0 +1,18 @@
+.filter-date-dropdown {
+    width: 266px;
+
+    label {
+        h3 {
+            margin-bottom: 5px;
+            float: left;
+        }
+    }
+
+    .form-input {
+        @extend %text_field;
+        width: 266px;
+        background: url('./../image/expand_more.svg') no-repeat;
+        background-position: 236px 18px;
+        @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+    }
+}

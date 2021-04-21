@@ -1,69 +1,71 @@
-.like_button {
+.like-buttons {
+    width: 89.72px;
+    height: 51px;
+
     h3 {
         font-size: 12px;
         line-height: 15px;
-        padding-bottom: 15px;
+        margin-bottom: 15px;
     }
 
-    #like_button_dislike {
-        position: relative;
-        width: 40px;
-        height: 20px;
-        margin-right: 5px;
-        border: 1px solid $dark25;
-        border-radius: 10px;
-        background-color: white;
+    .like-buttons-block {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        .like-button-dislike {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            border: 1px solid $dark25;
+            border-radius: 10px;
+            background-color: white;
 
-        span {
-            padding-left: 10px;
-            font-size: 10px;
-            line-height: 12px;
-            text-align: center;
-            letter-spacing: 0em;
-            vertical-align: middle;
-            color: $dark25;
+            span {
+                margin: auto 0 auto 10px;
+                align-items: center;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0em;
+                color: $dark25;
 
-            &::before {
-                position: absolute;
-                content: '';
-                // margin: 0 auto;
-                top: 1px;
-                left: 1px;
-                width: 20px;
-                height: 20px;
-                background: url('./../image/favorite_border.svg') no-repeat;
-                background-position: 3px 5px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background: url('./../image/favorite_border.svg') no-repeat;
+                    background-position: 3px 5.25px;
+                }
             }
         }
-    }
 
-    #like_button_like {
-        position: relative;
-        width: 40px;
-        height: 20px;
-        margin-left: 5px;
-        border: 1px solid $purple;
-        border-radius: 10px;
-        background-color: white;
+        .like-button-like {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            border: 1px solid $purple;
+            border-radius: 10px;
+            background-color: white;
 
-        span {
-            padding-left: 10px;
-            font-size: 10px;
-            line-height: 12px;
-            text-align: center;
-            letter-spacing: 0em;
-            vertical-align: middle;
-            color: $purple;
+            span {
+                margin: auto 0 auto 10px;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0em;
+                color: $purple;
 
-            &::before {
-                position: absolute;
-                content: '';
-                top: 1px;
-                left: 1px;
-                width: 20px;
-                height: 20px;
-                background: url('./../image/favorite.svg') no-repeat;
-                background-position: 3px 5px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background: url('./../image/favorite.svg') no-repeat;
+                    background-position: 3px 5.25px;
+                }
             }
         }
     }

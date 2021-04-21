@@ -1,7 +1,7 @@
 export const likeButton = () => {
-    let formLikeButton = document.querySelector('.like_button');
-    let likeButtonDislike = formLikeButton.querySelector('#like_button_dislike');
-    let likeButtonLike = formLikeButton.querySelector('#like_button_like');
+    // let formLikeButton = document.querySelector('.like_button');
+    let likeButtonDislike = document.querySelector('.like-button-dislike');
+    let likeButtonLike = document.querySelector('.like-button-like');
     let spanTextDislike = likeButtonDislike.firstChild.textContent;
     let spanTextLike = likeButtonLike.firstChild.textContent;
     likeButtonDislike.addEventListener("click", function () {

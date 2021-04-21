@@ -1,19 +1,20 @@
-.buttons_group {
+.buttons-group {
     h3 {
         margin-bottom: 16px;
     }
+
     .buttons {
 
         display: grid;
         grid-template-rows: 44px 44px 15px 44px;
         row-gap: 30px;
 
-        .button_gradient {
+        .button-gradient {
             display: grid;
             grid-template-columns: 99px 99px;
             column-gap: 20px;
 
-            .button-linear_gradient {
+            .button-linear-gradient {
                 width: 99px;
                 height: 44px;
                 background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -32,12 +33,12 @@
             }
         }
 
-        .button-border_gradient {
+        .button-border-gradient {
             display: grid;
             grid-template-columns: 99px 99px;
             column-gap: 20px;
 
-            .button-border_linear__gradient {
+            .button-border-linear-gradient {
                 width: 99px;
                 height: 44px;
                 font-family: Montserrat;
@@ -57,12 +58,12 @@
             }
         }
 
-        .button-no_border {
+        .button-no-border {
             display: grid;
             grid-template-columns: 61px 61px;
             column-gap: 20px;
 
-            .no_border {
+            .no-border {
                 width: 61px;
                 font-family: Montserrat;
                 font-size: 12px;
@@ -84,6 +85,8 @@
         .button-big {
             // display: grid;
             position: relative;
+            width: 320px;
+            height: 44px;
 
             .big {
                 width: 320px;

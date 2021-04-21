@@ -2,6 +2,146 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./Form_Elements/Form_Element_1/Text_Field.js":
+/*!****************************************************!*\
+  !*** ./Form_Elements/Form_Element_1/Text_Field.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./masked-text-field/masked-text-field.js */ "./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js");
+/* harmony import */ var _data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data-dropdown/data-dropdown.js */ "./Form_Elements/Form_Element_1/data-dropdown/data-dropdown.js");
+
+
+(0,_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_0__.maskedTextField)();
+(0,_data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dataDropdownStart)();
+(0,_data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dataDropdownFinish)();
+
+/***/ }),
+
+/***/ "./Form_Elements/Form_Element_1/data-dropdown/data-dropdown.js":
+/*!*********************************************************************!*\
+  !*** ./Form_Elements/Form_Element_1/data-dropdown/data-dropdown.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "dataDropdownStart": () => (/* binding */ dataDropdownStart),
+/* harmony export */   "dataDropdownFinish": () => (/* binding */ dataDropdownFinish)
+/* harmony export */ });
+/* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! imask */ "../node_modules/imask/esm/index.js");
+
+var dataDropdownStart = function dataDropdownStart() {
+  (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelector('.data-dropdown-start'), {
+    mask: Date,
+    lazy: false,
+    overwrite: true,
+    autofix: true,
+    blocks: {
+      d: {
+        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+        placeholderChar: 'Д',
+        from: 1,
+        to: 31,
+        maxLength: 2
+      },
+      m: {
+        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+        placeholderChar: 'М',
+        from: 1,
+        to: 12,
+        maxLength: 2
+      },
+      Y: {
+        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+        placeholderChar: 'Г',
+        from: 1900,
+        to: 2999,
+        maxLength: 4
+      }
+    }
+  });
+};
+var dataDropdownFinish = function dataDropdownFinish() {
+  (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelector('.data-dropdown-finish'), {
+    mask: Date,
+    lazy: false,
+    overwrite: true,
+    autofix: true,
+    blocks: {
+      d: {
+        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+        placeholderChar: 'Д',
+        from: 1,
+        to: 31,
+        maxLength: 2
+      },
+      m: {
+        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+        placeholderChar: 'М',
+        from: 1,
+        to: 12,
+        maxLength: 2
+      },
+      Y: {
+        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+        placeholderChar: 'Г',
+        from: 1900,
+        to: 2999,
+        maxLength: 4
+      }
+    }
+  });
+};
+
+/***/ }),
+
+/***/ "./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js":
+/*!*****************************************************************************!*\
+  !*** ./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "maskedTextField": () => (/* binding */ maskedTextField)
+/* harmony export */ });
+/* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! imask */ "../node_modules/imask/esm/index.js");
+
+var maskedTextField = function maskedTextField() {
+  (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelector('.masked-text-field'), {
+    mask: Date,
+    overwrite: true,
+    autofix: true,
+    blocks: {
+      d: {
+        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+        placeholderChar: 'Д',
+        from: 1,
+        to: 31,
+        maxLength: 2
+      },
+      m: {
+        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+        placeholderChar: 'М',
+        from: 1,
+        to: 12,
+        maxLength: 2
+      },
+      Y: {
+        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+        placeholderChar: 'Г',
+        from: 1900,
+        to: 2999,
+        maxLength: 4
+      }
+    }
+  });
+};
+
+/***/ }),
+
 /***/ "./Form_Elements/Form_Element_2/Form_Element_2.js":
 /*!********************************************************!*\
   !*** ./Form_Elements/Form_Element_2/Form_Element_2.js ***!
@@ -26,9 +166,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "likeButton": () => (/* binding */ likeButton)
 /* harmony export */ });
 var likeButton = function likeButton() {
-  var formLikeButton = document.querySelector('.like_button');
-  var likeButtonDislike = formLikeButton.querySelector('#like_button_dislike');
-  var likeButtonLike = formLikeButton.querySelector('#like_button_like');
+  // let formLikeButton = document.querySelector('.like_button');
+  var likeButtonDislike = document.querySelector('.like-button-dislike');
+  var likeButtonLike = document.querySelector('.like-button-like');
   var spanTextDislike = likeButtonDislike.firstChild.textContent;
   var spanTextLike = likeButtonLike.firstChild.textContent;
   likeButtonDislike.addEventListener("click", function () {
@@ -134,115 +274,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Range_Slider_Range_Slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Range_Slider/Range_Slider.js */ "./Form_Elements/Form_Element_3/Range_Slider/Range_Slider.js");
 
 (0,_Range_Slider_Range_Slider_js__WEBPACK_IMPORTED_MODULE_0__.rangeSlider)();
-
-/***/ }),
-
-/***/ "./Form_Elements/Text_Field/masked_text_field/masked_text_field.js":
-/*!*************************************************************************!*\
-  !*** ./Form_Elements/Text_Field/masked_text_field/masked_text_field.js ***!
-  \*************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "maskedTextField": () => (/* binding */ maskedTextField),
-/* harmony export */   "dataDropdownStart": () => (/* binding */ dataDropdownStart),
-/* harmony export */   "dataDropdownFinish": () => (/* binding */ dataDropdownFinish)
-/* harmony export */ });
-/* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! imask */ "../node_modules/imask/esm/index.js");
-
-var maskedTextField = function maskedTextField() {
-  (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelector('.masked_text_field'), {
-    mask: Date,
-    overwrite: true,
-    autofix: true,
-    blocks: {
-      d: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Д',
-        from: 1,
-        to: 31,
-        maxLength: 2
-      },
-      m: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'М',
-        from: 1,
-        to: 12,
-        maxLength: 2
-      },
-      Y: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Г',
-        from: 1900,
-        to: 2999,
-        maxLength: 4
-      }
-    }
-  });
-};
-var dataDropdownStart = function dataDropdownStart() {
-  (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelector('.data_dropdown_start'), {
-    mask: Date,
-    lazy: false,
-    overwrite: true,
-    autofix: true,
-    blocks: {
-      d: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Д',
-        from: 1,
-        to: 31,
-        maxLength: 2
-      },
-      m: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'М',
-        from: 1,
-        to: 12,
-        maxLength: 2
-      },
-      Y: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Г',
-        from: 1900,
-        to: 2999,
-        maxLength: 4
-      }
-    }
-  });
-};
-var dataDropdownFinish = function dataDropdownFinish() {
-  (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelector('.data_dropdown_finish'), {
-    mask: Date,
-    lazy: false,
-    overwrite: true,
-    autofix: true,
-    blocks: {
-      d: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Д',
-        from: 1,
-        to: 31,
-        maxLength: 2
-      },
-      m: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'М',
-        from: 1,
-        to: 12,
-        maxLength: 2
-      },
-      Y: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Г',
-        from: 1900,
-        to: 2999,
-        maxLength: 4
-      }
-    }
-  });
-};
 
 /***/ }),
 
@@ -5199,19 +5230,14 @@ var __webpack_exports__ = {};
   \*********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../scss/index.scss */ "./scss/index.scss");
-/* harmony import */ var _Form_Elements_Form_Element_2_Form_Element_2_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_2/Form_Element_2.js */ "./Form_Elements/Form_Element_2/Form_Element_2.js");
-/* harmony import */ var _Form_Elements_Text_Field_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../Form_Elements/Text_Field/masked_text_field/masked_text_field.js */ "./Form_Elements/Text_Field/masked_text_field/masked_text_field.js");
+/* harmony import */ var _Form_Elements_Form_Element_1_Text_Field_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_1/Text_Field.js */ "./Form_Elements/Form_Element_1/Text_Field.js");
+/* harmony import */ var _Form_Elements_Form_Element_2_Form_Element_2_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_2/Form_Element_2.js */ "./Form_Elements/Form_Element_2/Form_Element_2.js");
 /* harmony import */ var _Form_Elements_Form_Element_3_form_element_3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_3/form-element_3 */ "./Form_Elements/Form_Element_3/form-element_3.js");
- // import './../index.pug';
-// import './../test.pug';
+
 
  // import './../Form_Elements/Text_Field/drop_down/drop_down.js';
 
 
-
-(0,_Form_Elements_Text_Field_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__.maskedTextField)();
-(0,_Form_Elements_Text_Field_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__.dataDropdownStart)();
-(0,_Form_Elements_Text_Field_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_2__.dataDropdownFinish)();
 })();
 
 /******/ })()

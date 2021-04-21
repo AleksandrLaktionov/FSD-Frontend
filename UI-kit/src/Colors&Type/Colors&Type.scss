@@ -1,11 +1,4 @@
- %Color {
-     @import './Colors/Colors.scss';
-    }
-%Type_Fonts {
-    @import './TypeFonts/TypeFonts.scss';
-}
-
-.Colors_Type {
+.colors-type {
     display: grid;
     grid-template-columns: fit-content(281.26px) fit-content(436px);
     column-gap: 415px / 1440px * 100%;
@@ -21,6 +14,6 @@
         grid-template-columns: 1fr;
         row-gap: 20px;
     }
-    @extend %Color;
-    @extend %Type_Fonts;
+    @import './Colors/Colors.scss';
+    @import './TypeFonts/TypeFonts.scss';
 }

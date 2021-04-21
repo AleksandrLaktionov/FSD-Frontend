@@ -1,21 +1,21 @@
-.TypeFonts {
+.type-fonts {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 30px;
     max-height: 321px;
-    .Type_Fonts {
+    .type-fonts-content {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         row-gap: 25px;
-        #H1 {
+        #h1 {
             @include fontFamily_Montserrat (24px, 400, 29.26px, right, $dark25);
         }
 
-        #H2 {
+        #h2 {
             @include fontFamily_Montserrat (19px, 400, 23.16px, right, $dark25);
         }
 
-        #H3 {
+        #h3 {
             @include fontFamily_Montserrat (12px, 400, 14.63px, right, $dark25);
         }
 
@@ -24,7 +24,7 @@
         }
     }
 
-    .Type_Fonts_Text {
+    .type-fonts-text {
         display: grid;
         grid-template-rows: repeat(4,1fr);
         row-gap: 25px;

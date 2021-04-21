@@ -1,0 +1,17 @@
+.text-field {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    row-gap: 20px;
+    @import './form-default/form-default.scss';
+    @import './form-hover-focus/form-hover-focus.scss';
+    @import './form-dropdown/form-dropdown.scss';
+    @import './masked-text-field/masked-text-field.scss';
+    @import './data-dropdown/data-dropdown.scss';
+    @import './filter-date-dropdown/filter-date-dropdown.scss';
+    @import './subscription-text-field/subscription-text-field.scss';
+    @import './dropdown-default/dropdown-default.scss';
+    @import './drop-down-expanded/drop-down-expanded.scss';
+    @import './expandable-checkbox-list/expandable-checkbox-list.scss';
+    @import './expandable-checkbox-list__active/expandable-checkbox-list__active.scss';
+    @import './icon-card/icon-card.scss';
+}

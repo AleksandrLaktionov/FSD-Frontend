@@ -1,0 +1,15 @@
+.expandable-checkbox-list {
+    width: 266px;
+    height: 44px;
+
+    label {
+        display: grid;
+        height: 44px;
+        align-items: center;
+
+        h3 {
+            background: url('./../image/expand_more.svg') no-repeat;
+            background-position: 236px;
+        }
+    }
+}

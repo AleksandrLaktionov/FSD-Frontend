@@ -1,56 +1,64 @@
-.Toggle {
+.toggle {
+    width: 260px;
+    height: 89px;
 
     h3 {
         font-size: 12px;
         line-height: 15px;
-        padding-bottom: 13px;
+        margin-bottom: 13px;
     }
 
-    .button_toggle {
-        position: relative;
-        width: 260px;
-        margin-bottom: 10px;
+    .toggle-buttons {
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap: 10px;
 
-        #toggle_button {
-            width: 40px;
-            height: 20px;
-            vertical-align: middle;
-            opacity: 0;
-        }
+        .toggle-button {
+            position: relative;
+            display: grid;
+            grid-template-columns: auto auto;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 3px;
-            left: 0;
-            width: 40px;
-            height: 20px;
-            border: 1px solid $dark25;
-            border-radius: 10px;
-            background: url('./../image/Rectangle 2.2.svg') no-repeat;
-            background-color: #FFFFFF;
-            background-position: 3px center;
-            z-index: -2;
-        }
+            input[type='checkbox'] {
+                margin: auto;
+                width: 40px;
+                height: 20px;
+                opacity: 0;
+            }
 
-        #toggle_button:checked + ::after {
-            content: '';
-            position: absolute;
-            top: 3px;
-            left: 0;
-            width: 40px;
-            height: 20px;
-            border: 1px solid $purple;
-            border-radius: 10px;
-            background: url('./../image/Rectangle 2.1.svg') no-repeat;
-            background-color: #FFFFFF;
-            background-position: 23px center;
-            z-index: -1;
-        }
+            input[type='checkbox']:checked+ ::after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 40px;
+                height: 20px;
+                border: 1px solid $purple;
+                border-radius: 10px;
+                background: url('./../image/Rectangle 2.1.svg') no-repeat;
+                background-color: #FFFFFF;
+                background-position: 23px center;
+                z-index: -1;
+            }
 
-        label {
-            padding-left: 10px;
-            vertical-align: middle;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 40px;
+                height: 20px;
+                border: 1px solid $dark25;
+                border-radius: 10px;
+                background: url('./../image/Rectangle 2.2.svg') no-repeat;
+                background-color: #FFFFFF;
+                background-position: 3px center;
+                z-index: -2;
+            }
+
+            label {
+                margin-left: 10px;
+                vertical-align: middle;
+            }
         }
     }
 }

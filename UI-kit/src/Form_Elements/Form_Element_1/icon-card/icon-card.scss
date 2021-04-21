@@ -1,0 +1,39 @@
+.icon-card {
+    width: 280px;
+    height: 158px;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 18px;
+
+    .insert-emoticon,
+    .location-city {
+        .icon-img {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin-bottom: 13px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .content {
+            display: inline-block;
+            padding-left: 6px;
+            padding-bottom: 20px;
+            vertical-align: middle;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        hr {
+            width: 100%;
+            height: 1px;
+            background: $dark10;
+        }
+    }
+}

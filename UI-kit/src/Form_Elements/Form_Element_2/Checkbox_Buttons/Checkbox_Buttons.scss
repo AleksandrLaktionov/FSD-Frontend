@@ -1,4 +1,4 @@
-.checkbox__buttons {
+.checkbox-buttons {
     width: 222px;
     height: 129.12px;
 
@@ -7,12 +7,12 @@
         vertical-align: middle;
     }
 
-    .checkbox_list {
+    .checkbox-list {
         display: grid;
         grid-template-rows: repeat(3, auto);
         row-gap: 6px;
 
-        .checkbox_buttons_list {
+        .checkbox-list-buttons {
             position: relative;
 
             input[type='checkbox'] {
