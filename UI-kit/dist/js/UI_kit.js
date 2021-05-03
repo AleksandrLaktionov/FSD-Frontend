@@ -268,8 +268,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown/dropdown.js */ "./Form_Elements/Form_Element_2/dropdown/dropdown.js");
 
 
-(0,_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dropDown)();
 (0,_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_0__.likeButton)();
+(0,_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dropDown)();
 
 /***/ }),
 
