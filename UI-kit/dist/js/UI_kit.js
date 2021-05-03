@@ -10,12 +10,15 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./masked-text-field/masked-text-field.js */ "./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js");
-/* harmony import */ var _data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data-dropdown/data-dropdown.js */ "./Form_Elements/Form_Element_1/data-dropdown/data-dropdown.js");
+/* harmony import */ var _drop_down_expanded_drop_down_expanded_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./drop-down-expanded/drop-down-expanded.js */ "./Form_Elements/Form_Element_1/drop-down-expanded/drop-down-expanded.js");
+/* harmony import */ var _data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data-dropdown/data-dropdown.js */ "./Form_Elements/Form_Element_1/data-dropdown/data-dropdown.js");
 
 
+
+(0,_drop_down_expanded_drop_down_expanded_js__WEBPACK_IMPORTED_MODULE_1__.dropDownExpanded)();
 (0,_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_0__.maskedTextField)();
-(0,_data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dataDropdownStart)();
-(0,_data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dataDropdownFinish)();
+(0,_data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_2__.dataDropdownStart)();
+(0,_data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_2__.dataDropdownFinish)();
 
 /***/ }),
 
@@ -97,6 +100,118 @@ var dataDropdownFinish = function dataDropdownFinish() {
 
 /***/ }),
 
+/***/ "./Form_Elements/Form_Element_1/drop-down-expanded/drop-down-expanded.js":
+/*!*******************************************************************************!*\
+  !*** ./Form_Elements/Form_Element_1/drop-down-expanded/drop-down-expanded.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "dropDownExpanded": () => (/* binding */ dropDownExpanded)
+/* harmony export */ });
+var dropDownExpanded = function dropDownExpanded() {
+  var min = 0;
+  var max = 10;
+  var textContent = [['спальня', 'спальни', 'спален'], ['кровать', 'кровати', 'кроватей'], ['ванная', 'ванны', 'ванн']];
+  var textNone = '...';
+  var inputTextDefoult = [];
+  var dropDownExp = document.querySelectorAll('.drop-down-expanded');
+
+  var _loop = function _loop(i) {
+    var _this = dropDownExp[i];
+
+    var dropDownInput = _this.querySelector('.drop-down-input');
+
+    var dropDownContent = _this.querySelector('.drop-down-content');
+
+    var getDownDropDown = function getDownDropDown() {
+      dropDownContent.style.display = 'none';
+    };
+
+    var getUpDropDown = function getUpDropDown() {
+      dropDownContent.style.display = 'grid';
+    };
+
+    _this.addEventListener('mouseover', getUpDropDown);
+
+    _this.addEventListener('mouseout', getDownDropDown);
+
+    var contentItems = dropDownContent.querySelectorAll('.content-items');
+
+    var _loop2 = function _loop2(a) {
+      var contentItem = contentItems[a];
+      var decrementButton = contentItem.querySelector('.decrement');
+      var incrementButton = contentItem.querySelector('.increment');
+      var contentItemNumber = contentItem.querySelector('input[type="number"]');
+      var inputNumber = Number(contentItemNumber.value);
+
+      var inputContent = function inputContent(j, k) {
+        if (j == 0) {
+          inputTextDefoult[a] = "".concat(textNone);
+          var stringInput = inputTextDefoult.join(', ');
+          dropDownInput.value = stringInput;
+        } else if (j == 1) {
+          inputTextDefoult[a] = "".concat(j, " ").concat(k[a][0]);
+
+          var _stringInput = inputTextDefoult.join(', ');
+
+          dropDownInput.value = _stringInput;
+        } else if (j > 1 && j <= 4) {
+          inputTextDefoult[a] = "".concat(j, " ").concat(k[a][1]);
+
+          var _stringInput2 = inputTextDefoult.join(', ');
+
+          dropDownInput.value = _stringInput2;
+        } else {
+          inputTextDefoult[a] = "".concat(j, " ").concat(k[a][2]);
+
+          var _stringInput3 = inputTextDefoult.join(', ');
+
+          dropDownInput.value = _stringInput3;
+        }
+
+        ;
+      };
+
+      var setDecrement = function setDecrement() {
+        if (inputNumber != min) {
+          --inputNumber;
+          contentItemNumber.value = String(inputNumber);
+          inputContent(inputNumber, textContent);
+          return inputNumber;
+        }
+      };
+
+      var setIncrement = function setIncrement() {
+        if (inputNumber != max) {
+          ++inputNumber;
+          contentItemNumber.value = String(inputNumber);
+          inputContent(inputNumber, textContent);
+          return inputNumber;
+        }
+      };
+
+      decrementButton.addEventListener('click', setDecrement);
+      incrementButton.addEventListener('click', setIncrement);
+    };
+
+    for (var a = 0; a < contentItems.length; a++) {
+      _loop2(a);
+    }
+
+    ;
+  };
+
+  for (var i = 0; i < dropDownExp.length; i++) {
+    _loop(i);
+  }
+
+  ;
+};
+
+/***/ }),
+
 /***/ "./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js":
 /*!*****************************************************************************!*\
   !*** ./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js ***!
@@ -150,8 +265,121 @@ var maskedTextField = function maskedTextField() {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _like_button_like_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like_button/like_button.js */ "./Form_Elements/Form_Element_2/like_button/like_button.js");
+/* harmony import */ var _dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown/dropdown.js */ "./Form_Elements/Form_Element_2/dropdown/dropdown.js");
 
+
+(0,_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dropDown)();
 (0,_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_0__.likeButton)();
+
+/***/ }),
+
+/***/ "./Form_Elements/Form_Element_2/dropdown/dropdown.js":
+/*!***********************************************************!*\
+  !*** ./Form_Elements/Form_Element_2/dropdown/dropdown.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "dropDown": () => (/* binding */ dropDown)
+/* harmony export */ });
+var dropDown = function dropDown() {
+  var min = 0;
+  var max = 10;
+  var textContent = ['гостя', 'гостей'];
+  var textNone = 'Сколько';
+  var inputTextDefoult = [];
+  var dDown = document.querySelectorAll('.dropdown');
+
+  var _loop = function _loop(i) {
+    var _this = dDown[i];
+
+    var dropDownInput = _this.querySelector('.drop-down-input');
+
+    var dropDownContent = _this.querySelector('.drop-down-content');
+
+    var getDownDDown = function getDownDDown() {
+      dropDownContent.style.display = 'none';
+    };
+
+    var getUpDDown = function getUpDDown() {
+      dropDownContent.style.display = 'grid';
+    };
+
+    _this.addEventListener('mouseover', getUpDDown);
+
+    _this.addEventListener('mouseout', getDownDDown);
+
+    var contentItems = dropDownContent.querySelectorAll('.content-items');
+
+    var _loop2 = function _loop2(a) {
+      var contentItem = contentItems[a];
+      var decrementButton = contentItem.querySelector('.decrement');
+      var incrementButton = contentItem.querySelector('.increment');
+      var contentItemNumber = contentItem.querySelector('input[type="number"]');
+      var inputNumber = Number(contentItemNumber.value);
+      console.log(decrementButton);
+      console.log(incrementButton);
+      console.log(contentItemNumber); // const inputContent = (j, k) => {
+      //     inputTextDefoult[0] = `${j} ${k[0]}`;
+      //     let stringInput = inputTextDefoult.join(', ')
+      //     dropDownInput.value = stringInput;
+      // if (j == 0) {
+      //     inputTextDefoult[a] = `${textNone}`;
+      //     let stringInput = inputTextDefoult.join(', ')
+      //     dropDownInput.value = stringInput;
+      // } else if (j == 1) {
+      //     inputTextDefoult[a] = `${j} ${k[a][0]}`;
+      //     let stringInput = inputTextDefoult.join(', ')
+      //     dropDownInput.value = stringInput;
+      // } else if (j > 1 && j <= 4) {
+      //     inputTextDefoult[a] = `${j} ${k[a][1]}`;
+      //     let stringInput = inputTextDefoult.join(', ')
+      //     dropDownInput.value = stringInput;
+      // } else {
+      //     inputTextDefoult[a] = `${j} ${k[a][2]}`;
+      //     let stringInput = inputTextDefoult.join(', ')
+      //     dropDownInput.value = stringInput;
+      // };
+      // };
+
+      var setDecrement = function setDecrement() {
+        if (inputNumber != min) {
+          --inputNumber;
+          contentItemNumber.value = String(inputNumber);
+          dropDownInput.value = contentItemNumber.value; // inputContent(inputNumber, textContent)
+
+          return inputNumber;
+        }
+      };
+
+      var setIncrement = function setIncrement() {
+        if (inputNumber != max) {
+          ++inputNumber;
+          contentItemNumber.value = String(inputNumber);
+          dropDownInput.value = contentItemNumber.value; // inputContent(inputNumber, textContent)
+
+          return inputNumber;
+        }
+      };
+
+      decrementButton.addEventListener('click', setDecrement);
+      incrementButton.addEventListener('click', setIncrement);
+    };
+
+    for (var a = 0; a < contentItems.length; a++) {
+      _loop2(a);
+    }
+
+    ;
+  };
+
+  for (var i = 0; i < dDown.length; i++) {
+    _loop(i);
+  }
+
+  ;
+};
 
 /***/ }),
 
@@ -167,20 +395,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var likeButton = function likeButton() {
   // let formLikeButton = document.querySelector('.like_button');
-  var likeButtonDislike = document.querySelector('.like-button-dislike');
-  var likeButtonLike = document.querySelector('.like-button-like');
-  var spanTextDislike = likeButtonDislike.firstChild.textContent;
-  var spanTextLike = likeButtonLike.firstChild.textContent;
-  likeButtonDislike.addEventListener("click", function () {
-    ++spanTextDislike;
-    likeButtonDislike.firstChild.textContent = spanTextDislike;
-    return spanTextDislike;
-  });
-  likeButtonLike.addEventListener("click", function () {
-    ++spanTextLike;
-    likeButtonLike.firstChild.textContent = spanTextLike;
-    return spanTextLike;
-  });
+  var likeButtonDislike = document.querySelectorAll('.like-button-dislike');
+
+  var _loop = function _loop(i) {
+    var dislike = likeButtonDislike[i];
+    var spanTextDislike = dislike.firstChild.textContent;
+    dislike.addEventListener("click", function () {
+      ++spanTextDislike;
+      dislike.firstChild.textContent = spanTextDislike;
+      return spanTextDislike;
+    });
+  };
+
+  for (var i = 0; i < likeButtonDislike.length; i++) {
+    _loop(i);
+  }
+
+  var likeButtonLike = document.querySelectorAll('.like-button-like');
+
+  var _loop2 = function _loop2(_i) {
+    var like = likeButtonLike[_i];
+    var spanTextLike = like.firstChild.textContent;
+    like.addEventListener("click", function () {
+      ++spanTextLike;
+      like.firstChild.textContent = spanTextLike;
+      return spanTextLike;
+    });
+  };
+
+  for (var _i = 0; _i < likeButtonLike.length; _i++) {
+    _loop2(_i);
+  }
 };
 
 /***/ }),
