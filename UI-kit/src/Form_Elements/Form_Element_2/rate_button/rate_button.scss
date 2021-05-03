@@ -1,48 +1,38 @@
 .rate-button {
-
     h3 {
         padding-bottom: 15px;
         // letter-spacing: -0.7px;
     }
-
     .rate-button-stars-form1 {
         margin-right: 9px;
     }
-
     .rate-button-stars-form2 {
         margin-left: 9px;
     }
-
     .rate-button-stars-form1,
     .rate-button-stars-form2 {
         display: inline-block;
-
         .rate-button-stars-1,
         .rate-button-stars-2 {
             width: 108px;
             font-size: 24px;
-            line-height: 20,4px;
+            line-height: 20.4px;
             display: flex;
             justify-content: space-around;
             flex-direction: row-reverse;
-
             .rate-button-item {
                 display: none;
-
                 &:checked,
                 &:checked~.rate-button-label::before {
                     content: url('./../image/star.svg');
                     cursor: pointer;
                 }
             }
-
             .rate-button-label {
-
                 &::before {
                     content: url('./../image/star_border.svg');
                     cursor: pointer;
                 }
-
                 // &:hover,
                 // &:hover~ ::before {
                 //     content: url('./../image/star.svg');

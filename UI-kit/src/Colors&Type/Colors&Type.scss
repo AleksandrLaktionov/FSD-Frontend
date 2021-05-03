@@ -3,12 +3,7 @@
     grid-template-columns: fit-content(281.26px) fit-content(436px);
     column-gap: 415px / 1440px * 100%;
     margin: 90px 0 90px 90px;
-    padding: 
-    (145px - 90px) / 1440px * 100% 
-    0 
-    0
-    (150px - 90px) / 1440px * 100%;
-
+    padding: (145px - 90px) / 1440px * 100% 0 0 (150px - 90px) / 1440px * 100%;
     @media (max-width: 767px) {
         min-width: $min_width;
         grid-template-columns: 1fr;

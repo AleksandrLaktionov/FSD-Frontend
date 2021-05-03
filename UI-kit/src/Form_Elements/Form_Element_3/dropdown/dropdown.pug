@@ -1,6 +1,5 @@
 form(action="#" class='dropdown')
-    label 
-        h3 dropdown
+    h3(class="label-left") dropdown
     input(type="text" class="input-dropdown" name="drop-down-number" value='Сколько гостей' )
     .dropdown-list
         h3 взрослые
@@ -18,8 +17,6 @@ form(action="#" class='dropdown')
                 button(type="button" disabled) -
                 input(type="number", name="drop-down-number" value="0" readonly)
                 button(type="button") +
-        .button-down 
-            button(type="reset") 
-                h3 очистить
-            button(type="submit") 
-                h3 применить
+        .button-down
+            button(type="reset") очистить
+            button(type="submit") применить

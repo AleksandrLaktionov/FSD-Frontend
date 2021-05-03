@@ -1,26 +1,19 @@
 .form-default {
     width: 320px;
-
-    label {
-        h3 {
-            margin-bottom: 5px;
-            float: left;
-        }
+    h3 {
+        margin-bottom: 5px;
+        float: left;
     }
-
-    #label-right {
-        h3 {
-            margin-bottom: 5px;
-            font-weight: 400;
-            line-height: 14.63px;
-            color: $dark50;
-            float: right;
-        }
+    .label-right {
+        margin-bottom: 5px;
+        font-weight: 400;
+        line-height: 14.63px;
+        color: $dark50;
+        float: right;
+        text-align: end;
     }
-
     .form-input {
         @extend %text_field;
-
         &::placeholder {
             color: $dark25;
             line-height: 18px;

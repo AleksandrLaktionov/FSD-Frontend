@@ -3,25 +3,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-
-    label {
-        h3 {
-            margin-bottom: 5px;
-            float: left;
-        }
+    h3 {
+        margin-bottom: 5px;
+        float: left;
     }
-
     div {
         width: 150px;
     }
-
     .form-input {
         @extend %text_field;
         width: 150px;
         background: url('./../image/expand_more.svg') no-repeat;
         background-position: 120px 18px;
-        @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
-
+        @include fontFamily_Montserrat (14px,
+        400,
+        24px,
+        left,
+        $dark75);
         &::placeholder {
             color: $dark25;
         }

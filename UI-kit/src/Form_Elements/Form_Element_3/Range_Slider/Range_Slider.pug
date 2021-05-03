@@ -1,8 +1,6 @@
-form(action="#" method="method" class="multi-range-slider")
-        label(for="range")
-            h3 Range Slider
-        label(for="range" id="right-label" class="result") 
-            p 5000-10000₽
+form(action="#" class="multi-range-slider")
+        //- h3 Range Slider
+        p(id="right-label" class="result")  5000-10000₽
         .range-slider
             input(type="range" step="1000" min="0" max="15000" name="range" id="input-left" value=5000)
             input(type="range" step="1000" min="0" max="15000" name="range" id="input-right" value=10000)

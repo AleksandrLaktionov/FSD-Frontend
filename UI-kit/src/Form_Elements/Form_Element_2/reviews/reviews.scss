@@ -7,37 +7,28 @@
     .reviews-top {
         display: flex;
         margin-bottom: 10px;
-
         .photo {
-            width: 48px;
+            width: 47.67px;
             height: 48px;
-            border-radius: 50%;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
+            background: url('./../image/image.svg');
+            background-position: -22px -12px;
+            border: 2px solid #ffffff;
+            filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+            border-radius: 32px;
         }
-
         .name {
             display: inline-block;
             margin-left: 9.93px;
-
             p {
-                
-
                 span {
                     font-weight: bold;
                 }
             }
         }
     }
-
     .reviews-bottom {
         display: flex;
-
         .like-button {
-
             .like-button-like {
                 position: relative;
                 width: 40px;
@@ -45,14 +36,12 @@
                 border-radius: 10px;
                 background-image: url('./../image/like_border.svg');
                 background-position: -1px 0;
-
                 span {
                     margin: auto 0 auto 10px;
                     font-size: 10px;
                     line-height: 12px;
                     letter-spacing: 0em;
                     color: $purple;
-
                     &::before {
                         position: absolute;
                         content: '';
@@ -66,12 +55,10 @@
                 }
             }
         }
-
         .reviews-text {
             display: inline-block;
             margin-left: 14.31px;
-            
-            // height: 72px;
+            width: 653px;
         }
     }
 }

@@ -1,22 +1,23 @@
 form(action="#" class='drop-down-expanded')
-    label 
-        h3 dropdown
-    label(id="label-right")
-        h3 expanded
+    h3(class="label-left") dropdown
+    h3(class="label-right") expanded
     input(type="text" class="drop-down-input" value='2 спальни, 2 кровати...' )
-    div 
-        h3 спальни
+    .drop-down-content
+        .content-items
+            h3 спальни
             span
-                button(type="button") -
-                input(type="number", name="drop-down-number" value="2" readonly)
-                button(type="button") +
-        h3 кровати
+                button(type="button" class="decrement") -
+                input(type="number" value="2" readonly)
+                button(type="button" class="increment") +
+        .content-items
+            h3 кровати
             span
-                button(type="button") -
-                input(type="number", name="drop-down-number" value="2" readonly)
-                button(type="button") +
-        h3 ванные комнаты
+                button(type="button" class="decrement") -
+                input(type="number" value="2" readonly)
+                button(type="button" class="increment") +
+        .content-items
+            h3 ванные комнаты
             span
-                button(type="button" disabled) -
-                input(type="number", name="drop-down-number" value="0" readonly)
-                button(type="button") +
+                button(type="button" class="decrement") -
+                input(type="number" value="0" readonly)
+                button(type="button" class="increment") +
