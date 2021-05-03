@@ -116,95 +116,78 @@ var dropDownExpanded = function dropDownExpanded() {
   var textContent = [['спальня', 'спальни', 'спален'], ['кровать', 'кровати', 'кроватей'], ['ванная', 'ванны', 'ванн']];
   var textNone = '...';
   var inputTextDefoult = [];
-  var dropDownExp = document.querySelectorAll('.drop-down-expanded');
+  var dropDownExp = document.querySelector('.drop-down-expanded');
+  var dropDownInput = dropDownExp.querySelector('.drop-down-input');
+  var dropDownContent = dropDownExp.querySelector('.drop-down-content'); // const getDownDropDown = () => {
+  //     dropDownContent.style.display = 'none';
+  // };
+  // const getUpDropDown = () => {
+  //     dropDownContent.style.display = 'grid';
+  // };
+  // dropDownExp.addEventListener('mouseover', getUpDropDown);
+  // dropDownExp.addEventListener('mouseout', getDownDropDown);
 
-  var _loop = function _loop(i) {
-    var _this = dropDownExp[i];
+  var contentItems = dropDownContent.querySelectorAll('.content-items');
 
-    var dropDownInput = _this.querySelector('.drop-down-input');
+  var _loop = function _loop(a) {
+    var contentItem = contentItems[a];
+    var decrementButton = contentItem.querySelector('.decrement');
+    var incrementButton = contentItem.querySelector('.increment');
+    var contentItemNumber = contentItem.querySelector('input[type="number"]');
+    var inputNumber = Number(contentItemNumber.value);
 
-    var dropDownContent = _this.querySelector('.drop-down-content');
+    var inputContent = function inputContent(j, k) {
+      if (j == 0) {
+        inputTextDefoult[a] = "".concat(textNone);
+        var stringInput = inputTextDefoult.join(', ');
+        dropDownInput.value = stringInput;
+      } else if (j == 1) {
+        inputTextDefoult[a] = "".concat(j, " ").concat(k[a][0]);
 
-    var getDownDropDown = function getDownDropDown() {
-      dropDownContent.style.display = 'none';
+        var _stringInput = inputTextDefoult.join(', ');
+
+        dropDownInput.value = _stringInput;
+      } else if (j > 1 && j <= 4) {
+        inputTextDefoult[a] = "".concat(j, " ").concat(k[a][1]);
+
+        var _stringInput2 = inputTextDefoult.join(', ');
+
+        dropDownInput.value = _stringInput2;
+      } else {
+        inputTextDefoult[a] = "".concat(j, " ").concat(k[a][2]);
+
+        var _stringInput3 = inputTextDefoult.join(', ');
+
+        dropDownInput.value = _stringInput3;
+      }
+
+      ;
     };
 
-    var getUpDropDown = function getUpDropDown() {
-      dropDownContent.style.display = 'grid';
+    var setDecrement = function setDecrement() {
+      if (inputNumber != min) {
+        --inputNumber;
+        contentItemNumber.value = String(inputNumber);
+        inputContent(inputNumber, textContent);
+        return inputNumber;
+      }
     };
 
-    _this.addEventListener('mouseover', getUpDropDown);
-
-    _this.addEventListener('mouseout', getDownDropDown);
-
-    var contentItems = dropDownContent.querySelectorAll('.content-items');
-
-    var _loop2 = function _loop2(a) {
-      var contentItem = contentItems[a];
-      var decrementButton = contentItem.querySelector('.decrement');
-      var incrementButton = contentItem.querySelector('.increment');
-      var contentItemNumber = contentItem.querySelector('input[type="number"]');
-      var inputNumber = Number(contentItemNumber.value);
-
-      var inputContent = function inputContent(j, k) {
-        if (j == 0) {
-          inputTextDefoult[a] = "".concat(textNone);
-          var stringInput = inputTextDefoult.join(', ');
-          dropDownInput.value = stringInput;
-        } else if (j == 1) {
-          inputTextDefoult[a] = "".concat(j, " ").concat(k[a][0]);
-
-          var _stringInput = inputTextDefoult.join(', ');
-
-          dropDownInput.value = _stringInput;
-        } else if (j > 1 && j <= 4) {
-          inputTextDefoult[a] = "".concat(j, " ").concat(k[a][1]);
-
-          var _stringInput2 = inputTextDefoult.join(', ');
-
-          dropDownInput.value = _stringInput2;
-        } else {
-          inputTextDefoult[a] = "".concat(j, " ").concat(k[a][2]);
-
-          var _stringInput3 = inputTextDefoult.join(', ');
-
-          dropDownInput.value = _stringInput3;
-        }
-
-        ;
-      };
-
-      var setDecrement = function setDecrement() {
-        if (inputNumber != min) {
-          --inputNumber;
-          contentItemNumber.value = String(inputNumber);
-          inputContent(inputNumber, textContent);
-          return inputNumber;
-        }
-      };
-
-      var setIncrement = function setIncrement() {
-        if (inputNumber != max) {
-          ++inputNumber;
-          contentItemNumber.value = String(inputNumber);
-          inputContent(inputNumber, textContent);
-          return inputNumber;
-        }
-      };
-
-      decrementButton.addEventListener('click', setDecrement);
-      incrementButton.addEventListener('click', setIncrement);
+    var setIncrement = function setIncrement() {
+      if (inputNumber != max) {
+        ++inputNumber;
+        contentItemNumber.value = String(inputNumber);
+        inputContent(inputNumber, textContent);
+        return inputNumber;
+      }
     };
 
-    for (var a = 0; a < contentItems.length; a++) {
-      _loop2(a);
-    }
-
-    ;
+    decrementButton.addEventListener('click', setDecrement);
+    incrementButton.addEventListener('click', setIncrement);
   };
 
-  for (var i = 0; i < dropDownExp.length; i++) {
-    _loop(i);
+  for (var a = 0; a < contentItems.length; a++) {
+    _loop(a);
   }
 
   ;
@@ -289,93 +272,76 @@ var dropDown = function dropDown() {
   var textContent = ['гостя', 'гостей'];
   var textNone = 'Сколько';
   var inputTextDefoult = [];
-  var dDown = document.querySelectorAll('.dropdown');
+  var dDown = document.querySelector('.dropdown');
+  var dropDownInput = dDown.querySelector('.drop-down-input');
+  var dropDownContent = dDown.querySelector('.drop-down-content'); // const getDownDDown = () => {
+  //     dropDownContent.style.display = 'none';
+  // };
+  // const getUpDDown = () => {
+  //     dropDownContent.style.display = 'grid';
+  // };
+  // dDown.addEventListener('mouseover', getUpDDown);
+  // dDown.addEventListener('mouseout', getDownDDown);
 
-  var _loop = function _loop(i) {
-    var _this = dDown[i];
+  var contentItems = dropDownContent.querySelectorAll('.content-items');
 
-    var dropDownInput = _this.querySelector('.drop-down-input');
+  var _loop = function _loop(a) {
+    var contentItem = contentItems[a];
+    var decrementButton = contentItem.querySelector('.decrement');
+    var incrementButton = contentItem.querySelector('.increment');
+    var contentItemNumber = contentItem.querySelector('input[type="number"]');
+    var inputNumber = Number(contentItemNumber.value);
+    console.log(decrementButton);
+    console.log(incrementButton);
+    console.log(contentItemNumber); // const inputContent = (j, k) => {
+    //     inputTextDefoult[0] = `${j} ${k[0]}`;
+    //     let stringInput = inputTextDefoult.join(', ')
+    //     dropDownInput.value = stringInput;
+    // if (j == 0) {
+    //     inputTextDefoult[a] = `${textNone}`;
+    //     let stringInput = inputTextDefoult.join(', ')
+    //     dropDownInput.value = stringInput;
+    // } else if (j == 1) {
+    //     inputTextDefoult[a] = `${j} ${k[a][0]}`;
+    //     let stringInput = inputTextDefoult.join(', ')
+    //     dropDownInput.value = stringInput;
+    // } else if (j > 1 && j <= 4) {
+    //     inputTextDefoult[a] = `${j} ${k[a][1]}`;
+    //     let stringInput = inputTextDefoult.join(', ')
+    //     dropDownInput.value = stringInput;
+    // } else {
+    //     inputTextDefoult[a] = `${j} ${k[a][2]}`;
+    //     let stringInput = inputTextDefoult.join(', ')
+    //     dropDownInput.value = stringInput;
+    // };
+    // };
 
-    var dropDownContent = _this.querySelector('.drop-down-content');
+    var setDecrement = function setDecrement() {
+      if (inputNumber != min) {
+        --inputNumber;
+        contentItemNumber.value = String(inputNumber);
+        dropDownInput.value = contentItemNumber.value; // inputContent(inputNumber, textContent)
 
-    var getDownDDown = function getDownDDown() {
-      dropDownContent.style.display = 'none';
+        return inputNumber;
+      }
     };
 
-    var getUpDDown = function getUpDDown() {
-      dropDownContent.style.display = 'grid';
+    var setIncrement = function setIncrement() {
+      if (inputNumber != max) {
+        ++inputNumber;
+        contentItemNumber.value = String(inputNumber);
+        dropDownInput.value = contentItemNumber.value; // inputContent(inputNumber, textContent)
+
+        return inputNumber;
+      }
     };
 
-    _this.addEventListener('mouseover', getUpDDown);
-
-    _this.addEventListener('mouseout', getDownDDown);
-
-    var contentItems = dropDownContent.querySelectorAll('.content-items');
-
-    var _loop2 = function _loop2(a) {
-      var contentItem = contentItems[a];
-      var decrementButton = contentItem.querySelector('.decrement');
-      var incrementButton = contentItem.querySelector('.increment');
-      var contentItemNumber = contentItem.querySelector('input[type="number"]');
-      var inputNumber = Number(contentItemNumber.value);
-      console.log(decrementButton);
-      console.log(incrementButton);
-      console.log(contentItemNumber); // const inputContent = (j, k) => {
-      //     inputTextDefoult[0] = `${j} ${k[0]}`;
-      //     let stringInput = inputTextDefoult.join(', ')
-      //     dropDownInput.value = stringInput;
-      // if (j == 0) {
-      //     inputTextDefoult[a] = `${textNone}`;
-      //     let stringInput = inputTextDefoult.join(', ')
-      //     dropDownInput.value = stringInput;
-      // } else if (j == 1) {
-      //     inputTextDefoult[a] = `${j} ${k[a][0]}`;
-      //     let stringInput = inputTextDefoult.join(', ')
-      //     dropDownInput.value = stringInput;
-      // } else if (j > 1 && j <= 4) {
-      //     inputTextDefoult[a] = `${j} ${k[a][1]}`;
-      //     let stringInput = inputTextDefoult.join(', ')
-      //     dropDownInput.value = stringInput;
-      // } else {
-      //     inputTextDefoult[a] = `${j} ${k[a][2]}`;
-      //     let stringInput = inputTextDefoult.join(', ')
-      //     dropDownInput.value = stringInput;
-      // };
-      // };
-
-      var setDecrement = function setDecrement() {
-        if (inputNumber != min) {
-          --inputNumber;
-          contentItemNumber.value = String(inputNumber);
-          dropDownInput.value = contentItemNumber.value; // inputContent(inputNumber, textContent)
-
-          return inputNumber;
-        }
-      };
-
-      var setIncrement = function setIncrement() {
-        if (inputNumber != max) {
-          ++inputNumber;
-          contentItemNumber.value = String(inputNumber);
-          dropDownInput.value = contentItemNumber.value; // inputContent(inputNumber, textContent)
-
-          return inputNumber;
-        }
-      };
-
-      decrementButton.addEventListener('click', setDecrement);
-      incrementButton.addEventListener('click', setIncrement);
-    };
-
-    for (var a = 0; a < contentItems.length; a++) {
-      _loop2(a);
-    }
-
-    ;
+    decrementButton.addEventListener('click', setDecrement);
+    incrementButton.addEventListener('click', setIncrement);
   };
 
-  for (var i = 0; i < dDown.length; i++) {
-    _loop(i);
+  for (var a = 0; a < contentItems.length; a++) {
+    _loop(a);
   }
 
   ;
