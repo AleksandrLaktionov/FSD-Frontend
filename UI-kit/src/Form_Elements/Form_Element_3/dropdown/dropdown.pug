@@ -1,22 +1,25 @@
-form(action="#" class='dropdown')
+form(action="#" class='dropdown-active')
     h3(class="label-left") dropdown
-    input(type="text" class="input-dropdown" name="drop-down-number" value='Сколько гостей' )
-    .dropdown-list
-        h3 взрослые
-            span
-                button(type="button" disabled) -
-                input(type="number", name="drop-down-number" value="0" readonly)
-                button(type="button") +
-        h3 дети
-            span
-                button(type="button" disabled) -
-                input(type="number", name="drop-down-number" value="0" readonly)
-                button(type="button") +
-        h3  младенцы
-            span
-                button(type="button" disabled) -
-                input(type="number", name="drop-down-number" value="0" readonly)
-                button(type="button") +
+    input(type="text" class="drop-down-input" name="drop-down-guests" value='Сколько гостей' )
+    .drop-down-content
+        .content-items
+                h3 взрослые
+                span
+                    button(type="button" class="decrement") -
+                    input(type="number" value="0" readonly)
+                    button(type="button" class="increment") +
+        .content-items
+                h3 дети
+                span
+                    button(type="button" class="decrement") -
+                    input(type="number" value="0" readonly)
+                    button(type="button" class="increment") +
+        .content-items
+                h3  младенцы
+                span
+                    button(type="button" class="decrement") -
+                    input(type="number" value="0" readonly)
+                    button(type="button" class="increment") +
         .button-down
             button(type="reset") очистить
             button(type="submit") применить

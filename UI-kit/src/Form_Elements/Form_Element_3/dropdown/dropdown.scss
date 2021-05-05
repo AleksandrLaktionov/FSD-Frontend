@@ -1,10 +1,10 @@
-.dropdown {
+.dropdown-active {
     width: 320px;
     .label-left {
         margin-bottom: 5px;
         float: left;
     }
-    .input-dropdown {
+    .drop-down-input {
         width: 320px;
         height: 44px;
         padding: 15px;
@@ -20,7 +20,7 @@
         left,
         $dark75);
     }
-    .dropdown-list {
+    .drop-down-content {
         display: grid;
         grid-template-rows: repeat(4, auto);
         align-items: center;
@@ -32,12 +32,20 @@
         border-radius: 4px;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
-        h3 {
+        .content-items {
             display: grid;
             grid-template-columns: auto auto;
             align-items: center;
+            h3 {
+                @include fontFamily_Montserrat (12px,
+                700,
+                16px,
+                left,
+                $dark100);
+            }
             span {
-                text-align: end;
+                // text-align: end;
+                justify-self: end;
                 button {
                     vertical-align: middle;
                     align-items: center;

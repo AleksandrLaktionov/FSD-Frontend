@@ -1,23 +1,24 @@
 form(action="#" class='dropdown')
     h3(class="label-left") dropdown
-    input(type="text" class="drop-down-input" value='Сколько гостей' )
+    input(type="text" class="drop-down-input" name="drop-down-guests" value='Сколько гостей' )
     .drop-down-content
         .content-items
             h3 взрослые
             span
                 button(type="button" class="decrement") -
-                input(type="number", name="drop-down-number" value="0" readonly)
+                input(type="number" value="0" readonly)
                 button(type="button" class="increment") +
         .content-items
             h3 дети
             span
                 button(type="button" class="decrement") -
-                input(type="number", name="drop-down-number" value="0" readonly)
+                input(type="number" value="0" readonly)
                 button(type="button" class="increment") +
         .content-items
             h3  младенцы
             span
                 button(type="button" class="decrement") -
-                input(type="number", name="drop-down-number" value="0" readonly)
+                input(type="number" value="0" readonly)
                 button(type="button" class="increment") +
-        button(type="submit") применить
+        .button-down
+            button(type="submit") применить

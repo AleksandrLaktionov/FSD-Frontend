@@ -12,7 +12,7 @@ export const dropDownExpanded = () => {
 
     let textNone = '...';
 
-    let inputTextDefoult = [];
+    let inputTextDefoult = ['2 спальни', '2 кровати', '...'];
 
     const dropDownExp = document.querySelector('.drop-down-expanded');
 
@@ -20,6 +20,7 @@ export const dropDownExpanded = () => {
 
     let dropDownContent = dropDownExp.querySelector('.drop-down-content');
 
+    dropDownInput.value = inputTextDefoult.join(', ');
     // const getDownDropDown = () => {
     //     dropDownContent.style.display = 'none';
     // };

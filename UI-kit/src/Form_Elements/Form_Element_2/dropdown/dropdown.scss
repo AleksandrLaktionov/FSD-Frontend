@@ -71,18 +71,22 @@
                 }
             }
         }
-        button[type=submit] {
-            display: inline-block;
-            width: 84px;
-            height: 30px;
-            background-color: rgba(255, 255, 255, 0);
-            justify-self: end;
-            @include fontFamily_Montserrat (12px,
-            700,
-            15px,
-            left,
-            $purple);
-            text-transform: uppercase;
+        .button-down {
+            display: grid;
+            // grid-template-columns: auto auto;
+            button[type=submit] {
+                display: inline-block;
+                width: 84px;
+                height: 30px;
+                background-color: rgba(255, 255, 255, 0);
+                justify-self: end;
+                @include fontFamily_Montserrat (12px,
+                700,
+                15px,
+                left,
+                $purple);
+                text-transform: uppercase;
+            }
         }
     }
 }

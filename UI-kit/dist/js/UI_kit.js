@@ -115,10 +115,11 @@ var dropDownExpanded = function dropDownExpanded() {
   var max = 10;
   var textContent = [['спальня', 'спальни', 'спален'], ['кровать', 'кровати', 'кроватей'], ['ванная', 'ванны', 'ванн']];
   var textNone = '...';
-  var inputTextDefoult = [];
+  var inputTextDefoult = ['2 спальни', '2 кровати', '...'];
   var dropDownExp = document.querySelector('.drop-down-expanded');
   var dropDownInput = dropDownExp.querySelector('.drop-down-input');
-  var dropDownContent = dropDownExp.querySelector('.drop-down-content'); // const getDownDropDown = () => {
+  var dropDownContent = dropDownExp.querySelector('.drop-down-content');
+  dropDownInput.value = inputTextDefoult.join(', '); // const getDownDropDown = () => {
   //     dropDownContent.style.display = 'none';
   // };
   // const getUpDropDown = () => {
@@ -268,9 +269,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var dropDown = function dropDown() {
   var min = 0;
-  var max = 10;
+  var max = 3;
   var textContent = ['гостя', 'гостей'];
-  var textNone = 'Сколько';
   var inputTextDefoult = [];
   var dDown = document.querySelector('.dropdown');
   var dropDownInput = dDown.querySelector('.drop-down-input');
@@ -291,47 +291,36 @@ var dropDown = function dropDown() {
     var incrementButton = contentItem.querySelector('.increment');
     var contentItemNumber = contentItem.querySelector('input[type="number"]');
     var inputNumber = Number(contentItemNumber.value);
-    console.log(decrementButton);
-    console.log(incrementButton);
-    console.log(contentItemNumber); // const inputContent = (j, k) => {
-    //     inputTextDefoult[0] = `${j} ${k[0]}`;
-    //     let stringInput = inputTextDefoult.join(', ')
-    //     dropDownInput.value = stringInput;
-    // if (j == 0) {
-    //     inputTextDefoult[a] = `${textNone}`;
-    //     let stringInput = inputTextDefoult.join(', ')
-    //     dropDownInput.value = stringInput;
-    // } else if (j == 1) {
-    //     inputTextDefoult[a] = `${j} ${k[a][0]}`;
-    //     let stringInput = inputTextDefoult.join(', ')
-    //     dropDownInput.value = stringInput;
-    // } else if (j > 1 && j <= 4) {
-    //     inputTextDefoult[a] = `${j} ${k[a][1]}`;
-    //     let stringInput = inputTextDefoult.join(', ')
-    //     dropDownInput.value = stringInput;
-    // } else {
-    //     inputTextDefoult[a] = `${j} ${k[a][2]}`;
-    //     let stringInput = inputTextDefoult.join(', ')
-    //     dropDownInput.value = stringInput;
-    // };
-    // };
+
+    var inputContent = function inputContent(j, k) {
+      inputTextDefoult[a] = j;
+      var stringInput = inputTextDefoult.reduce(function (sum, current) {
+        return sum + current;
+      }, 0);
+
+      if (stringInput >= 1 && stringInput <= 4) {
+        dropDownInput.value = "".concat(stringInput, " ").concat(k[0]);
+      } else {
+        dropDownInput.value = "".concat(stringInput, " ").concat(k[1]);
+      }
+
+      ;
+    };
 
     var setDecrement = function setDecrement() {
       if (inputNumber != min) {
-        --inputNumber;
+        inputNumber -= 1;
         contentItemNumber.value = String(inputNumber);
-        dropDownInput.value = contentItemNumber.value; // inputContent(inputNumber, textContent)
-
+        inputContent(inputNumber, textContent);
         return inputNumber;
       }
     };
 
     var setIncrement = function setIncrement() {
       if (inputNumber != max) {
-        ++inputNumber;
+        inputNumber += 1;
         contentItemNumber.value = String(inputNumber);
-        dropDownInput.value = contentItemNumber.value; // inputContent(inputNumber, textContent)
-
+        inputContent(inputNumber, textContent);
         return inputNumber;
       }
     };
@@ -475,6 +464,94 @@ var rangeSlider = function rangeSlider() {
 
 /***/ }),
 
+/***/ "./Form_Elements/Form_Element_3/dropdown/dropdown.js":
+/*!***********************************************************!*\
+  !*** ./Form_Elements/Form_Element_3/dropdown/dropdown.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "dropDownActive": () => (/* binding */ dropDownActive)
+/* harmony export */ });
+var dropDownActive = function dropDownActive() {
+  var min = 0;
+  var max = 3;
+  var textContent = ['гость', 'гостя', 'гостей'];
+  var inputTextDefoult = [];
+  var dDownActive = document.querySelector('.dropdown-active');
+  var dropDownInput = dDownActive.querySelector('.drop-down-input');
+  var dropDownContent = dDownActive.querySelector('.drop-down-content');
+  var bReset = dropDownContent.querySelector('button[type="reset"]'); // const getDownDDown = () => {
+  //     dropDownContent.style.display = 'none';
+  // };
+  // const getUpDDown = () => {
+  //     dropDownContent.style.display = 'grid';
+  // };
+  // dDown.addEventListener('mouseover', getUpDDown);
+  // dDown.addEventListener('mouseout', getDownDDown);
+
+  var contentItems = dropDownContent.querySelectorAll('.content-items');
+
+  var _loop = function _loop(a) {
+    var contentItem = contentItems[a];
+    var decrementButton = contentItem.querySelector('.decrement');
+    var incrementButton = contentItem.querySelector('.increment');
+    var contentItemNumber = contentItem.querySelector('input[type="number"]');
+    var inputNumber = Number(contentItemNumber.value);
+
+    var inputContent = function inputContent(j, k) {
+      inputTextDefoult[a] = j;
+      var stringInput = inputTextDefoult.reduce(function (sum, current) {
+        return sum + current;
+      }, 0);
+
+      if (stringInput == 1) {
+        dropDownInput.value = "".concat(stringInput, " ").concat(k[0]);
+      } else if (stringInput >= 1 && stringInput <= 4) {
+        dropDownInput.value = "".concat(stringInput, " ").concat(k[1]);
+      } else {
+        dropDownInput.value = "".concat(stringInput, " ").concat(k[2]);
+      }
+
+      ;
+    };
+
+    var setDecrement = function setDecrement() {
+      if (inputNumber != min) {
+        inputNumber -= 1;
+        contentItemNumber.value = String(inputNumber);
+        inputContent(inputNumber, textContent);
+        return inputNumber;
+      }
+    };
+
+    var setIncrement = function setIncrement() {
+      if (inputNumber != max) {
+        inputNumber += 1;
+        contentItemNumber.value = String(inputNumber);
+        inputContent(inputNumber, textContent);
+        return inputNumber;
+      }
+    };
+
+    decrementButton.addEventListener('click', setDecrement);
+    incrementButton.addEventListener('click', setIncrement);
+    bReset.addEventListener('click', function () {
+      inputNumber = 0;
+      inputTextDefoult = [];
+    });
+  };
+
+  for (var a = 0; a < contentItems.length; a++) {
+    _loop(a);
+  }
+
+  ;
+};
+
+/***/ }),
+
 /***/ "./Form_Elements/Form_Element_3/form-element_3.js":
 /*!********************************************************!*\
   !*** ./Form_Elements/Form_Element_3/form-element_3.js ***!
@@ -483,8 +560,11 @@ var rangeSlider = function rangeSlider() {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Range_Slider_Range_Slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Range_Slider/Range_Slider.js */ "./Form_Elements/Form_Element_3/Range_Slider/Range_Slider.js");
+/* harmony import */ var _dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown/dropdown.js */ "./Form_Elements/Form_Element_3/dropdown/dropdown.js");
+
 
 (0,_Range_Slider_Range_Slider_js__WEBPACK_IMPORTED_MODULE_0__.rangeSlider)();
+(0,_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dropDownActive)();
 
 /***/ }),
 
@@ -5446,7 +5526,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Form_Elements_Form_Element_3_form_element_3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_3/form-element_3 */ "./Form_Elements/Form_Element_3/form-element_3.js");
 
 
- // import './../Form_Elements/Text_Field/drop_down/drop_down.js';
 
 
 })();

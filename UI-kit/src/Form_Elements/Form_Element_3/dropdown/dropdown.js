@@ -1,18 +1,20 @@
-export const dropDown = () => {
+export const dropDownActive = () => {
 
     let min = 0;
 
     let max = 3;
 
-    let textContent = ['гостя', 'гостей'];
+    let textContent = ['гость', 'гостя', 'гостей'];
 
     let inputTextDefoult = [];
 
-    const dDown = document.querySelector('.dropdown');
+    const dDownActive = document.querySelector('.dropdown-active');
 
-    let dropDownInput = dDown.querySelector('.drop-down-input');
+    const dropDownInput = dDownActive.querySelector('.drop-down-input');
 
-    let dropDownContent = dDown.querySelector('.drop-down-content');
+    const dropDownContent = dDownActive.querySelector('.drop-down-content');
+
+    const bReset = dropDownContent.querySelector('button[type="reset"]');
 
     // const getDownDDown = () => {
     //     dropDownContent.style.display = 'none';
@@ -29,17 +31,21 @@ export const dropDown = () => {
     for (let a = 0; a < contentItems.length; a++) {
         const contentItem = contentItems[a];
 
-        let decrementButton = contentItem.querySelector('.decrement');
-        let incrementButton = contentItem.querySelector('.increment');
-        let contentItemNumber = contentItem.querySelector('input[type="number"]');
+        const decrementButton = contentItem.querySelector('.decrement');
+        const incrementButton = contentItem.querySelector('.increment');
+        const contentItemNumber = contentItem.querySelector('input[type="number"]');
+
         let inputNumber = Number(contentItemNumber.value);
+
         const inputContent = (j, k) => {
             inputTextDefoult[a] = j;
             let stringInput = inputTextDefoult.reduce((sum, current) => sum + current, 0);
-            if (stringInput >= 1 && stringInput <= 4) {
+            if (stringInput == 1) {
                 dropDownInput.value = `${stringInput} ${k[0]}`;
-            } else {
+            } else if (stringInput >= 1 && stringInput <= 4) {
                 dropDownInput.value = `${stringInput} ${k[1]}`;
+            } else {
+                dropDownInput.value = `${stringInput} ${k[2]}`;
             };
         };
 
@@ -63,5 +69,11 @@ export const dropDown = () => {
 
         decrementButton.addEventListener('click', setDecrement);
         incrementButton.addEventListener('click', setIncrement);
+
+
+        bReset.addEventListener('click', () => {
+            inputNumber = 0;
+            inputTextDefoult = []
+        })
     };
 }
