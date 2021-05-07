@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,700);
 @charset "UTF-8";
-.form-elements .text-field .form-default .form-input, .form-elements .text-field .hover-focus .form-input, .form-elements .text-field .form-dropdown .form-input, .form-elements .text-field .data-dropdown .form-input, .form-elements .text-field .filter-date-dropdown .form-input, .form-elements .text-field .subscription-text-field .form-input, .form-elements .text-field .dropdown-default .form-input, .Cards .choosing-room-number .data-dropdown .form-input, .Cards .choosing-room-number .form-dropdown .form-input, .Cards .selected-room-number .data-dropdown .form-input, .Cards .selected-room-number .form-dropdown .form-input {
+.form-elements .text-field .form-default .form-input, .form-elements .text-field .hover-focus .form-input, .form-elements .text-field .form-dropdown .form-input, .form-elements .text-field .data-dropdown .form-input, .form-elements .text-field .filter-date-dropdown .form-input, .form-elements .text-field .subscription-text-field .form-input, .form-elements .text-field .dropdown-default .form-input, .cards .choosing-room-number .data-dropdown .form-input, .cards .choosing-room-number .form-dropdown .form-input, .cards .selected-room-number .data-dropdown .form-input, .cards .selected-room-number .form-dropdown .form-input {
   padding-left: 15px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   width: 320px;
@@ -1358,12 +1358,12 @@ img {
       grid-template-columns: 100%;
       row-gap: 20px; } }
 
-.Cards {
+.cards {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   margin: 150px 140px 140px 140px; }
-  .Cards .choosing-room-number {
+  .cards .choosing-room-number {
     padding: 40px 30px 30px 30px;
     display: grid;
     row-gap: 20px;
@@ -1373,7 +1373,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px; }
-    .Cards .choosing-room-number h2 {
+    .cards .choosing-room-number h2 {
       font-family: Montserrat;
       font-size: 24px;
       font-style: normal;
@@ -1382,17 +1382,17 @@ img {
       letter-spacing: 0em;
       text-align: left;
       color: #1f2041; }
-    .Cards .choosing-room-number .data-dropdown {
+    .cards .choosing-room-number .data-dropdown {
       width: 320px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 20px; }
-      .Cards .choosing-room-number .data-dropdown h3 {
+      .cards .choosing-room-number .data-dropdown h3 {
         margin-bottom: 5px;
         float: left; }
-      .Cards .choosing-room-number .data-dropdown div {
+      .cards .choosing-room-number .data-dropdown div {
         width: 150px; }
-      .Cards .choosing-room-number .data-dropdown .form-input {
+      .cards .choosing-room-number .data-dropdown .form-input {
         width: 150px;
         background: url(.././img/expand_more.svg) no-repeat;
         background-position: 120px 18px;
@@ -1404,12 +1404,12 @@ img {
         letter-spacing: 0em;
         text-align: left;
         color: rgba(31, 32, 65, 0.75); }
-    .Cards .choosing-room-number .form-dropdown {
+    .cards .choosing-room-number .form-dropdown {
       width: 320px; }
-      .Cards .choosing-room-number .form-dropdown h3 {
+      .cards .choosing-room-number .form-dropdown h3 {
         margin-bottom: 5px;
         float: left; }
-      .Cards .choosing-room-number .form-dropdown .form-input {
+      .cards .choosing-room-number .form-dropdown .form-input {
         background: url(.././img/expand_more.svg) no-repeat;
         background-position: 290px 18px;
         font-family: Montserrat;
@@ -1420,11 +1420,11 @@ img {
         letter-spacing: 0em;
         text-align: left;
         color: rgba(31, 32, 65, 0.75); }
-    .Cards .choosing-room-number .button-big {
+    .cards .choosing-room-number .button-big {
       position: relative;
       width: 320px;
       height: 44px; }
-      .Cards .choosing-room-number .button-big .big {
+      .cards .choosing-room-number .button-big .big {
         width: 320px;
         height: 44px;
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -1439,7 +1439,7 @@ img {
         color: #1f2041;
         text-transform: uppercase;
         color: #FFFFFF; }
-      .Cards .choosing-room-number .button-big::after {
+      .cards .choosing-room-number .button-big::after {
         position: absolute;
         content: '';
         width: 20px;
@@ -1448,7 +1448,7 @@ img {
         top: 12px;
         right: 12px;
         cursor: pointer; }
-  .Cards .selected-room-number {
+  .cards .selected-room-number {
     position: relative;
     padding: 40px 30px 30px 30px;
     display: grid;
@@ -1460,7 +1460,7 @@ img {
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     line-height: 24px; }
-    .Cards .selected-room-number h2 {
+    .cards .selected-room-number h2 {
       display: inline;
       font-family: Montserrat;
       font-size: 14px;
@@ -1470,7 +1470,7 @@ img {
       letter-spacing: 0em;
       text-align: left;
       color: #1f2041; }
-      .Cards .selected-room-number h2 span {
+      .cards .selected-room-number h2 span {
         font-family: Montserrat;
         font-size: 12px;
         font-style: normal;
@@ -1480,7 +1480,7 @@ img {
         text-align: left;
         color: #bc9cff;
         text-transform: uppercase; }
-    .Cards .selected-room-number p {
+    .cards .selected-room-number p {
       display: inline;
       float: right;
       font-family: Montserrat;
@@ -1491,17 +1491,17 @@ img {
       letter-spacing: 0em;
       text-align: right;
       color: rgba(31, 32, 65, 0.5); }
-    .Cards .selected-room-number .data-dropdown {
+    .cards .selected-room-number .data-dropdown {
       width: 320px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 20px; }
-      .Cards .selected-room-number .data-dropdown h3 {
+      .cards .selected-room-number .data-dropdown h3 {
         margin-bottom: 5px;
         float: left; }
-      .Cards .selected-room-number .data-dropdown div {
+      .cards .selected-room-number .data-dropdown div {
         width: 150px; }
-      .Cards .selected-room-number .data-dropdown .form-input {
+      .cards .selected-room-number .data-dropdown .form-input {
         width: 150px;
         background: url(.././img/expand_more.svg) no-repeat;
         background-position: 120px 18px;
@@ -1513,12 +1513,12 @@ img {
         letter-spacing: 0em;
         text-align: left;
         color: rgba(31, 32, 65, 0.75); }
-    .Cards .selected-room-number .form-dropdown {
+    .cards .selected-room-number .form-dropdown {
       width: 320px; }
-      .Cards .selected-room-number .form-dropdown h3 {
+      .cards .selected-room-number .form-dropdown h3 {
         margin-bottom: 5px;
         float: left; }
-      .Cards .selected-room-number .form-dropdown .form-input {
+      .cards .selected-room-number .form-dropdown .form-input {
         background: url(.././img/expand_more.svg) no-repeat;
         background-position: 290px 18px;
         font-family: Montserrat;
@@ -1529,11 +1529,11 @@ img {
         letter-spacing: 0em;
         text-align: left;
         color: rgba(31, 32, 65, 0.75); }
-    .Cards .selected-room-number .text-content {
+    .cards .selected-room-number .text-content {
       display: grid;
       grid-template-rows: repeat(4, auto);
       row-gap: 10px; }
-      .Cards .selected-room-number .text-content li {
+      .cards .selected-room-number .text-content li {
         position: relative;
         font-family: Montserrat;
         font-size: 14px;
@@ -1543,11 +1543,11 @@ img {
         letter-spacing: 0em;
         text-align: left;
         color: rgba(31, 32, 65, 0.75); }
-        .Cards .selected-room-number .text-content li span {
+        .cards .selected-room-number .text-content li span {
           position: absolute;
           top: 0;
           right: 0; }
-      .Cards .selected-room-number .text-content #total {
+      .cards .selected-room-number .text-content #total {
         margin: 30px 0 0 0;
         position: relative;
         font-family: Montserrat;
@@ -1558,7 +1558,7 @@ img {
         letter-spacing: 0em;
         text-align: left;
         color: #1f2041; }
-        .Cards .selected-room-number .text-content #total hr {
+        .cards .selected-room-number .text-content #total hr {
           position: absolute;
           left: 59px;
           bottom: 4px;
@@ -1566,11 +1566,11 @@ img {
           height: 1px;
           border-top: 1px dashed rgba(31, 32, 65, 0.25);
           align-items: center; }
-    .Cards .selected-room-number .button-big {
+    .cards .selected-room-number .button-big {
       position: relative;
       width: 320px;
       height: 44px; }
-      .Cards .selected-room-number .button-big .big {
+      .cards .selected-room-number .button-big .big {
         width: 320px;
         height: 44px;
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -1585,7 +1585,7 @@ img {
         color: #1f2041;
         text-transform: uppercase;
         color: #FFFFFF; }
-      .Cards .selected-room-number .button-big::after {
+      .cards .selected-room-number .button-big::after {
         position: absolute;
         content: '';
         width: 20px;
@@ -1594,14 +1594,14 @@ img {
         top: 12px;
         right: 12px;
         cursor: pointer; }
-  .Cards .calendar {
+  .cards .calendar {
     width: 320px;
     height: 369px;
     background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 4px; }
-  .Cards .account-registration {
+  .cards .account-registration {
     padding: 40px 30px 30px 30px;
     display: grid;
     row-gap: 20px;
