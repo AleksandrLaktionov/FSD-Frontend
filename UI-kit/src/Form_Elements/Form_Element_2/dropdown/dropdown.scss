@@ -45,7 +45,7 @@
                 justify-self: end;
                 button {
                     vertical-align: middle;
-                    align-items: center;
+                    // align-items: center;
                     width: 30px;
                     height: 30px;
                     border: 1px solid $dark25;
@@ -62,7 +62,7 @@
                     }
                 }
                 input[type="number"] {
-                    vertical-align: middle;
+                    // vertical-align: middle;
                     width: 25px;
                     @include fontFamily_Montserrat (12px,
                     700,

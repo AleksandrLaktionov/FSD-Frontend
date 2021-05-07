@@ -2,9 +2,9 @@ export const dropDown = () => {
 
     let min = 0;
 
-    let max = 3;
+    let max = 10;
 
-    let textContent = ['гостя', 'гостей'];
+    let textContent = ['гость', 'гостя', 'гостей'];
 
     let inputTextDefoult = [];
 
@@ -36,10 +36,12 @@ export const dropDown = () => {
         const inputContent = (j, k) => {
             inputTextDefoult[a] = j;
             let stringInput = inputTextDefoult.reduce((sum, current) => sum + current, 0);
-            if (stringInput >= 1 && stringInput <= 4) {
+            if (stringInput == 1) {
                 dropDownInput.value = `${stringInput} ${k[0]}`;
-            } else {
+            } else if (stringInput >= 1 && stringInput <= 4) {
                 dropDownInput.value = `${stringInput} ${k[1]}`;
+            } else {
+                dropDownInput.value = `${stringInput} ${k[2]}`;
             };
         };
 

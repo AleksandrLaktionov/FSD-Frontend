@@ -1,0 +1,90 @@
+.selected-room-number {
+    position: relative;
+    padding: 40px 30px 30px 30px;
+    display: grid;
+    row-gap: 20px;
+    width: 380px;
+    height: 511px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    h2 {
+        display: inline;
+        // position: absolute;
+        // top: 40px;
+        // left: 30px;
+        // float: left;
+        // clear: both;
+        @include fontFamily_Montserrat (14px, 700, 17px, left, $dark100);
+        span {
+            @include fontFamily_Montserrat (12px, 700, 15px, left, $purple);
+            text-transform: uppercase;
+        }
+    }
+    p {
+        display: inline;
+        // position: absolute;
+        // top: 40px;
+        // right: 30px;
+        // text-align: end;
+        float: right;
+        // clear: both;
+        @include fontFamily_Montserrat (14px, 700, 18px, right, $dark50);
+    }
+    @import '../../Form_Elements/Form_Element_1/data-dropdown/data-dropdown.scss';
+    @import '../../Form_Elements/Form_Element_1/form-dropdown/form-dropdown.scss';
+    line-height: 24px;
+    .text-content {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 10px;
+        li {
+            position: relative;
+            @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
+            span {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        #total {
+            margin: 30px 0 0 0;
+            position: relative;
+            @include fontFamily_Montserrat (19px, 700, 23px, left, $dark100);
+            hr {
+                position: absolute;
+                left: 59px;
+                bottom: 4px;
+                width: 182px;
+                height: 1px;
+                border-top: 1px dashed $dark25;
+                align-items: center;
+            }
+        }
+    }
+    .button-big {
+        position: relative;
+        width: 320px;
+        height: 44px;
+        .big {
+            width: 320px;
+            height: 44px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 22px;
+            @include fontFamily_Montserrat (12px, 700, 15px, center, $dark100);
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: url('./../image/arrow_forward_white.svg') no-repeat;
+            top: 12px;
+            right: 12px;
+            cursor: pointer;
+        }
+    }
+}

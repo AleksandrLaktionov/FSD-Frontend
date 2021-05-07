@@ -1,17 +1,4 @@
-.form-hover-focus {
-    width: 320px;
-    h3 {
-        margin-bottom: 5px;
-        float: left;
-    }
-    .label-right {
-        margin-bottom: 5px;
-        font-weight: 400;
-        line-height: 14.63px;
-        color: $dark50;
-        float: right;
-        text-align: end;
-    }
+.hover-focus {
     .form-input {
         @extend %text_field;
         @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);

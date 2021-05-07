@@ -5,7 +5,7 @@
         float: left;
     }
     .label-right {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         font-weight: 400;
         line-height: 14.63px;
         color: $dark50;
@@ -14,9 +14,9 @@
     }
     .form-input {
         @extend %text_field;
+        @include fontFamily_Montserrat (14px, 400, 24px, left, $dark75);
         &::placeholder {
-            color: $dark25;
-            line-height: 18px;
+            @include fontFamily_Montserrat (14px, 400, 18px, left, $dark25);
         }
     }
 }

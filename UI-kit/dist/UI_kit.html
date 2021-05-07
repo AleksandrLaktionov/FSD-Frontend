@@ -20,27 +20,13 @@
     <div id="green"></div>
   </div>
   <div class="colors-content">
-    <div>
-      <p>Dark Shade 100%<br><span>#1F2041</span></p>
-    </div>
-    <div>
-      <p>Dark Shade 75%<br><span>#1F2041</span></p>
-    </div>
-    <div>
-      <p>Dark Shade 50%<br><span>#1F2041</span></p>
-    </div>
-    <div>
-      <p>Dark Shade 25%<br><span>#1F2041</span></p>
-    </div>
-    <div>
-      <p>Dark Shade 5%<br><span>#1F2041</span></p>
-    </div>
-    <div>
-      <p>Purple<br><span>#BC9CFF</span></p>
-    </div>
-    <div>
-      <p>Green<br><span>#6FCF97</span></p>
-    </div>
+    <p>Dark Shade 100%<br><span>#1F2041</span></p>
+    <p>Dark Shade 75%<br><span>#1F2041</span></p>
+    <p>Dark Shade 50%<br><span>#1F2041</span></p>
+    <p>Dark Shade 25%<br><span>#1F2041</span></p>
+    <p>Dark Shade 5%<br><span>#1F2041</span></p>
+    <p>Purple<br><span>#BC9CFF</span></p>
+    <p>Green<br><span>#6FCF97</span></p>
   </div>
 </div>
 <div class="type-fonts">
@@ -51,18 +37,10 @@
     <div id="p">Body</div>
   </div>
   <div class="type-fonts-text">
-    <div>
-      <h1>This one is the sub-section or widget title</h1>
-    </div>
-    <div>
-      <h2>Next one is the item title inside widgets</h2>
-    </div>
-    <div>
-      <h3>This is a label or CTA text</h3>
-    </div>
-    <div>
-      <p>This is the body text which is used for most of the design, like paragraphs, lists, etc.</p>
-    </div>
+    <h1>This one is the sub-section or widget title</h1>
+    <h2>Next one is the item title inside widgets</h2>
+    <h3>This is a label or CTA text</h3>
+    <p>This is the body text which is used for most of the design, like paragraphs, lists, etc.</p>
   </div>
 </div>
 </div>
@@ -73,27 +51,27 @@
   <h3 class="label-right">Default</h3>
   <input class="form-input" type="email" placeholder="Email">
 </form>
-<form class="form-hover-focus" action="#">
+<form class="form-default hover-focus" action="#">
   <h3>Text field</h3>
   <h3 class="label-right">Hover / Focus</h3>
   <input class="form-input" type="text" value="This is pretty awesome">
 </form>
-<form class="form-dropdown" action="#">
+<form class="form-default form-dropdown" action="#">
   <h3>Dropdown</h3>
   <input class="form-input" type="text" value="Сколько гостей" readonly="readonly">
 </form>
-<form class="masked-text" action="#">
+<form class="form-default" action="#">
   <h3>masked text field</h3>
-  <input class="masked-text-field" type="text" placeholder="ДД.ММ.ГГГГ">
+  <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
 </form>
 <form class="data-dropdown" action="#">
   <div>
-    <h3>date Dropdown</h3>
-    <input class="form-input data-dropdown-start" type="text">
+    <h3>DATE DROPDOWN</h3>
+    <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
   </div>
   <div>
-    <h3>date Dropdown</h3>
-    <input class="form-input data-dropdown-finish" type="text" value="19.08.2019">
+    <h3>DATE DROPDOWN</h3>
+    <input class="form-input data-drop" type="text" value="19.08.2019">
   </div>
 </form>
 <form class="filter-date-dropdown" action="#">
@@ -190,7 +168,7 @@
 </form>
 <form class="radio-buttons" action="#">
   <h3>Radio Buttons</h3>
-  <div><span>
+  <div class="radio-block"><span>
       <input type="radio" name="radio-button" id="radio-button__men">
       <label for="radio-button__men">Мужчина</label></span><span>
       <input type="radio" name="radio-button" id="radio-button__women">
@@ -201,7 +179,7 @@
   <div class="toggle-buttons">
     <div class="toggle-button">
       <input type="checkbox" id="toggle-button-1" name="toggle-button" checked="checked">
-      <label for="toggle-button-2">Получать спецпредложения</label>
+      <label for="toggle-button-1">Получать спецпредложения</label>
     </div>
     <div class="toggle-button">
       <input type="checkbox" id="toggle-button-2" name="toggle-button">
@@ -394,6 +372,61 @@
   </ul>
 </div>
 </div>
+</div>
+<div class="Cards">
+<div class="choosing-room-number">
+  <h2>Найдём номера под ваши пожелания</h2>
+  <form class="data-dropdown" action="#">
+    <div>
+      <h3>прибытие</h3>
+      <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
+    </div>
+    <div>
+      <h3>выезд</h3>
+      <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
+    </div>
+  </form>
+  <form class="form-dropdown" action="#">
+    <h3>гости</h3>
+    <input class="form-input" type="text" value="Сколько гостей" readonly="readonly">
+  </form>
+  <div class="button-big">
+    <button class="big">подобрать номер</button>
+  </div>
+</div>
+<div class="selected-room-number">
+  <div class="room-text">
+    <h2>№ 888 <span>люкс</span></h2>
+    <p>9 990₽ в сутки</p>
+  </div>
+  <form class="data-dropdown" action="#">
+    <div>
+      <h3>прибытие</h3>
+      <input class="form-input data-drop" type="text" value="19.08.2019">
+    </div>
+    <div>
+      <h3>выезд</h3>
+      <input class="form-input data-drop" type="text" value="23.08.2019">
+    </div>
+  </form>
+  <form class="form-dropdown" action="#">
+    <h3>гости</h3>
+    <input class="form-input" type="text" value="3 гостя" readonly="readonly">
+  </form>
+  <ul class="text-content">
+    <li>9 990₽ х 4 суток<span>39 960₽</span></li>
+    <li>Сбор за услуги: скидка 2 179₽<span>0₽</span></li>
+    <li>Сбор за дополнительные<br>услуги<span>300₽</span></li>
+    <li id="total">Итого
+      <hr><span>38 081₽</span>
+    </li>
+  </ul>
+  <div class="button-big">
+    <button class="big">забронировать</button>
+  </div>
+</div>
+<div class="calendar"></div>
+<div class="account-registration"></div>
 </div>
   </body>
 </html>

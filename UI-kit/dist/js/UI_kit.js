@@ -1,6 +1,55 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./Cards/Cards.js":
+/*!************************!*\
+  !*** ./Cards/Cards.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _choosing_room_number_choosing_room_number_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./choosing-room-number/choosing-room-number.js */ "./Cards/choosing-room-number/choosing-room-number.js");
+/* harmony import */ var _choosing_room_number_choosing_room_number_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_choosing_room_number_choosing_room_number_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _selected_room_number_selected_room_number_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./selected-room-number/selected-room-number.js */ "./Cards/selected-room-number/selected-room-number.js");
+/* harmony import */ var _selected_room_number_selected_room_number_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_selected_room_number_selected_room_number_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _account_registration_account_registration_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./account-registration/account-registration.js */ "./Cards/account-registration/account-registration.js");
+/* harmony import */ var _account_registration_account_registration_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_account_registration_account_registration_js__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+/***/ }),
+
+/***/ "./Cards/account-registration/account-registration.js":
+/*!************************************************************!*\
+  !*** ./Cards/account-registration/account-registration.js ***!
+  \************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./Cards/choosing-room-number/choosing-room-number.js":
+/*!************************************************************!*\
+  !*** ./Cards/choosing-room-number/choosing-room-number.js ***!
+  \************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./Cards/selected-room-number/selected-room-number.js":
+/*!************************************************************!*\
+  !*** ./Cards/selected-room-number/selected-room-number.js ***!
+  \************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
 
 /***/ "./Form_Elements/Form_Element_1/Text_Field.js":
 /*!****************************************************!*\
@@ -8,95 +57,16 @@
   \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./masked-text-field/masked-text-field.js */ "./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js");
 /* harmony import */ var _drop_down_expanded_drop_down_expanded_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./drop-down-expanded/drop-down-expanded.js */ "./Form_Elements/Form_Element_1/drop-down-expanded/drop-down-expanded.js");
-/* harmony import */ var _data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data-dropdown/data-dropdown.js */ "./Form_Elements/Form_Element_1/data-dropdown/data-dropdown.js");
 
+ // import { dataDropdownStart, dataDropdownFinish } from './data-dropdown/data-dropdown.js';
 
-
-(0,_drop_down_expanded_drop_down_expanded_js__WEBPACK_IMPORTED_MODULE_1__.dropDownExpanded)();
-(0,_masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_0__.maskedTextField)();
-(0,_data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_2__.dataDropdownStart)();
-(0,_data_dropdown_data_dropdown_js__WEBPACK_IMPORTED_MODULE_2__.dataDropdownFinish)();
-
-/***/ }),
-
-/***/ "./Form_Elements/Form_Element_1/data-dropdown/data-dropdown.js":
-/*!*********************************************************************!*\
-  !*** ./Form_Elements/Form_Element_1/data-dropdown/data-dropdown.js ***!
-  \*********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "dataDropdownStart": () => (/* binding */ dataDropdownStart),
-/* harmony export */   "dataDropdownFinish": () => (/* binding */ dataDropdownFinish)
-/* harmony export */ });
-/* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! imask */ "../node_modules/imask/esm/index.js");
-
-var dataDropdownStart = function dataDropdownStart() {
-  (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelector('.data-dropdown-start'), {
-    mask: Date,
-    lazy: false,
-    overwrite: true,
-    autofix: true,
-    blocks: {
-      d: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Д',
-        from: 1,
-        to: 31,
-        maxLength: 2
-      },
-      m: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'М',
-        from: 1,
-        to: 12,
-        maxLength: 2
-      },
-      Y: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Г',
-        from: 1900,
-        to: 2999,
-        maxLength: 4
-      }
-    }
-  });
-};
-var dataDropdownFinish = function dataDropdownFinish() {
-  (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelector('.data-dropdown-finish'), {
-    mask: Date,
-    lazy: false,
-    overwrite: true,
-    autofix: true,
-    blocks: {
-      d: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Д',
-        from: 1,
-        to: 31,
-        maxLength: 2
-      },
-      m: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'М',
-        from: 1,
-        to: 12,
-        maxLength: 2
-      },
-      Y: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Г',
-        from: 1900,
-        to: 2999,
-        maxLength: 4
-      }
-    }
-  });
-};
+(0,_drop_down_expanded_drop_down_expanded_js__WEBPACK_IMPORTED_MODULE_1__.dropDownExpanded)(); // maskedTextField();
+// dataDropdownStart();
+// dataDropdownFinish();
 
 /***/ }),
 
@@ -106,6 +76,7 @@ var dataDropdownFinish = function dataDropdownFinish() {
   \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "dropDownExpanded": () => (/* binding */ dropDownExpanded)
@@ -202,6 +173,7 @@ var dropDownExpanded = function dropDownExpanded() {
   \*****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "maskedTextField": () => (/* binding */ maskedTextField)
@@ -209,35 +181,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! imask */ "../node_modules/imask/esm/index.js");
 
 var maskedTextField = function maskedTextField() {
-  (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(document.querySelector('.masked-text-field'), {
-    mask: Date,
-    overwrite: true,
-    autofix: true,
-    blocks: {
-      d: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Д',
-        from: 1,
-        to: 31,
-        maxLength: 2
-      },
-      m: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'М',
-        from: 1,
-        to: 12,
-        maxLength: 2
-      },
-      Y: {
-        mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
-        placeholderChar: 'Г',
-        from: 1900,
-        to: 2999,
-        maxLength: 4
+  document.querySelectorAll('.data-drop').forEach(function (element) {
+    (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(element, {
+      mask: Date,
+      overwrite: true,
+      autofix: true,
+      blocks: {
+        d: {
+          mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+          placeholderChar: 'Д',
+          from: 1,
+          to: 31,
+          maxLength: 2
+        },
+        m: {
+          mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+          placeholderChar: 'М',
+          from: 1,
+          to: 12,
+          maxLength: 2
+        },
+        Y: {
+          mask: imask__WEBPACK_IMPORTED_MODULE_0__.default.MaskedRange,
+          placeholderChar: 'Г',
+          from: 1900,
+          to: 2999,
+          maxLength: 4
+        }
       }
-    }
+    });
   });
 };
+maskedTextField();
 
 /***/ }),
 
@@ -247,6 +222,7 @@ var maskedTextField = function maskedTextField() {
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _like_button_like_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like_button/like_button.js */ "./Form_Elements/Form_Element_2/like_button/like_button.js");
 /* harmony import */ var _dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown/dropdown.js */ "./Form_Elements/Form_Element_2/dropdown/dropdown.js");
@@ -263,14 +239,15 @@ __webpack_require__.r(__webpack_exports__);
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "dropDown": () => (/* binding */ dropDown)
 /* harmony export */ });
 var dropDown = function dropDown() {
   var min = 0;
-  var max = 3;
-  var textContent = ['гостя', 'гостей'];
+  var max = 10;
+  var textContent = ['гость', 'гостя', 'гостей'];
   var inputTextDefoult = [];
   var dDown = document.querySelector('.dropdown');
   var dropDownInput = dDown.querySelector('.drop-down-input');
@@ -298,10 +275,12 @@ var dropDown = function dropDown() {
         return sum + current;
       }, 0);
 
-      if (stringInput >= 1 && stringInput <= 4) {
+      if (stringInput == 1) {
         dropDownInput.value = "".concat(stringInput, " ").concat(k[0]);
-      } else {
+      } else if (stringInput >= 1 && stringInput <= 4) {
         dropDownInput.value = "".concat(stringInput, " ").concat(k[1]);
+      } else {
+        dropDownInput.value = "".concat(stringInput, " ").concat(k[2]);
       }
 
       ;
@@ -344,6 +323,7 @@ var dropDown = function dropDown() {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "likeButton": () => (/* binding */ likeButton)
@@ -391,6 +371,7 @@ var likeButton = function likeButton() {
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "rangeSlider": () => (/* binding */ rangeSlider)
@@ -470,13 +451,14 @@ var rangeSlider = function rangeSlider() {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "dropDownActive": () => (/* binding */ dropDownActive)
 /* harmony export */ });
 var dropDownActive = function dropDownActive() {
   var min = 0;
-  var max = 3;
+  var max = 10;
   var textContent = ['гость', 'гостя', 'гостей'];
   var inputTextDefoult = [];
   var dDownActive = document.querySelector('.dropdown-active');
@@ -558,6 +540,7 @@ var dropDownActive = function dropDownActive() {
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Range_Slider_Range_Slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Range_Slider/Range_Slider.js */ "./Form_Elements/Form_Element_3/Range_Slider/Range_Slider.js");
 /* harmony import */ var _dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown/dropdown.js */ "./Form_Elements/Form_Element_3/dropdown/dropdown.js");
@@ -574,6 +557,7 @@ __webpack_require__.r(__webpack_exports__);
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "_": () => (/* binding */ _createClass),
@@ -902,6 +886,7 @@ function _nonIterableRest() {
   \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1001,6 +986,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.HTMLContenteditableMaskElem
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1167,6 +1153,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.HTMLMaskElement = HTMLMaskE
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1625,6 +1612,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_8__.default.InputMask = InputMask;
   \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1725,6 +1713,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_1__.default.MaskElement = MaskElement;
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1857,6 +1846,7 @@ var ActionDetails = /*#__PURE__*/function () {
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1928,6 +1918,7 @@ var ChangeDetails = /*#__PURE__*/function () {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2007,6 +1998,7 @@ var ContinuousTailDetails = /*#__PURE__*/function () {
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2035,6 +2027,7 @@ function IMask(el) {
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "DIRECTION": () => (/* binding */ DIRECTION),
@@ -2171,6 +2164,7 @@ function objectIncludes(b, a) {
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "InputMask": () => (/* reexport safe */ _controls_input_js__WEBPACK_IMPORTED_MODULE_0__.default),
@@ -2255,6 +2249,7 @@ try {
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2653,6 +2648,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.Masked = Masked;
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2846,6 +2842,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_3__.default.MaskedDate = MaskedDate;
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3221,6 +3218,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedDynamic = MaskedDynam
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3311,6 +3309,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.MaskedEnum = MaskedEnum;
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
@@ -3378,6 +3377,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_1__.default.createMask = createMask;
   \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3437,6 +3437,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.MaskedFunction = MaskedFunc
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3863,6 +3864,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedNumber = MaskedNumber
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4597,6 +4599,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_8__.default.MaskedPattern = MaskedPatte
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4783,6 +4786,7 @@ var ChunksTailDetails = /*#__PURE__*/function () {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4943,6 +4947,7 @@ var PatternFixedDefinition = /*#__PURE__*/function () {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
@@ -5148,6 +5153,7 @@ var PatternInputDefinition = /*#__PURE__*/function () {
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "PIPE_TYPE": () => (/* binding */ PIPE_TYPE),
@@ -5207,6 +5213,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_1__.default.pipe = pipe;
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -5390,6 +5397,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.MaskedRange = MaskedRange;
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -5451,6 +5459,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.MaskedRegExp = MaskedRegExp
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -5484,6 +5493,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -5514,8 +5535,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!*********************!*\
   !*** ./js/index.js ***!
   \*********************/
@@ -5524,6 +5546,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Form_Elements_Form_Element_1_Text_Field_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_1/Text_Field.js */ "./Form_Elements/Form_Element_1/Text_Field.js");
 /* harmony import */ var _Form_Elements_Form_Element_2_Form_Element_2_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_2/Form_Element_2.js */ "./Form_Elements/Form_Element_2/Form_Element_2.js");
 /* harmony import */ var _Form_Elements_Form_Element_3_form_element_3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_3/form-element_3 */ "./Form_Elements/Form_Element_3/form-element_3.js");
+/* harmony import */ var _Cards_Cards_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../Cards/Cards.js */ "./Cards/Cards.js");
+
 
 
 

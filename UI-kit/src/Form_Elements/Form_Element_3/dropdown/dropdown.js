@@ -2,7 +2,7 @@ export const dropDownActive = () => {
 
     let min = 0;
 
-    let max = 3;
+    let max = 10;
 
     let textContent = ['гость', 'гостя', 'гостей'];
 

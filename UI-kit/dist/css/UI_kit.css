@@ -1,11 +1,57 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,700);
 @charset "UTF-8";
-.form-elements .text-field .form-default .form-input, .form-elements .text-field .form-hover-focus .form-input, .form-elements .text-field .form-dropdown .form-input, .form-elements .text-field .masked-text .masked-text-field, .form-elements .text-field .data-dropdown .form-input, .form-elements .text-field .filter-date-dropdown .form-input, .form-elements .text-field .subscription-text-field .form-input, .form-elements .text-field .dropdown-default .form-input {
+.form-elements .text-field .form-default .form-input, .form-elements .text-field .hover-focus .form-input, .form-elements .text-field .form-dropdown .form-input, .form-elements .text-field .data-dropdown .form-input, .form-elements .text-field .filter-date-dropdown .form-input, .form-elements .text-field .subscription-text-field .form-input, .form-elements .text-field .dropdown-default .form-input, .Cards .choosing-room-number .data-dropdown .form-input, .Cards .choosing-room-number .form-dropdown .form-input, .Cards .selected-room-number .data-dropdown .form-input, .Cards .selected-room-number .form-dropdown .form-input {
   padding-left: 15px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   width: 320px;
   height: 44px;
   border-radius: 4px; }
+
+.form-elements .form-element-2 .radio-buttons {
+  width: 220.74px; }
+  .form-elements .form-element-2 .radio-buttons h3 {
+    margin-bottom: 13px; }
+  .form-elements .form-element-2 .radio-buttons .radio-block {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px; }
+    .form-elements .form-element-2 .radio-buttons .radio-block span {
+      display: grid;
+      grid-template-columns: auto auto;
+      position: relative; }
+      .form-elements .form-element-2 .radio-buttons .radio-block span input[type='radio'] {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        margin: auto;
+        z-index: 2; }
+      .form-elements .form-element-2 .radio-buttons .radio-block span input[type='radio']:checked + ::before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        left: 0;
+        background: url(".././img/Rectangle 2.1.svg") no-repeat;
+        background-position: 3px 3px;
+        border: 1px solid #bc9cff;
+        border-radius: 10px; }
+      .form-elements .form-element-2 .radio-buttons .radio-block span::after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 10px;
+        top: 3px;
+        left: 0;
+        z-index: 1; }
+      .form-elements .form-element-2 .radio-buttons .radio-block span input[type='radio']:checked + label {
+        color: rgba(31, 32, 65, 0.75); }
+      .form-elements .form-element-2 .radio-buttons .radio-block span label {
+        margin-left: 10px;
+        vertical-align: middle;
+        color: rgba(31, 32, 65, 0.5); }
 
 /* Обнуление */
 * {
@@ -175,26 +221,25 @@ img {
       display: grid;
       grid-template-rows: repeat(7, 1fr);
       row-gap: 20px; }
-      .colors-type .colors .colors-content div {
-        margin: auto 0; }
-        .colors-type .colors .colors-content div p {
+      .colors-type .colors .colors-content p {
+        margin: auto 0;
+        font-family: Montserrat;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27.79px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1f2041; }
+        .colors-type .colors .colors-content p span {
           font-family: Montserrat;
           font-size: 19px;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 400;
           line-height: 27.79px;
           letter-spacing: 0em;
           text-align: left;
           color: #1f2041; }
-          .colors-type .colors .colors-content div p span {
-            font-family: Montserrat;
-            font-size: 19px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 27.79px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #1f2041; }
   .colors-type .type-fonts {
     display: grid;
     grid-template-columns: auto auto;
@@ -261,28 +306,13 @@ img {
         margin-bottom: 5px;
         float: left; }
       .form-elements .text-field .form-default .label-right {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         font-weight: 400;
         line-height: 14.63px;
         color: rgba(31, 32, 65, 0.5);
         float: right;
         text-align: end; }
-      .form-elements .text-field .form-default .form-input::placeholder {
-        color: rgba(31, 32, 65, 0.25);
-        line-height: 18px; }
-    .form-elements .text-field .form-hover-focus {
-      width: 320px; }
-      .form-elements .text-field .form-hover-focus h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .text-field .form-hover-focus .label-right {
-        margin-bottom: 5px;
-        font-weight: 400;
-        line-height: 14.63px;
-        color: rgba(31, 32, 65, 0.5);
-        float: right;
-        text-align: end; }
-      .form-elements .text-field .form-hover-focus .form-input {
+      .form-elements .text-field .form-default .form-input {
         font-family: Montserrat;
         font-size: 14px;
         font-style: normal;
@@ -291,12 +321,30 @@ img {
         letter-spacing: 0em;
         text-align: left;
         color: rgba(31, 32, 65, 0.75); }
-        .form-elements .text-field .form-hover-focus .form-input:hover {
-          border: 1px solid rgba(31, 32, 65, 0.5);
-          border-radius: 4px; }
-        .form-elements .text-field .form-hover-focus .form-input:focus {
-          border: 1px solid rgba(31, 32, 65, 0.5);
-          border-radius: 4px; }
+        .form-elements .text-field .form-default .form-input::placeholder {
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.25); }
+    .form-elements .text-field .hover-focus .form-input {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(31, 32, 65, 0.75); }
+      .form-elements .text-field .hover-focus .form-input:hover {
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-radius: 4px; }
+      .form-elements .text-field .hover-focus .form-input:focus {
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-radius: 4px; }
     .form-elements .text-field .form-dropdown {
       width: 320px; }
       .form-elements .text-field .form-dropdown h3 {
@@ -309,28 +357,10 @@ img {
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 18px;
         letter-spacing: 0em;
         text-align: left;
         color: rgba(31, 32, 65, 0.75); }
-    .form-elements .text-field .masked-text {
-      width: 320px; }
-      .form-elements .text-field .masked-text h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .text-field .masked-text .masked-text-field {
-        background: url(.././img/expand_more.svg) no-repeat;
-        background-position: 289px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-        .form-elements .text-field .masked-text .masked-text-field::placeholder {
-          color: rgba(31, 32, 65, 0.25); }
     .form-elements .text-field .data-dropdown {
       width: 320px;
       display: grid;
@@ -349,12 +379,10 @@ img {
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 18px;
         letter-spacing: 0em;
         text-align: left;
         color: rgba(31, 32, 65, 0.75); }
-        .form-elements .text-field .data-dropdown .form-input::placeholder {
-          color: rgba(31, 32, 65, 0.25); }
     .form-elements .text-field .filter-date-dropdown {
       width: 266px; }
       .form-elements .text-field .filter-date-dropdown h3 {
@@ -473,7 +501,6 @@ img {
             justify-self: end; }
             .form-elements .text-field .drop-down-expanded .drop-down-content .content-items span button {
               vertical-align: middle;
-              align-items: center;
               width: 30px;
               height: 30px;
               border: 1px solid rgba(31, 32, 65, 0.25);
@@ -492,7 +519,6 @@ img {
                 border: 1px solid rgba(31, 32, 65, 0.1);
                 color: rgba(31, 32, 65, 0.25); }
             .form-elements .text-field .drop-down-expanded .drop-down-content .content-items span input[type="number"] {
-              vertical-align: middle;
               width: 25px;
               font-family: Montserrat;
               font-size: 12px;
@@ -642,55 +668,8 @@ img {
             line-height: 18px; }
             .form-elements .form-element-2 .checkbox-buttons .checkbox-list .checkbox-list-buttons span label {
               color: rgba(31, 32, 65, 0.5); }
-    .form-elements .form-element-2 .radio-buttons {
-      width: 220.74px;
-      height: 55px; }
-      .form-elements .form-element-2 .radio-buttons h3 {
-        margin-bottom: 13px; }
-      .form-elements .form-element-2 .radio-buttons div {
-        display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 20px; }
-        .form-elements .form-element-2 .radio-buttons div span {
-          display: grid;
-          grid-template-columns: auto auto;
-          position: relative; }
-          .form-elements .form-element-2 .radio-buttons div span input[type='radio'] {
-            width: 20px;
-            height: 20px;
-            opacity: 0;
-            margin: auto; }
-          .form-elements .form-element-2 .radio-buttons div span input[type='radio']:checked + ::before {
-            position: absolute;
-            content: '';
-            width: 20px;
-            height: 20px;
-            top: 3px;
-            left: 0;
-            background: url(".././img/Rectangle 2.1.svg") no-repeat;
-            background-position: 3px 3px;
-            border: 1px solid #bc9cff;
-            border-radius: 10px;
-            z-index: -1; }
-          .form-elements .form-element-2 .radio-buttons div span::after {
-            position: absolute;
-            content: "";
-            width: 20px;
-            height: 20px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 10px;
-            top: 3px;
-            left: 0;
-            z-index: -2; }
-          .form-elements .form-element-2 .radio-buttons div span input[type='radio']:checked + label {
-            color: rgba(31, 32, 65, 0.75); }
-          .form-elements .form-element-2 .radio-buttons div span label {
-            margin-left: 10px;
-            vertical-align: middle;
-            color: rgba(31, 32, 65, 0.5); }
     .form-elements .form-element-2 .toggle {
-      width: 260px;
-      height: 89px; }
+      width: 260px; }
       .form-elements .form-element-2 .toggle h3 {
         font-size: 12px;
         line-height: 15px;
@@ -707,7 +686,8 @@ img {
             margin: auto;
             width: 40px;
             height: 20px;
-            opacity: 0; }
+            opacity: 0;
+            z-index: 2; }
           .form-elements .form-element-2 .toggle .toggle-buttons .toggle-button input[type='checkbox']:checked + ::after {
             content: '';
             position: absolute;
@@ -720,7 +700,7 @@ img {
             background: url(".././img/Rectangle 2.1.svg") no-repeat;
             background-color: #FFFFFF;
             background-position: 23px center;
-            z-index: -1; }
+            z-index: 1; }
           .form-elements .form-element-2 .toggle .toggle-buttons .toggle-button::before {
             content: '';
             position: absolute;
@@ -733,7 +713,7 @@ img {
             background: url(".././img/Rectangle 2.2.svg") no-repeat;
             background-color: #FFFFFF;
             background-position: 3px center;
-            z-index: -2; }
+            z-index: 0; }
           .form-elements .form-element-2 .toggle .toggle-buttons .toggle-button label {
             margin-left: 10px;
             vertical-align: middle; }
@@ -882,7 +862,6 @@ img {
             justify-self: end; }
             .form-elements .form-element-2 .dropdown .drop-down-content .content-items span button {
               vertical-align: middle;
-              align-items: center;
               width: 30px;
               height: 30px;
               border: 1px solid rgba(31, 32, 65, 0.25);
@@ -900,7 +879,6 @@ img {
                 border: 1px solid rgba(31, 32, 65, 0.1);
                 color: rgba(31, 32, 65, 0.25); }
             .form-elements .form-element-2 .dropdown .drop-down-content .content-items span input[type="number"] {
-              vertical-align: middle;
               width: 25px;
               font-family: Montserrat;
               font-size: 12px;
@@ -1281,9 +1259,7 @@ img {
         padding: 7px 7px 0px 15px;
         border: 1px solid rgba(31, 32, 65, 0.5);
         border-top: none;
-        border-radius: 4px;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0; }
+        border-radius: 0 0 4px 4px; }
         .form-elements .form-element-3 .dropdown-active .drop-down-content .content-items {
           display: grid;
           grid-template-columns: auto auto;
@@ -1301,7 +1277,6 @@ img {
             justify-self: end; }
             .form-elements .form-element-3 .dropdown-active .drop-down-content .content-items span button {
               vertical-align: middle;
-              align-items: center;
               width: 30px;
               height: 30px;
               border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1319,7 +1294,6 @@ img {
                 border: 1px solid rgba(31, 32, 65, 0.1);
                 color: rgba(31, 32, 65, 0.25); }
             .form-elements .form-element-3 .dropdown-active .drop-down-content .content-items span input[type="number"] {
-              vertical-align: middle;
               width: 32px;
               font-family: Montserrat;
               font-size: 12px;
@@ -1383,6 +1357,260 @@ img {
       min-width: 320px;
       grid-template-columns: 100%;
       row-gap: 20px; } }
+
+.Cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  margin: 150px 140px 140px 140px; }
+  .Cards .choosing-room-number {
+    padding: 40px 30px 30px 30px;
+    display: grid;
+    row-gap: 20px;
+    width: 380px;
+    height: 374px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; }
+    .Cards .choosing-room-number h2 {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1f2041; }
+    .Cards .choosing-room-number .data-dropdown {
+      width: 320px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px; }
+      .Cards .choosing-room-number .data-dropdown h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Cards .choosing-room-number .data-dropdown div {
+        width: 150px; }
+      .Cards .choosing-room-number .data-dropdown .form-input {
+        width: 150px;
+        background: url(.././img/expand_more.svg) no-repeat;
+        background-position: 120px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+    .Cards .choosing-room-number .form-dropdown {
+      width: 320px; }
+      .Cards .choosing-room-number .form-dropdown h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Cards .choosing-room-number .form-dropdown .form-input {
+        background: url(.././img/expand_more.svg) no-repeat;
+        background-position: 290px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+    .Cards .choosing-room-number .button-big {
+      position: relative;
+      width: 320px;
+      height: 44px; }
+      .Cards .choosing-room-number .button-big .big {
+        width: 320px;
+        height: 44px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #1f2041;
+        text-transform: uppercase;
+        color: #FFFFFF; }
+      .Cards .choosing-room-number .button-big::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: url(.././img/arrow_forward_white.svg) no-repeat;
+        top: 12px;
+        right: 12px;
+        cursor: pointer; }
+  .Cards .selected-room-number {
+    position: relative;
+    padding: 40px 30px 30px 30px;
+    display: grid;
+    row-gap: 20px;
+    width: 380px;
+    height: 511px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    line-height: 24px; }
+    .Cards .selected-room-number h2 {
+      display: inline;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1f2041; }
+      .Cards .selected-room-number h2 span {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #bc9cff;
+        text-transform: uppercase; }
+    .Cards .selected-room-number p {
+      display: inline;
+      float: right;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.5); }
+    .Cards .selected-room-number .data-dropdown {
+      width: 320px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px; }
+      .Cards .selected-room-number .data-dropdown h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Cards .selected-room-number .data-dropdown div {
+        width: 150px; }
+      .Cards .selected-room-number .data-dropdown .form-input {
+        width: 150px;
+        background: url(.././img/expand_more.svg) no-repeat;
+        background-position: 120px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+    .Cards .selected-room-number .form-dropdown {
+      width: 320px; }
+      .Cards .selected-room-number .form-dropdown h3 {
+        margin-bottom: 5px;
+        float: left; }
+      .Cards .selected-room-number .form-dropdown .form-input {
+        background: url(.././img/expand_more.svg) no-repeat;
+        background-position: 290px 18px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+    .Cards .selected-room-number .text-content {
+      display: grid;
+      grid-template-rows: repeat(4, auto);
+      row-gap: 10px; }
+      .Cards .selected-room-number .text-content li {
+        position: relative;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75); }
+        .Cards .selected-room-number .text-content li span {
+          position: absolute;
+          top: 0;
+          right: 0; }
+      .Cards .selected-room-number .text-content #total {
+        margin: 30px 0 0 0;
+        position: relative;
+        font-family: Montserrat;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1f2041; }
+        .Cards .selected-room-number .text-content #total hr {
+          position: absolute;
+          left: 59px;
+          bottom: 4px;
+          width: 182px;
+          height: 1px;
+          border-top: 1px dashed rgba(31, 32, 65, 0.25);
+          align-items: center; }
+    .Cards .selected-room-number .button-big {
+      position: relative;
+      width: 320px;
+      height: 44px; }
+      .Cards .selected-room-number .button-big .big {
+        width: 320px;
+        height: 44px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #1f2041;
+        text-transform: uppercase;
+        color: #FFFFFF; }
+      .Cards .selected-room-number .button-big::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: url(.././img/arrow_forward_white.svg) no-repeat;
+        top: 12px;
+        right: 12px;
+        cursor: pointer; }
+  .Cards .calendar {
+    width: 320px;
+    height: 369px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px; }
+  .Cards .account-registration {
+    padding: 40px 30px 30px 30px;
+    display: grid;
+    row-gap: 20px;
+    width: 380px;
+    height: 646px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; }
 
 
 /*# sourceMappingURL=UI_kit.css.map*/

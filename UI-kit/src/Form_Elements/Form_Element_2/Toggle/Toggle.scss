@@ -1,30 +1,26 @@
 .toggle {
     width: 260px;
-    height: 89px;
-
+    // height: 89px;
     h3 {
         font-size: 12px;
         line-height: 15px;
         margin-bottom: 13px;
     }
-
     .toggle-buttons {
         display: grid;
         grid-template-rows: auto auto;
         row-gap: 10px;
-
         .toggle-button {
             position: relative;
             display: grid;
             grid-template-columns: auto auto;
-
             input[type='checkbox'] {
                 margin: auto;
                 width: 40px;
                 height: 20px;
                 opacity: 0;
+                z-index: 2;
             }
-
             input[type='checkbox']:checked+ ::after {
                 content: '';
                 position: absolute;
@@ -37,9 +33,8 @@
                 background: url('./../image/Rectangle 2.1.svg') no-repeat;
                 background-color: #FFFFFF;
                 background-position: 23px center;
-                z-index: -1;
+                z-index: 1;
             }
-
             &::before {
                 content: '';
                 position: absolute;
@@ -52,9 +47,8 @@
                 background: url('./../image/Rectangle 2.2.svg') no-repeat;
                 background-color: #FFFFFF;
                 background-position: 3px center;
-                z-index: -2;
+                z-index: 0;
             }
-
             label {
                 margin-left: 10px;
                 vertical-align: middle;

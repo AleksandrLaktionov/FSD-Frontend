@@ -1,7 +1,7 @@
 export const rangeSlider = () => {
 
     let multiRangeSlider = document.querySelector('.multi-range-slider');
-    
+
     let result = multiRangeSlider.querySelector('.result');
     let inputLeft = multiRangeSlider.querySelector('.range-slider > #input-left');
     let inputRight = multiRangeSlider.querySelector('.range-slider > #input-right');

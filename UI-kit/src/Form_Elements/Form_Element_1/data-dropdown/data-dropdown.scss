@@ -17,11 +17,11 @@
         background-position: 120px 18px;
         @include fontFamily_Montserrat (14px,
         400,
-        24px,
+        18px,
         left,
         $dark75);
-        &::placeholder {
-            color: $dark25;
-        }
+        // &::placeholder {
+        //     color: $dark25;
+        // }
     }
 }

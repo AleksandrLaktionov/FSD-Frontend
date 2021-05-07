@@ -30,9 +30,7 @@
         padding: 7px 7px 0px 15px;
         border: 1px solid $dark50;
         border-top: none;
-        border-radius: 4px;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
+        border-radius: 0 0 4px 4px;
         .content-items {
             display: grid;
             grid-template-columns: auto auto;
@@ -49,7 +47,7 @@
                 justify-self: end;
                 button {
                     vertical-align: middle;
-                    align-items: center;
+                    // align-items: center;
                     width: 30px;
                     height: 30px;
                     border: 1px solid $dark25;
@@ -66,7 +64,7 @@
                     }
                 }
                 input[type="number"] {
-                    vertical-align: middle;
+                    // vertical-align: middle;
                     width: 32px;
                     @include fontFamily_Montserrat (12px,
                     700,

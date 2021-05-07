@@ -1,0 +1,10 @@
+.Cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    margin: 150px 140px 140px 140px;
+    @import './choosing-room-number/choosing-room-number.scss';
+    @import './selected-room-number/selected-room-number.scss';
+    @import './calendar/calendar.scss';
+    @import './account-registration/account-registration.scss';
+}

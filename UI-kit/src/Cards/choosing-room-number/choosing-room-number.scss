@@ -1,0 +1,40 @@
+.choosing-room-number {
+    padding: 40px 30px 30px 30px;
+    display: grid;
+    row-gap: 20px;
+    width: 380px;
+    height: 374px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    h2 {
+        @include fontFamily_Montserrat (24px, 700, 29px, left, $dark100);
+    }
+    @import '../../Form_Elements/Form_Element_1/data-dropdown/data-dropdown.scss';
+    @import '../../Form_Elements/Form_Element_1/form-dropdown/form-dropdown.scss';
+    .button-big {
+        position: relative;
+        width: 320px;
+        height: 44px;
+        .big {
+            width: 320px;
+            height: 44px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 22px;
+            @include fontFamily_Montserrat (12px, 700, 15px, center, $dark100);
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: url('./../image/arrow_forward_white.svg') no-repeat;
+            top: 12px;
+            right: 12px;
+            cursor: pointer;
+        }
+    }
+}
