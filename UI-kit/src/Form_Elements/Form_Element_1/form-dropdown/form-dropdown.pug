@@ -1,3 +1,5 @@
-form(action="#" class="form-default form-dropdown")
-    h3 Dropdown
-    input(type="text" class="form-input" value="Сколько гостей" readonly)
+mixin formDropdown(text)
+    form(action="#" class="form-dropdown")
+        h3=text
+        input(type="text" class="form-input" value="Сколько гостей" readonly)
++formDropdown("Dropdown")

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Document</title>
-  <script defer="defer" src="./js/UI_kit.js"></script><link href="./css/UI_kit.css" rel="stylesheet"></head>
+  <link href="./css/UI_kit.css" rel="stylesheet"></head>
   <body> 
 <div class="logo"></div>
 <div class="colors-type">
@@ -44,8 +44,8 @@
   </div>
 </div>
 </div>
-<div class="form-elements">
-<div class="text-field">
+    <div class="form-elements">
+      <div class="text-field">
 <form class="form-default" action="#">
   <h3>Text field</h3>
   <h3 class="label-right">Default</h3>
@@ -56,24 +56,24 @@
   <h3 class="label-right">Hover / Focus</h3>
   <input class="form-input" type="text" value="This is pretty awesome">
 </form>
-<form class="form-default form-dropdown" action="#">
-  <h3>Dropdown</h3>
-  <input class="form-input" type="text" value="Сколько гостей" readonly="readonly">
-</form>
+                <form class="form-dropdown" action="#">
+                  <h3>Dropdown</h3>
+                  <input class="form-input" type="text" value="Сколько гостей" readonly="readonly">
+                </form>
 <form class="form-default" action="#">
   <h3>masked text field</h3>
   <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
 </form>
-<form class="data-dropdown" action="#">
-  <div>
-    <h3>DATE DROPDOWN</h3>
-    <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
-  </div>
-  <div>
-    <h3>DATE DROPDOWN</h3>
-    <input class="form-input data-drop" type="text" value="19.08.2019">
-  </div>
-</form>
+                <form class="data-dropdown" action="#">
+                  <div>
+                    <h3>date dropdown</h3>
+                    <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ" value="">
+                  </div>
+                  <div>
+                    <h3>date dropdown</h3>
+                    <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ" value="19.08.2019">
+                  </div>
+                </form>
 <form class="filter-date-dropdown" action="#">
   <h3>filter date dropdown</h3>
   <input class="form-input" type="text" value="19 авг - 23 авг">
@@ -147,7 +147,7 @@
     <hr>
   </div>
 </div>
-</div>
+      </div>
 <div class="form-element-2">
 <form class="checkbox-buttons" action="#">
   <h3>Checkbox Buttons </h3>
@@ -288,7 +288,7 @@
   </div>
 </div>
 </div>
-<div class="form-element-3">
+      <div class="form-element-3">
 <form class="multi-range-slider" action="#">
   <p class="result" id="right-label"> 5000-10000₽</p>
   <div class="range-slider">
@@ -302,26 +302,26 @@
     </div>
   </div>
 </form>
-<div class="buttons-group">
-  <h3>buttons</h3>
-  <div class="buttons">
-    <div class="button-gradient">
-      <button class="button-linear-gradient">CLICK ME</button>
-      <button class="button-linear-gradient" disabled="disabled">CLICK ME</button>
-    </div>
-    <div class="button-border-gradient">
-      <button class="button-border-linear-gradient">CLICK ME</button>
-      <button class="button-border-linear-gradient" disabled="disabled">CLICK ME</button>
-    </div>
-    <div class="button-no-border">
-      <button class="no-border">CLICK ME</button>
-      <button class="no-border" disabled="disabled">CLICK ME</button>
-    </div>
-    <div class="button-big">
-      <button class="big">перейти к оплате</button>
-    </div>
-  </div>
-</div>
+        <div class="buttons-group">
+          <h3>buttons</h3>
+          <div class="buttons">
+            <div class="button-gradient">
+                      <button class="button-linear-gradient">click me</button>
+                      <button class="button-linear-gradient" disabled="disabled">click me</button>
+            </div>
+            <div class="button-border-gradient">
+                      <button class="button-border-linear-gradient">click me</button>
+                      <button class="button-border-linear-gradient" disabled="disabled">click me</button>
+            </div>
+            <div class="button-no-border">
+                      <button class="no-border">click me</button>
+                      <button class="no-border" disabled="disabled">click me</button>
+            </div>
+            <div class="button-big">
+                      <button class="big">перейти</button>
+            </div>
+          </div>
+        </div>
 <div class="pagination">
   <h3>pagination</h3>
   <ul>
@@ -371,29 +371,29 @@
     <li>Время прибытия — после 13:00,<br> а выезд до 12:00</li>
   </ul>
 </div>
-</div>
-</div>
-<div class="cards">
-<div class="choosing-room-number">
-  <h2>Найдём номера под ваши пожелания</h2>
-  <form class="data-dropdown" action="#">
-    <div>
-      <h3>прибытие</h3>
-      <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
+      </div>
     </div>
-    <div>
-      <h3>выезд</h3>
-      <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
-    </div>
-  </form>
-  <form class="form-dropdown" action="#">
-    <h3>гости</h3>
-    <input class="form-input" type="text" value="Сколько гостей" readonly="readonly">
-  </form>
-  <div class="button-big">
-    <button class="big">подобрать номер</button>
-  </div>
-</div>
+    <div class="cards">
+      <div class="choosing-room-number">
+        <h2>Найдём номера под ваши пожелания</h2>
+                <form class="data-dropdown" action="#">
+                  <div>
+                    <h3>прибытие</h3>
+                    <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
+                  </div>
+                  <div>
+                    <h3>выезд</h3>
+                    <input class="form-input data-drop" type="text" placeholder="ДД.ММ.ГГГГ">
+                  </div>
+                </form>
+                <form class="form-dropdown" action="#">
+                  <h3>гости</h3>
+                  <input class="form-input" type="text" value="Сколько гостей" readonly="readonly">
+                </form>
+        <div class="button-big">
+          <button class="big">подобрать номер</button>
+        </div>
+      </div>
 <div class="selected-room-number">
   <div class="room-text">
     <h2>№ 888 <span>люкс</span></h2>
@@ -427,6 +427,6 @@
 </div>
 <div class="calendar"></div>
 <div class="account-registration"></div>
-</div>
-  </body>
+    </div>
+  <script defer="defer" src="./js/UI_kit.js"></script></body>
 </html>

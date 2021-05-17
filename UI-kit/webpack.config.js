@@ -35,6 +35,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src/index.pug'),
             filename: `${filename('html')}`,
+            inject: 'body',
             minify: {
                 collapseWhitespace: isProd,
             }

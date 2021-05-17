@@ -1,14 +1,18 @@
+block var_button
+    mixin btn(text)
+        button&attributes(attributes)=text
+
 .buttons-group
     h3 buttons
     .buttons
         .button-gradient
-            button(class="button-linear-gradient") CLICK ME
-            button(class="button-linear-gradient" disabled) CLICK ME
+            +btn("click me")(class="button-linear-gradient")
+            +btn("click me")(class="button-linear-gradient" disabled)
         .button-border-gradient
-            button(class="button-border-linear-gradient") CLICK ME
-            button(class="button-border-linear-gradient" disabled) CLICK ME
+            +btn("click me")(class="button-border-linear-gradient")
+            +btn("click me")(class="button-border-linear-gradient" disabled)
         .button-no-border
-            button(class="no-border") CLICK ME
-            button(class="no-border" disabled) CLICK ME
+            +btn("click me")(class="no-border")
+            +btn("click me")(class="no-border" disabled)
         .button-big
-            button(class="big") перейти к оплате
+            +btn("перейти")(class="big")

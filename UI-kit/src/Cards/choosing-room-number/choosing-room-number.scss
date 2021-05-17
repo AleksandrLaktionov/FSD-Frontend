@@ -15,23 +15,23 @@
     @import '../../Form_Elements/Form_Element_1/form-dropdown/form-dropdown.scss';
     .button-big {
         position: relative;
-        width: 320px;
-        height: 44px;
+        max-width: 320px;
+
         .big {
             width: 320px;
             height: 44px;
-            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
             border-radius: 22px;
-            @include fontFamily_Montserrat (12px, 700, 15px, center, $dark100);
+            @include fontFamily_Montserrat(12px, 700, 15px, center, #ffffff);
             text-transform: uppercase;
-            color: #FFFFFF;
         }
+
         &::after {
             position: absolute;
-            content: '';
+            content: "";
             width: 20px;
             height: 20px;
-            background: url('./../image/arrow_forward_white.svg') no-repeat;
+            background: url("./../image/arrow_forward_white.svg") no-repeat;
             top: 12px;
             right: 12px;
             cursor: pointer;

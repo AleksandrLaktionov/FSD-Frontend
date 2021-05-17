@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,700');
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff"), url("../fonts/Montserrat-Regular.ttf"),
+    url("../fonts/Montserrat-Regular.otf"), url("../fonts/Montserrat-Regular.eot");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff"), url("../fonts/Montserrat-Bold.ttf"), url("../fonts/Montserrat-Bold.otf"),
+    url("../fonts/Montserrat-Bold.eot");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:regular,700');
 @import 'var_style.scss';
 @import 'nulle.scss';
 @import '../logo/logo.scss';
