@@ -1,0 +1,8 @@
+mixin formInput(type, placeholder, value)
+    input(type="email" class="form-input" placeholder=placeholder value=value)&attributes(attributes)
+
+mixin formDefault(text_left, text_right)
+    form(action="#" class="form-default")
+        h3=text_left
+        h3(class="label-right")=text_right
+        +formInput("email", "Email")

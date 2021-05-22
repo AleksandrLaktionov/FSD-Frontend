@@ -1,0 +1,26 @@
+.form-dropdown {
+    max-width: 320px;
+    h3 {
+        padding-bottom: 5px;
+        @include fontFamily_Montserrat(12px, 700, 15px, left, $dark100);
+        text-transform: uppercase;
+        // float: left;
+    }
+    .form-input {
+        @include textField(320px,44px);
+        @include fontFamily_Montserrat(14px, 400, 24px, left, $dark75);
+        &::placeholder {
+            @include fontFamily_Montserrat(14px, 400, 18px, left, $dark25);
+        }
+        // @extend %form_input;
+        // @extend %hover_focus;
+        // letter-spacing: -0.013em;
+        background: url('./../image/expand_more.svg') no-repeat;
+        background-position: 290px 17px;
+        @include fontFamily_Montserrat (14px,
+        400,
+        18px,
+        left,
+        $dark75);
+    }
+}

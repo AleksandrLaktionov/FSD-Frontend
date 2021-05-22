@@ -1,0 +1,17 @@
+.subscription-text-field {
+    width: 266px;
+    h3 {
+        padding-bottom: 5px;
+        @include fontFamily_Montserrat(12px, 700, 16px, left, $dark100);
+        text-transform: uppercase;
+    }
+    .form-input {
+        @include textField(266px, 44px);
+        @include fontFamily_Montserrat(14px, 400, 24px, left, $dark75);
+        background: url('./../image/arrow_forward.svg') no-repeat;
+        background-position: 233px 12px;
+        &::placeholder {
+            @include fontFamily_Montserrat(14px, 400, 24px, left, $dark25);
+        }
+    }
+}

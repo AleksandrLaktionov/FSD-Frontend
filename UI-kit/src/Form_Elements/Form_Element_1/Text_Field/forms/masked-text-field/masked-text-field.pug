@@ -1,0 +1,4 @@
+mixin maskedText(text_left,text_right)
+    form(action="#" class="masked-text")
+        h3=text_left
+        +formInput("text","ДД.ММ.ГГГГ")(class="masked-date")

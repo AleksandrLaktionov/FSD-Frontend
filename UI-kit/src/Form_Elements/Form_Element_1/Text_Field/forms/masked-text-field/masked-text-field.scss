@@ -1,0 +1,15 @@
+.masked-text {
+    width: 320px;
+    h3 {
+        padding-bottom: 1.5px;
+        @include fontFamily_Montserrat(12px, 700, 20px, left, $dark100);
+        text-transform: uppercase;
+    }
+    .masked-date {
+        @include textField(320px, 44px);
+        @include fontFamily_Montserrat(14px, 400, 24px, left, $dark75);
+        &::placeholder {
+            @include fontFamily_Montserrat(14px, 400, 18px, left, $dark25);
+        }
+    }
+}

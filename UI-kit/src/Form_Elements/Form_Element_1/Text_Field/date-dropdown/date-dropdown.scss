@@ -1,0 +1,24 @@
+.form-date-dropdown {
+    width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    .date-dropdown {
+        width: 150px;
+
+        h3 {
+            padding-bottom: 5px;
+            @include fontFamily_Montserrat(12px, 700, 15px, left, $dark100);
+            text-transform: uppercase;
+        }
+        .form-input {
+            @include textField(150px, 44px);
+            @include fontFamily_Montserrat(14px, 400, 24px, left, $dark75);
+            &::placeholder {
+                @include fontFamily_Montserrat(14px, 400, 18px, left, $dark75);
+            }
+            background: url("./../image/expand_more.svg") no-repeat;
+            background-position: 120px 18px;
+        }
+    }
+}

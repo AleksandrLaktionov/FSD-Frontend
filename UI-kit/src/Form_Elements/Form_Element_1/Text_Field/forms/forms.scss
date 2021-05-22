@@ -1,0 +1,8 @@
+.text-field {
+  display: grid;
+  row-gap: 21px;
+  @import './form-default/form-default.scss';
+  @import './form-hover-focus/form-hover-focus.scss';
+  @import './form-dropdown/form-dropdown.scss';
+  @import './masked-text-field/masked-text-field.scss';
+}

@@ -1,14 +1,13 @@
 .form-elements {
     margin: 90px;
-    padding: (140px - 90px) / 1440px * 100%;
-    display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    column-gap: 20px;
+    padding: (140px - 90px) 0 0 (140px - 90px);
+    // display: grid;
+    // grid-template-columns: 33.33% 33.33% 33.33%;
+    // column-gap: 20px;
     // position: relative;
-    @import './Form_Element_1/Text_Field.scss';
-    @import './Form_Element_2/Form_Element_2.scss';
-    @import './Form_Element_3/form-element_3.scss';
+    @import './Form_Element_1/Form_Element_1.scss';
+    // @import './Form_Element_2/Form_Element_2.scss';
+    // @import './Form_Element_3/form-element_3.scss';
     @media (max-width: 1240px) {
         min-width: 768px;
         grid-template-columns: 50% 50%;

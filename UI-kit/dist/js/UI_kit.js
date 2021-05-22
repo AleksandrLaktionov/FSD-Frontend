@@ -1,179 +1,54 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./Cards/Cards.js":
-/*!************************!*\
-  !*** ./Cards/Cards.js ***!
-  \************************/
+/***/ "./Form_Elements/Form_Element_1/Form_Element_1.js":
+/*!********************************************************!*\
+  !*** ./Form_Elements/Form_Element_1/Form_Element_1.js ***!
+  \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _choosing_room_number_choosing_room_number_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./choosing-room-number/choosing-room-number.js */ "./Cards/choosing-room-number/choosing-room-number.js");
-/* harmony import */ var _choosing_room_number_choosing_room_number_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_choosing_room_number_choosing_room_number_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _selected_room_number_selected_room_number_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./selected-room-number/selected-room-number.js */ "./Cards/selected-room-number/selected-room-number.js");
-/* harmony import */ var _selected_room_number_selected_room_number_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_selected_room_number_selected_room_number_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _account_registration_account_registration_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./account-registration/account-registration.js */ "./Cards/account-registration/account-registration.js");
-/* harmony import */ var _account_registration_account_registration_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_account_registration_account_registration_js__WEBPACK_IMPORTED_MODULE_2__);
-
-
+/* harmony import */ var _Text_Field_Text_Field_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Text_Field/Text_Field.js */ "./Form_Elements/Form_Element_1/Text_Field/Text_Field.js");
 
 
 /***/ }),
 
-/***/ "./Cards/account-registration/account-registration.js":
-/*!************************************************************!*\
-  !*** ./Cards/account-registration/account-registration.js ***!
-  \************************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./Cards/choosing-room-number/choosing-room-number.js":
-/*!************************************************************!*\
-  !*** ./Cards/choosing-room-number/choosing-room-number.js ***!
-  \************************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./Cards/selected-room-number/selected-room-number.js":
-/*!************************************************************!*\
-  !*** ./Cards/selected-room-number/selected-room-number.js ***!
-  \************************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./Form_Elements/Form_Element_1/Text_Field.js":
-/*!****************************************************!*\
-  !*** ./Form_Elements/Form_Element_1/Text_Field.js ***!
-  \****************************************************/
+/***/ "./Form_Elements/Form_Element_1/Text_Field/Text_Field.js":
+/*!***************************************************************!*\
+  !*** ./Form_Elements/Form_Element_1/Text_Field/Text_Field.js ***!
+  \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./masked-text-field/masked-text-field.js */ "./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js");
-/* harmony import */ var _drop_down_expanded_drop_down_expanded_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./drop-down-expanded/drop-down-expanded.js */ "./Form_Elements/Form_Element_1/drop-down-expanded/drop-down-expanded.js");
-
- // import { dataDropdownStart, dataDropdownFinish } from './data-dropdown/data-dropdown.js';
-
-(0,_drop_down_expanded_drop_down_expanded_js__WEBPACK_IMPORTED_MODULE_1__.dropDownExpanded)(); // maskedTextField();
+/* harmony import */ var _forms_forms_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./forms/forms.js */ "./Form_Elements/Form_Element_1/Text_Field/forms/forms.js");
+ // import { dropDownExpanded } from './drop-down-expanded/drop-down-expanded.js'
+// import { dataDropdownStart, dataDropdownFinish } from './data-dropdown/data-dropdown.js';
+// dropDownExpanded();
+// maskedTextField();
 // dataDropdownStart();
 // dataDropdownFinish();
 
 /***/ }),
 
-/***/ "./Form_Elements/Form_Element_1/drop-down-expanded/drop-down-expanded.js":
-/*!*******************************************************************************!*\
-  !*** ./Form_Elements/Form_Element_1/drop-down-expanded/drop-down-expanded.js ***!
-  \*******************************************************************************/
+/***/ "./Form_Elements/Form_Element_1/Text_Field/forms/forms.js":
+/*!****************************************************************!*\
+  !*** ./Form_Elements/Form_Element_1/Text_Field/forms/forms.js ***!
+  \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "dropDownExpanded": () => (/* binding */ dropDownExpanded)
-/* harmony export */ });
-var dropDownExpanded = function dropDownExpanded() {
-  var min = 0;
-  var max = 10;
-  var textContent = [['спальня', 'спальни', 'спален'], ['кровать', 'кровати', 'кроватей'], ['ванная', 'ванны', 'ванн']];
-  var textNone = '...';
-  var inputTextDefoult = ['2 спальни', '2 кровати', '...'];
-  var dropDownExp = document.querySelector('.drop-down-expanded');
-  var dropDownInput = dropDownExp.querySelector('.drop-down-input');
-  var dropDownContent = dropDownExp.querySelector('.drop-down-content');
-  dropDownInput.value = inputTextDefoult.join(', '); // const getDownDropDown = () => {
-  //     dropDownContent.style.display = 'none';
-  // };
-  // const getUpDropDown = () => {
-  //     dropDownContent.style.display = 'grid';
-  // };
-  // dropDownExp.addEventListener('mouseover', getUpDropDown);
-  // dropDownExp.addEventListener('mouseout', getDownDropDown);
+/* harmony import */ var _masked_text_field_masked_text_field_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./masked-text-field/masked-text-field.js */ "./Form_Elements/Form_Element_1/Text_Field/forms/masked-text-field/masked-text-field.js");
 
-  var contentItems = dropDownContent.querySelectorAll('.content-items');
-
-  var _loop = function _loop(a) {
-    var contentItem = contentItems[a];
-    var decrementButton = contentItem.querySelector('.decrement');
-    var incrementButton = contentItem.querySelector('.increment');
-    var contentItemNumber = contentItem.querySelector('input[type="number"]');
-    var inputNumber = Number(contentItemNumber.value);
-
-    var inputContent = function inputContent(j, k) {
-      if (j == 0) {
-        inputTextDefoult[a] = "".concat(textNone);
-        var stringInput = inputTextDefoult.join(', ');
-        dropDownInput.value = stringInput;
-      } else if (j == 1) {
-        inputTextDefoult[a] = "".concat(j, " ").concat(k[a][0]);
-
-        var _stringInput = inputTextDefoult.join(', ');
-
-        dropDownInput.value = _stringInput;
-      } else if (j > 1 && j <= 4) {
-        inputTextDefoult[a] = "".concat(j, " ").concat(k[a][1]);
-
-        var _stringInput2 = inputTextDefoult.join(', ');
-
-        dropDownInput.value = _stringInput2;
-      } else {
-        inputTextDefoult[a] = "".concat(j, " ").concat(k[a][2]);
-
-        var _stringInput3 = inputTextDefoult.join(', ');
-
-        dropDownInput.value = _stringInput3;
-      }
-
-      ;
-    };
-
-    var setDecrement = function setDecrement() {
-      if (inputNumber != min) {
-        --inputNumber;
-        contentItemNumber.value = String(inputNumber);
-        inputContent(inputNumber, textContent);
-        return inputNumber;
-      }
-    };
-
-    var setIncrement = function setIncrement() {
-      if (inputNumber != max) {
-        ++inputNumber;
-        contentItemNumber.value = String(inputNumber);
-        inputContent(inputNumber, textContent);
-        return inputNumber;
-      }
-    };
-
-    decrementButton.addEventListener('click', setDecrement);
-    incrementButton.addEventListener('click', setIncrement);
-  };
-
-  for (var a = 0; a < contentItems.length; a++) {
-    _loop(a);
-  }
-
-  ;
-};
 
 /***/ }),
 
-/***/ "./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js":
-/*!*****************************************************************************!*\
-  !*** ./Form_Elements/Form_Element_1/masked-text-field/masked-text-field.js ***!
-  \*****************************************************************************/
+/***/ "./Form_Elements/Form_Element_1/Text_Field/forms/masked-text-field/masked-text-field.js":
+/*!**********************************************************************************************!*\
+  !*** ./Form_Elements/Form_Element_1/Text_Field/forms/masked-text-field/masked-text-field.js ***!
+  \**********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "maskedTextField": () => (/* binding */ maskedTextField)
@@ -181,7 +56,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! imask */ "../node_modules/imask/esm/index.js");
 
 var maskedTextField = function maskedTextField() {
-  document.querySelectorAll('.data-drop').forEach(function (element) {
+  document.querySelectorAll('.masked-date').forEach(function (element) {
     (0,imask__WEBPACK_IMPORTED_MODULE_0__.default)(element, {
       mask: Date,
       overwrite: true,
@@ -216,338 +91,15 @@ maskedTextField();
 
 /***/ }),
 
-/***/ "./Form_Elements/Form_Element_2/Form_Element_2.js":
-/*!********************************************************!*\
-  !*** ./Form_Elements/Form_Element_2/Form_Element_2.js ***!
-  \********************************************************/
+/***/ "./Form_Elements/Form_Elements.js":
+/*!****************************************!*\
+  !*** ./Form_Elements/Form_Elements.js ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _like_button_like_button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like_button/like_button.js */ "./Form_Elements/Form_Element_2/like_button/like_button.js");
-/* harmony import */ var _dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown/dropdown.js */ "./Form_Elements/Form_Element_2/dropdown/dropdown.js");
+/* harmony import */ var _Form_Element_1_Form_Element_1_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Form_Element_1/Form_Element_1.js */ "./Form_Elements/Form_Element_1/Form_Element_1.js");
 
-
-(0,_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_0__.likeButton)();
-(0,_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dropDown)();
-
-/***/ }),
-
-/***/ "./Form_Elements/Form_Element_2/dropdown/dropdown.js":
-/*!***********************************************************!*\
-  !*** ./Form_Elements/Form_Element_2/dropdown/dropdown.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "dropDown": () => (/* binding */ dropDown)
-/* harmony export */ });
-var dropDown = function dropDown() {
-  var min = 0;
-  var max = 10;
-  var textContent = ['гость', 'гостя', 'гостей'];
-  var inputTextDefoult = [];
-  var dDown = document.querySelector('.dropdown');
-  var dropDownInput = dDown.querySelector('.drop-down-input');
-  var dropDownContent = dDown.querySelector('.drop-down-content'); // const getDownDDown = () => {
-  //     dropDownContent.style.display = 'none';
-  // };
-  // const getUpDDown = () => {
-  //     dropDownContent.style.display = 'grid';
-  // };
-  // dDown.addEventListener('mouseover', getUpDDown);
-  // dDown.addEventListener('mouseout', getDownDDown);
-
-  var contentItems = dropDownContent.querySelectorAll('.content-items');
-
-  var _loop = function _loop(a) {
-    var contentItem = contentItems[a];
-    var decrementButton = contentItem.querySelector('.decrement');
-    var incrementButton = contentItem.querySelector('.increment');
-    var contentItemNumber = contentItem.querySelector('input[type="number"]');
-    var inputNumber = Number(contentItemNumber.value);
-
-    var inputContent = function inputContent(j, k) {
-      inputTextDefoult[a] = j;
-      var stringInput = inputTextDefoult.reduce(function (sum, current) {
-        return sum + current;
-      }, 0);
-
-      if (stringInput == 1) {
-        dropDownInput.value = "".concat(stringInput, " ").concat(k[0]);
-      } else if (stringInput >= 1 && stringInput <= 4) {
-        dropDownInput.value = "".concat(stringInput, " ").concat(k[1]);
-      } else {
-        dropDownInput.value = "".concat(stringInput, " ").concat(k[2]);
-      }
-
-      ;
-    };
-
-    var setDecrement = function setDecrement() {
-      if (inputNumber != min) {
-        inputNumber -= 1;
-        contentItemNumber.value = String(inputNumber);
-        inputContent(inputNumber, textContent);
-        return inputNumber;
-      }
-    };
-
-    var setIncrement = function setIncrement() {
-      if (inputNumber != max) {
-        inputNumber += 1;
-        contentItemNumber.value = String(inputNumber);
-        inputContent(inputNumber, textContent);
-        return inputNumber;
-      }
-    };
-
-    decrementButton.addEventListener('click', setDecrement);
-    incrementButton.addEventListener('click', setIncrement);
-  };
-
-  for (var a = 0; a < contentItems.length; a++) {
-    _loop(a);
-  }
-
-  ;
-};
-
-/***/ }),
-
-/***/ "./Form_Elements/Form_Element_2/like_button/like_button.js":
-/*!*****************************************************************!*\
-  !*** ./Form_Elements/Form_Element_2/like_button/like_button.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "likeButton": () => (/* binding */ likeButton)
-/* harmony export */ });
-var likeButton = function likeButton() {
-  // let formLikeButton = document.querySelector('.like_button');
-  var likeButtonDislike = document.querySelectorAll('.like-button-dislike');
-
-  var _loop = function _loop(i) {
-    var dislike = likeButtonDislike[i];
-    var spanTextDislike = dislike.firstChild.textContent;
-    dislike.addEventListener("click", function () {
-      ++spanTextDislike;
-      dislike.firstChild.textContent = spanTextDislike;
-      return spanTextDislike;
-    });
-  };
-
-  for (var i = 0; i < likeButtonDislike.length; i++) {
-    _loop(i);
-  }
-
-  var likeButtonLike = document.querySelectorAll('.like-button-like');
-
-  var _loop2 = function _loop2(_i) {
-    var like = likeButtonLike[_i];
-    var spanTextLike = like.firstChild.textContent;
-    like.addEventListener("click", function () {
-      ++spanTextLike;
-      like.firstChild.textContent = spanTextLike;
-      return spanTextLike;
-    });
-  };
-
-  for (var _i = 0; _i < likeButtonLike.length; _i++) {
-    _loop2(_i);
-  }
-};
-
-/***/ }),
-
-/***/ "./Form_Elements/Form_Element_3/Range_Slider/Range_Slider.js":
-/*!*******************************************************************!*\
-  !*** ./Form_Elements/Form_Element_3/Range_Slider/Range_Slider.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "rangeSlider": () => (/* binding */ rangeSlider)
-/* harmony export */ });
-var rangeSlider = function rangeSlider() {
-  var multiRangeSlider = document.querySelector('.multi-range-slider');
-  var result = multiRangeSlider.querySelector('.result');
-  var inputLeft = multiRangeSlider.querySelector('.range-slider > #input-left');
-  var inputRight = multiRangeSlider.querySelector('.range-slider > #input-right');
-  var slider = multiRangeSlider.querySelector('.range-slider > .slider');
-  var thumbLeft = slider.querySelector('.thumb.left');
-  var thumbRight = slider.querySelector('.thumb.right');
-  var range = slider.querySelector('.range');
-
-  function setLeftValue() {
-    var _this = inputLeft,
-        min = parseInt(_this.min),
-        max = parseInt(_this.max);
-    _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
-    var percent = ((_this.value - min) / (max - min) * 100).toFixed(2);
-    thumbLeft.style.left = percent + '%';
-    range.style.left = percent + '%';
-  }
-
-  setLeftValue();
-
-  function setRightValue() {
-    var _this = inputRight,
-        min = parseInt(_this.min),
-        max = parseInt(_this.max);
-    _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) - 1);
-    var percent = ((_this.value - min) / (max - min) * 100).toFixed(2);
-    thumbRight.style.right = 100 - percent + '%';
-    range.style.right = 100 - percent + '%';
-  }
-
-  setRightValue();
-
-  function setResult() {
-    result.textContent = "".concat(inputLeft.value) + '-' + "".concat(inputRight.value) + '₽';
-  }
-
-  setResult();
-  inputLeft.addEventListener('input', setLeftValue);
-  inputRight.addEventListener('input', setRightValue);
-  multiRangeSlider.addEventListener('input', setResult); // inputLeft.addEventListener('mouseover', function () {
-  //     thumbLeft.classList.add('hover');
-  // });
-  // inputLeft.addEventListener('mouseout', function () {
-  //     thumbLeft.classList.remove('hover');
-  // });
-  // inputLeft.addEventListener('mousedown', function () {
-  //     thumbLeft.classList.add('active');
-  // });
-  // inputLeft.addEventListener('mouseup', function () {
-  //     thumbLeft.classList.remove('active');
-  // });
-  // inputRight.addEventListener('mouseover', function () {
-  //     thumbRight.classList.add('hover');
-  // });
-  // inputRight.addEventListener('mouseout', function () {
-  //     thumbRight.classList.remove('hover');
-  // });
-  // inputRight.addEventListener('mousedown', function () {
-  //     thumbRight.classList.add('active');
-  // });
-  // inputRight.addEventListener('mouseup', function () {
-  //     thumbRight.classList.remove('active');
-  // });
-};
-
-/***/ }),
-
-/***/ "./Form_Elements/Form_Element_3/dropdown/dropdown.js":
-/*!***********************************************************!*\
-  !*** ./Form_Elements/Form_Element_3/dropdown/dropdown.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "dropDownActive": () => (/* binding */ dropDownActive)
-/* harmony export */ });
-var dropDownActive = function dropDownActive() {
-  var min = 0;
-  var max = 10;
-  var textContent = ['гость', 'гостя', 'гостей'];
-  var inputTextDefoult = [];
-  var dDownActive = document.querySelector('.dropdown-active');
-  var dropDownInput = dDownActive.querySelector('.drop-down-input');
-  var dropDownContent = dDownActive.querySelector('.drop-down-content');
-  var bReset = dropDownContent.querySelector('button[type="reset"]'); // const getDownDDown = () => {
-  //     dropDownContent.style.display = 'none';
-  // };
-  // const getUpDDown = () => {
-  //     dropDownContent.style.display = 'grid';
-  // };
-  // dDown.addEventListener('mouseover', getUpDDown);
-  // dDown.addEventListener('mouseout', getDownDDown);
-
-  var contentItems = dropDownContent.querySelectorAll('.content-items');
-
-  var _loop = function _loop(a) {
-    var contentItem = contentItems[a];
-    var decrementButton = contentItem.querySelector('.decrement');
-    var incrementButton = contentItem.querySelector('.increment');
-    var contentItemNumber = contentItem.querySelector('input[type="number"]');
-    var inputNumber = Number(contentItemNumber.value);
-
-    var inputContent = function inputContent(j, k) {
-      inputTextDefoult[a] = j;
-      var stringInput = inputTextDefoult.reduce(function (sum, current) {
-        return sum + current;
-      }, 0);
-
-      if (stringInput == 1) {
-        dropDownInput.value = "".concat(stringInput, " ").concat(k[0]);
-      } else if (stringInput >= 1 && stringInput <= 4) {
-        dropDownInput.value = "".concat(stringInput, " ").concat(k[1]);
-      } else {
-        dropDownInput.value = "".concat(stringInput, " ").concat(k[2]);
-      }
-
-      ;
-    };
-
-    var setDecrement = function setDecrement() {
-      if (inputNumber != min) {
-        inputNumber -= 1;
-        contentItemNumber.value = String(inputNumber);
-        inputContent(inputNumber, textContent);
-        return inputNumber;
-      }
-    };
-
-    var setIncrement = function setIncrement() {
-      if (inputNumber != max) {
-        inputNumber += 1;
-        contentItemNumber.value = String(inputNumber);
-        inputContent(inputNumber, textContent);
-        return inputNumber;
-      }
-    };
-
-    decrementButton.addEventListener('click', setDecrement);
-    incrementButton.addEventListener('click', setIncrement);
-    bReset.addEventListener('click', function () {
-      inputNumber = 0;
-      inputTextDefoult = [];
-    });
-  };
-
-  for (var a = 0; a < contentItems.length; a++) {
-    _loop(a);
-  }
-
-  ;
-};
-
-/***/ }),
-
-/***/ "./Form_Elements/Form_Element_3/form-element_3.js":
-/*!********************************************************!*\
-  !*** ./Form_Elements/Form_Element_3/form-element_3.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Range_Slider_Range_Slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Range_Slider/Range_Slider.js */ "./Form_Elements/Form_Element_3/Range_Slider/Range_Slider.js");
-/* harmony import */ var _dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown/dropdown.js */ "./Form_Elements/Form_Element_3/dropdown/dropdown.js");
-
-
-(0,_Range_Slider_Range_Slider_js__WEBPACK_IMPORTED_MODULE_0__.rangeSlider)();
-(0,_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__.dropDownActive)();
 
 /***/ }),
 
@@ -557,7 +109,6 @@ __webpack_require__.r(__webpack_exports__);
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "_": () => (/* binding */ _createClass),
@@ -886,7 +437,6 @@ function _nonIterableRest() {
   \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -986,7 +536,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.HTMLContenteditableMaskElem
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1153,7 +702,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.HTMLMaskElement = HTMLMaskE
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1612,7 +1160,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_8__.default.InputMask = InputMask;
   \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1713,7 +1260,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_1__.default.MaskElement = MaskElement;
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1846,7 +1392,6 @@ var ActionDetails = /*#__PURE__*/function () {
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1918,7 +1463,6 @@ var ChangeDetails = /*#__PURE__*/function () {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1998,7 +1542,6 @@ var ContinuousTailDetails = /*#__PURE__*/function () {
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2027,7 +1570,6 @@ function IMask(el) {
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "DIRECTION": () => (/* binding */ DIRECTION),
@@ -2164,7 +1706,6 @@ function objectIncludes(b, a) {
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "InputMask": () => (/* reexport safe */ _controls_input_js__WEBPACK_IMPORTED_MODULE_0__.default),
@@ -2249,7 +1790,6 @@ try {
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2648,7 +2188,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.Masked = Masked;
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2842,7 +2381,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_3__.default.MaskedDate = MaskedDate;
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3218,7 +2756,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedDynamic = MaskedDynam
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3309,7 +2846,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.MaskedEnum = MaskedEnum;
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
@@ -3377,7 +2913,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_1__.default.createMask = createMask;
   \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3437,7 +2972,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.MaskedFunction = MaskedFunc
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3864,7 +3398,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedNumber = MaskedNumber
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4599,7 +4132,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_8__.default.MaskedPattern = MaskedPatte
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4786,7 +4318,6 @@ var ChunksTailDetails = /*#__PURE__*/function () {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4947,7 +4478,6 @@ var PatternFixedDefinition = /*#__PURE__*/function () {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
@@ -5153,7 +4683,6 @@ var PatternInputDefinition = /*#__PURE__*/function () {
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "PIPE_TYPE": () => (/* binding */ PIPE_TYPE),
@@ -5213,7 +4742,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_1__.default.pipe = pipe;
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -5397,7 +4925,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.MaskedRange = MaskedRange;
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -5459,7 +4986,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_2__.default.MaskedRegExp = MaskedRegExp
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -5493,18 +5019,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -5535,23 +5049,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!*********************!*\
   !*** ./js/index.js ***!
   \*********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../scss/index.scss */ "./scss/index.scss");
-/* harmony import */ var _Form_Elements_Form_Element_1_Text_Field_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_1/Text_Field.js */ "./Form_Elements/Form_Element_1/Text_Field.js");
-/* harmony import */ var _Form_Elements_Form_Element_2_Form_Element_2_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_2/Form_Element_2.js */ "./Form_Elements/Form_Element_2/Form_Element_2.js");
-/* harmony import */ var _Form_Elements_Form_Element_3_form_element_3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Form_Elements/Form_Element_3/form-element_3 */ "./Form_Elements/Form_Element_3/form-element_3.js");
-/* harmony import */ var _Cards_Cards_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../Cards/Cards.js */ "./Cards/Cards.js");
+/* harmony import */ var _Form_Elements_Form_Elements_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Form_Elements/Form_Elements.js */ "./Form_Elements/Form_Elements.js");
 
-
-
-
-
+ // import './../Form_Elements/Form_Element_2/Form_Element_2.js';
+// import './../Form_Elements/Form_Element_3/form-element_3';
+// import './../Cards/Cards.js';
 })();
 
 /******/ })()

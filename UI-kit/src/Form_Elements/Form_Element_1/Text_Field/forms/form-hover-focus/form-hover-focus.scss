@@ -1,0 +1,29 @@
+.form-hover-focus {
+    width: 320px;
+    // height: 44px;
+    position: relative;
+    h3 {
+        padding-bottom: 5px;
+        @include fontFamily_Montserrat(12px, 700, 15px, left, $dark100);
+        text-transform: uppercase;
+    }
+    .label-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include fontFamily_Montserrat(12px, 400, 15px, right, $dark50);
+        letter-spacing: -0.02em;
+    }
+    .hover-focus {
+        
+        // @extend %form_input;
+        @include textField(320px,43px);
+        @include fontFamily_Montserrat(14px, 400, 24px, left, $dark75);
+        &::placeholder {
+            @include fontFamily_Montserrat(14px, 400, 18px, left, $dark25);
+        }
+        @extend %hover_focus;
+        letter-spacing: -0.014em;
+        // padding-left: 15px;
+    }
+}

@@ -11,58 +11,13 @@
   font-weight: 700;
   font-style: normal; }
 
-.form-elements .text-field .form-default .form-input, .form-elements .text-field .hover-focus .form-input, .form-elements .text-field .form-dropdown .form-input, .form-elements .text-field .data-dropdown .form-input, .form-elements .text-field .filter-date-dropdown .form-input, .form-elements .text-field .subscription-text-field .form-input, .form-elements .text-field .dropdown-default .form-input, .cards .choosing-room-number .data-dropdown .form-input, .cards .choosing-room-number .form-dropdown .form-input, .cards .selected-room-number .data-dropdown .form-input, .cards .selected-room-number .form-dropdown .form-input {
-  padding-left: 15px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  width: 320px;
-  height: 44px;
+.form-elements .Form_Element_1 .text-fields .text-field .form-hover-focus .hover-focus:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
   border-radius: 4px; }
 
-.form-elements .form-element-2 .radio-buttons {
-  width: 220.74px; }
-  .form-elements .form-element-2 .radio-buttons h3 {
-    margin-bottom: 13px; }
-  .form-elements .form-element-2 .radio-buttons .radio-block {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 20px; }
-    .form-elements .form-element-2 .radio-buttons .radio-block span {
-      display: grid;
-      grid-template-columns: auto auto;
-      position: relative; }
-      .form-elements .form-element-2 .radio-buttons .radio-block span input[type='radio'] {
-        width: 20px;
-        height: 20px;
-        opacity: 0;
-        margin: auto;
-        z-index: 2; }
-      .form-elements .form-element-2 .radio-buttons .radio-block span input[type='radio']:checked + ::before {
-        position: absolute;
-        content: '';
-        width: 20px;
-        height: 20px;
-        top: 3px;
-        left: 0;
-        background: url(".././img/Rectangle 2.1.svg") no-repeat;
-        background-position: 3px 3px;
-        border: 1px solid #bc9cff;
-        border-radius: 10px; }
-      .form-elements .form-element-2 .radio-buttons .radio-block span::after {
-        position: absolute;
-        content: "";
-        width: 20px;
-        height: 20px;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        border-radius: 10px;
-        top: 3px;
-        left: 0;
-        z-index: 1; }
-      .form-elements .form-element-2 .radio-buttons .radio-block span input[type='radio']:checked + label {
-        color: rgba(31, 32, 65, 0.75); }
-      .form-elements .form-element-2 .radio-buttons .radio-block span label {
-        margin-left: 10px;
-        vertical-align: middle;
-        color: rgba(31, 32, 65, 0.5); }
+.form-elements .Form_Element_1 .text-fields .text-field .form-hover-focus .hover-focus:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 4px; }
 
 /* Обнуление */
 * {
@@ -96,46 +51,7 @@ body {
   height: 100%;
   width: 100%;
   max-width: 1920px;
-  min-width: 320px;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgba(31, 32, 65, 0.75); }
-
-h1 {
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #1f2041; }
-
-h2 {
-  font-family: Montserrat;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #1f2041; }
-
-h3 {
-  font-family: Montserrat;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #1f2041;
-  text-transform: uppercase; }
+  min-width: 320px; }
 
 input::-ms-clear {
   display: none; }
@@ -175,9 +91,9 @@ img {
 .colors-type {
   display: grid;
   grid-template-columns: fit-content(281.26px) fit-content(436px);
-  column-gap: 28.81944%;
-  margin: 90px 0 90px 90px;
-  padding: 3.81944% 0 0 4.16667%; }
+  column-gap: 415px;
+  margin: 90px 0 0 90px;
+  padding: 55px 0 0 60px; }
   @media (max-width: 767px) {
     .colors-type {
       min-width: 320px;
@@ -186,162 +102,142 @@ img {
   .colors-type .colors {
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 40px; }
-    .colors-type .colors .colors-block {
-      display: grid;
-      grid-template-rows: repeat(7, 1fr);
-      row-gap: 20px;
-      justify-items: center;
-      align-items: center; }
-      .colors-type .colors .colors-block #dark100 {
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-        background-color: #1f2041; }
-      .colors-type .colors .colors-block #dark75 {
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-        background-color: rgba(31, 32, 65, 0.75); }
-      .colors-type .colors .colors-block #dark50 {
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-        background-color: rgba(31, 32, 65, 0.5); }
-      .colors-type .colors .colors-block #dark25 {
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-        background-color: rgba(31, 32, 65, 0.25); }
-      .colors-type .colors .colors-block #dark05 {
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-        background-color: rgba(31, 32, 65, 0.05); }
-      .colors-type .colors .colors-block #purple {
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-        background-color: #bc9cff; }
-      .colors-type .colors .colors-block #green {
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-        background-color: #6fcf97; }
-    .colors-type .colors .colors-content {
-      display: grid;
-      grid-template-rows: repeat(7, 1fr);
-      row-gap: 20px; }
-      .colors-type .colors .colors-content p {
-        margin: auto 0;
+    grid-template-rows: repeat(7, 1fr);
+    column-gap: 40px;
+    row-gap: 20px;
+    align-items: center; }
+    .colors-type .colors #dark100 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: #1f2041; }
+    .colors-type .colors #dark75 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: rgba(31, 32, 65, 0.75); }
+    .colors-type .colors #dark50 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: rgba(31, 32, 65, 0.5); }
+    .colors-type .colors #dark25 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: rgba(31, 32, 65, 0.25); }
+    .colors-type .colors #dark05 {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: rgba(31, 32, 65, 0.05); }
+    .colors-type .colors #purple {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: #bc9cff; }
+    .colors-type .colors #green {
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      background-color: #6fcf97; }
+    .colors-type .colors p {
+      margin: auto 0;
+      font-family: Montserrat;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1f2041; }
+      .colors-type .colors p span {
         font-family: Montserrat;
         font-size: 19px;
         font-style: normal;
-        font-weight: 700;
-        line-height: 27.79px;
+        font-weight: 400;
+        line-height: 28px;
         letter-spacing: 0em;
         text-align: left;
         color: #1f2041; }
-        .colors-type .colors .colors-content p span {
-          font-family: Montserrat;
-          font-size: 19px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 27.79px;
-          letter-spacing: 0em;
-          text-align: left;
-          color: #1f2041; }
   .colors-type .type-fonts {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 30px;
-    max-height: 321px; }
-    .colors-type .type-fonts .type-fonts-content {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr);
-      row-gap: 25px; }
-      .colors-type .type-fonts .type-fonts-content #h1 {
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 29.26px;
-        letter-spacing: 0em;
-        text-align: right;
-        color: rgba(31, 32, 65, 0.25); }
-      .colors-type .type-fonts .type-fonts-content #h2 {
-        font-family: Montserrat;
-        font-size: 19px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 23.16px;
-        letter-spacing: 0em;
-        text-align: right;
-        color: rgba(31, 32, 65, 0.25); }
-      .colors-type .type-fonts .type-fonts-content #h3 {
-        font-family: Montserrat;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 14.63px;
-        letter-spacing: 0em;
-        text-align: right;
-        color: rgba(31, 32, 65, 0.25); }
-      .colors-type .type-fonts .type-fonts-content #p {
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: right;
-        color: rgba(31, 32, 65, 0.25); }
-    .colors-type .type-fonts .type-fonts-text {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr);
-      row-gap: 25px; }
-
-.form-elements {
-  margin: 90px;
-  padding: 3.47222%;
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  column-gap: 20px; }
-  .form-elements .text-field {
-    display: grid;
-    grid-template-rows: repeat(12, auto);
-    row-gap: 20px; }
-    .form-elements .text-field .form-default {
-      width: 320px; }
-      .form-elements .text-field .form-default h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .text-field .form-default .label-right {
-        margin-bottom: 8px;
-        font-weight: 400;
-        line-height: 14.63px;
-        color: rgba(31, 32, 65, 0.5);
-        float: right;
-        text-align: end; }
-      .form-elements .text-field .form-default .form-input {
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-        .form-elements .text-field .form-default .form-input::placeholder {
-          font-family: Montserrat;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 18px;
-          letter-spacing: 0em;
-          text-align: left;
-          color: rgba(31, 32, 65, 0.25); }
-    .form-elements .text-field .hover-focus .form-input {
+    max-width: 436px;
+    max-height: 320px;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 50px; }
+    .colors-type .type-fonts #h1 {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.25); }
+    .colors-type .type-fonts #h2 {
+      font-family: Montserrat;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.25); }
+    .colors-type .type-fonts #h3 {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 11px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.25); }
+    .colors-type .type-fonts #p {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: rgba(31, 32, 65, 0.25); }
+    .colors-type .type-fonts h1 {
+      margin: auto 0;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1f2041; }
+    .colors-type .type-fonts h2 {
+      margin: auto 0;
+      font-family: Montserrat;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1f2041; }
+    .colors-type .type-fonts h3 {
+      margin: auto 0;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 11px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1f2041;
+      text-transform: uppercase; }
+    .colors-type .type-fonts p {
+      margin: auto 0;
+      max-width: 301px;
       font-family: Montserrat;
       font-size: 14px;
       font-style: normal;
@@ -350,911 +246,267 @@ img {
       letter-spacing: 0em;
       text-align: left;
       color: rgba(31, 32, 65, 0.75); }
-      .form-elements .text-field .hover-focus .form-input:hover {
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        border-radius: 4px; }
-      .form-elements .text-field .hover-focus .form-input:focus {
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        border-radius: 4px; }
-    .form-elements .text-field .form-dropdown {
-      max-width: 320px; }
-      .form-elements .text-field .form-dropdown h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .text-field .form-dropdown .form-input {
-        background: url(.././img/expand_more.svg) no-repeat;
-        background-position: 290px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-    .form-elements .text-field .data-dropdown {
+
+.form-elements {
+  margin: 90px;
+  padding: 50px 0 0 50px; }
+  .form-elements .Form_Element_1 .text-fields {
+    display: grid;
+    row-gap: 41px; }
+    .form-elements .Form_Element_1 .text-fields .text-field {
+      display: grid;
+      row-gap: 21px; }
+      .form-elements .Form_Element_1 .text-fields .text-field .form-default {
+        position: relative;
+        max-width: 320px; }
+        .form-elements .Form_Element_1 .text-fields .text-field .form-default h3 {
+          padding-bottom: 5px;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1f2041;
+          text-transform: uppercase; }
+        .form-elements .Form_Element_1 .text-fields .text-field .form-default .label-right {
+          position: absolute;
+          top: -3px;
+          right: 0;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: right;
+          color: rgba(31, 32, 65, 0.5);
+          float: right; }
+        .form-elements .Form_Element_1 .text-fields .text-field .form-default .form-input {
+          padding-left: 14px;
+          border: 1px solid rgba(31, 32, 65, 0.25);
+          width: 320px;
+          height: 44px;
+          border-radius: 4px;
+          vertical-align: middle;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.75); }
+          .form-elements .Form_Element_1 .text-fields .text-field .form-default .form-input::placeholder {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(31, 32, 65, 0.25); }
+      .form-elements .Form_Element_1 .text-fields .text-field .form-hover-focus {
+        width: 320px;
+        position: relative; }
+        .form-elements .Form_Element_1 .text-fields .text-field .form-hover-focus h3 {
+          padding-bottom: 5px;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1f2041;
+          text-transform: uppercase; }
+        .form-elements .Form_Element_1 .text-fields .text-field .form-hover-focus .label-right {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: right;
+          color: rgba(31, 32, 65, 0.5);
+          letter-spacing: -0.02em; }
+        .form-elements .Form_Element_1 .text-fields .text-field .form-hover-focus .hover-focus {
+          padding-left: 14px;
+          border: 1px solid rgba(31, 32, 65, 0.25);
+          width: 320px;
+          height: 43px;
+          border-radius: 4px;
+          vertical-align: middle;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.75);
+          letter-spacing: -0.014em; }
+          .form-elements .Form_Element_1 .text-fields .text-field .form-hover-focus .hover-focus::placeholder {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(31, 32, 65, 0.25); }
+      .form-elements .Form_Element_1 .text-fields .text-field .form-dropdown {
+        max-width: 320px; }
+        .form-elements .Form_Element_1 .text-fields .text-field .form-dropdown h3 {
+          padding-bottom: 5px;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1f2041;
+          text-transform: uppercase; }
+        .form-elements .Form_Element_1 .text-fields .text-field .form-dropdown .form-input {
+          padding-left: 14px;
+          border: 1px solid rgba(31, 32, 65, 0.25);
+          width: 320px;
+          height: 44px;
+          border-radius: 4px;
+          vertical-align: middle;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.75);
+          background: url(.././img/expand_more.svg) no-repeat;
+          background-position: 290px 17px;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.75); }
+          .form-elements .Form_Element_1 .text-fields .text-field .form-dropdown .form-input::placeholder {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(31, 32, 65, 0.25); }
+      .form-elements .Form_Element_1 .text-fields .text-field .masked-text {
+        width: 320px; }
+        .form-elements .Form_Element_1 .text-fields .text-field .masked-text h3 {
+          padding-bottom: 1.5px;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1f2041;
+          text-transform: uppercase; }
+        .form-elements .Form_Element_1 .text-fields .text-field .masked-text .masked-date {
+          padding-left: 14px;
+          border: 1px solid rgba(31, 32, 65, 0.25);
+          width: 320px;
+          height: 44px;
+          border-radius: 4px;
+          vertical-align: middle;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.75); }
+          .form-elements .Form_Element_1 .text-fields .text-field .masked-text .masked-date::placeholder {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(31, 32, 65, 0.25); }
+    .form-elements .Form_Element_1 .text-fields .form-date-dropdown {
       width: 320px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 20px; }
-      .form-elements .text-field .data-dropdown h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .text-field .data-dropdown div {
+      .form-elements .Form_Element_1 .text-fields .form-date-dropdown .date-dropdown {
         width: 150px; }
-      .form-elements .text-field .data-dropdown .form-input {
-        width: 150px;
-        background: url(.././img/expand_more.svg) no-repeat;
-        background-position: 120px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-    .form-elements .text-field .filter-date-dropdown {
-      width: 266px; }
-      .form-elements .text-field .filter-date-dropdown h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .text-field .filter-date-dropdown .form-input {
-        width: 266px;
-        background: url(.././img/expand_more.svg) no-repeat;
-        background-position: 236px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-    .form-elements .text-field .subscription-text-field {
-      width: 267px; }
-      .form-elements .text-field .subscription-text-field h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .text-field .subscription-text-field .form-input {
-        width: 267px;
-        background: url(.././img/arrow_forward.svg) no-repeat;
-        background-position: 231px 13px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-        .form-elements .text-field .subscription-text-field .form-input::placeholder {
-          color: rgba(31, 32, 65, 0.25); }
-    .form-elements .text-field .dropdown-default {
-      width: 266px; }
-      .form-elements .text-field .dropdown-default h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .text-field .dropdown-default .label-right {
-        margin-bottom: 5px;
-        font-weight: 400;
-        line-height: 14.63px;
-        color: rgba(31, 32, 65, 0.5);
-        float: right;
-        text-align: end; }
-      .form-elements .text-field .dropdown-default .form-input {
-        width: 266px;
-        background: url(.././img/expand_more_75.svg) no-repeat;
-        background-position: 236px 18px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-    .form-elements .text-field .drop-down-expanded {
-      width: 266px; }
-      .form-elements .text-field .drop-down-expanded .label-left {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .text-field .drop-down-expanded .label-right {
-        margin-bottom: 5px;
-        font-weight: 400;
-        line-height: 14.63px;
-        color: rgba(31, 32, 65, 0.5);
-        float: right;
-        text-align: end; }
-      .form-elements .text-field .drop-down-expanded .drop-down-input {
-        width: 266px;
-        height: 44px;
-        padding: 14px;
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        border-radius: 4px 4px 0 0;
-        background: url(.././img/expand_more_75.svg) no-repeat;
-        background-position: 236px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-      .form-elements .text-field .drop-down-expanded .drop-down-content {
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-        align-items: center;
-        margin: auto 0;
-        width: 266px;
-        height: 119px;
-        padding: 2px 6px 4px 14px;
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        border-top: none;
-        border-radius: 0 0 4px 4px; }
-        .form-elements .text-field .drop-down-expanded .drop-down-content .content-items {
-          display: grid;
-          grid-template-columns: auto auto;
-          align-items: center; }
-          .form-elements .text-field .drop-down-expanded .drop-down-content .content-items h3 {
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 16px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #1f2041; }
-          .form-elements .text-field .drop-down-expanded .drop-down-content .content-items span {
-            justify-self: end; }
-            .form-elements .text-field .drop-down-expanded .drop-down-content .content-items span button {
-              vertical-align: middle;
-              width: 30px;
-              height: 30px;
-              border: 1px solid rgba(31, 32, 65, 0.25);
-              border-radius: 22px;
-              font-family: Montserrat;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 22px;
-              letter-spacing: 0em;
-              text-align: center;
-              color: rgba(31, 32, 65, 0.5);
-              color: rgba(31, 32, 65, 0.5);
-              background-color: rgba(255, 255, 255, 0); }
-              .form-elements .text-field .drop-down-expanded .drop-down-content .content-items span button:disabled {
-                border: 1px solid rgba(31, 32, 65, 0.1);
-                color: rgba(31, 32, 65, 0.25); }
-            .form-elements .text-field .drop-down-expanded .drop-down-content .content-items span input[type="number"] {
-              width: 25px;
-              font-family: Montserrat;
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 15px;
-              letter-spacing: 0em;
-              text-align: center;
-              color: #1f2041;
-              color: #1f2041;
-              background-color: rgba(255, 255, 255, 0); }
-    .form-elements .text-field .expandable-checkbox-list {
-      width: 266px;
-      height: 44px; }
-      .form-elements .text-field .expandable-checkbox-list h3 {
-        background: url(.././img/expand_more.svg) no-repeat;
-        background-position: 236px;
-        height: 44px;
-        display: grid;
-        align-items: center; }
-    .form-elements .text-field .expandable-checkbox-list__active {
-      width: 266px;
-      height: 217.44px; }
-      .form-elements .text-field .expandable-checkbox-list__active h3 {
-        height: 44px;
-        display: grid;
-        align-items: center;
-        background: url(.././img/expand_more_up.svg) no-repeat;
-        background-position: 236px; }
-      .form-elements .text-field .expandable-checkbox-list__active .dropdown-checkbox-list {
-        display: grid;
-        grid-template-rows: repeat(6, auto);
-        row-gap: 5px; }
-        .form-elements .text-field .expandable-checkbox-list__active .dropdown-checkbox-list span {
-          position: relative; }
-          .form-elements .text-field .expandable-checkbox-list__active .dropdown-checkbox-list span input[type='checkbox'] {
-            width: 20px;
-            height: 20px;
-            border: none;
-            vertical-align: middle;
-            opacity: 0; }
-          .form-elements .text-field .expandable-checkbox-list__active .dropdown-checkbox-list span input[type='checkbox']:checked + ::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 3px;
-            width: 20px;
-            height: 20px;
-            border: 1px solid #bc9cff;
-            border-radius: 4px;
-            background: url(.././img/Vector.svg) no-repeat;
-            background-position: 4px 3px;
-            z-index: -1; }
-          .form-elements .text-field .expandable-checkbox-list__active .dropdown-checkbox-list span::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 3px;
-            width: 20px;
-            height: 20px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 4px;
-            z-index: -2; }
-          .form-elements .text-field .expandable-checkbox-list__active .dropdown-checkbox-list span label {
-            padding-left: 10px;
-            line-height: 18px;
-            color: rgba(31, 32, 65, 0.5); }
-    .form-elements .text-field .icon-card {
-      width: 280px;
-      height: 158px;
-      display: grid;
-      grid-template-rows: auto auto;
-      row-gap: 18px; }
-      .form-elements .text-field .icon-card .insert-emoticon .icon-img,
-      .form-elements .text-field .icon-card .location-city .icon-img {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        vertical-align: middle;
-        margin-bottom: 13px; }
-        .form-elements .text-field .icon-card .insert-emoticon .icon-img img,
-        .form-elements .text-field .icon-card .location-city .icon-img img {
-          width: 100%;
-          height: 100%; }
-      .form-elements .text-field .icon-card .insert-emoticon .content,
-      .form-elements .text-field .icon-card .location-city .content {
-        display: inline-block;
-        padding-left: 6px;
-        padding-bottom: 20px;
-        vertical-align: middle; }
-        .form-elements .text-field .icon-card .insert-emoticon .content span,
-        .form-elements .text-field .icon-card .location-city .content span {
-          font-weight: 700; }
-      .form-elements .text-field .icon-card .insert-emoticon hr,
-      .form-elements .text-field .icon-card .location-city hr {
-        width: 100%;
-        height: 1px;
-        background: rgba(31, 32, 65, 0.1); }
-  .form-elements .form-element-2 {
-    display: grid;
-    grid-template-rows: repeat(8, auto);
-    row-gap: 20px; }
-    .form-elements .form-element-2 .checkbox-buttons {
-      width: 222px;
-      height: 129.12px; }
-      .form-elements .form-element-2 .checkbox-buttons h3 {
-        margin-bottom: 16.56px;
-        vertical-align: middle; }
-      .form-elements .form-element-2 .checkbox-buttons .checkbox-list {
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-        row-gap: 6px; }
-        .form-elements .form-element-2 .checkbox-buttons .checkbox-list .checkbox-list-buttons {
-          position: relative; }
-          .form-elements .form-element-2 .checkbox-buttons .checkbox-list .checkbox-list-buttons input[type='checkbox'] {
-            width: 20px;
-            height: 20px;
-            vertical-align: top;
-            opacity: 0; }
-          .form-elements .form-element-2 .checkbox-buttons .checkbox-list .checkbox-list-buttons input[type='checkbox']:checked + ::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            border: 1px solid #bc9cff;
-            border-radius: 4px;
-            background: url(.././img/Vector.svg) no-repeat;
-            background-position: 4px 3px;
-            vertical-align: middle;
-            z-index: -1; }
-          .form-elements .form-element-2 .checkbox-buttons .checkbox-list .checkbox-list-buttons::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 4px;
-            vertical-align: middle;
-            z-index: -2; }
-          .form-elements .form-element-2 .checkbox-buttons .checkbox-list .checkbox-list-buttons span {
-            display: inline-block;
-            width: 192px;
-            margin-left: 10px;
-            vertical-align: top;
-            line-height: 18px; }
-            .form-elements .form-element-2 .checkbox-buttons .checkbox-list .checkbox-list-buttons span label {
-              color: rgba(31, 32, 65, 0.5); }
-    .form-elements .form-element-2 .toggle {
-      width: 260px; }
-      .form-elements .form-element-2 .toggle h3 {
-        font-size: 12px;
-        line-height: 15px;
-        margin-bottom: 13px; }
-      .form-elements .form-element-2 .toggle .toggle-buttons {
-        display: grid;
-        grid-template-rows: auto auto;
-        row-gap: 10px; }
-        .form-elements .form-element-2 .toggle .toggle-buttons .toggle-button {
-          position: relative;
-          display: grid;
-          grid-template-columns: auto auto; }
-          .form-elements .form-element-2 .toggle .toggle-buttons .toggle-button input[type='checkbox'] {
-            margin: auto;
-            width: 40px;
-            height: 20px;
-            opacity: 0;
-            z-index: 2; }
-          .form-elements .form-element-2 .toggle .toggle-buttons .toggle-button input[type='checkbox']:checked + ::after {
-            content: '';
-            position: absolute;
-            top: 2px;
-            left: 0;
-            width: 40px;
-            height: 20px;
-            border: 1px solid #bc9cff;
-            border-radius: 10px;
-            background: url(".././img/Rectangle 2.1.svg") no-repeat;
-            background-color: #FFFFFF;
-            background-position: 23px center;
-            z-index: 1; }
-          .form-elements .form-element-2 .toggle .toggle-buttons .toggle-button::before {
-            content: '';
-            position: absolute;
-            top: 2px;
-            left: 0;
-            width: 40px;
-            height: 20px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 10px;
-            background: url(".././img/Rectangle 2.2.svg") no-repeat;
-            background-color: #FFFFFF;
-            background-position: 3px center;
-            z-index: 0; }
-          .form-elements .form-element-2 .toggle .toggle-buttons .toggle-button label {
-            margin-left: 10px;
-            vertical-align: middle; }
-    .form-elements .form-element-2 .like-buttons {
-      width: 89.72px;
-      height: 51px; }
-      .form-elements .form-element-2 .like-buttons h3 {
-        font-size: 12px;
-        line-height: 15px;
-        margin-bottom: 15px; }
-      .form-elements .form-element-2 .like-buttons .like-buttons-block {
-        display: grid;
-        grid-template-columns: auto auto;
-        column-gap: 10px; }
-        .form-elements .form-element-2 .like-buttons .like-buttons-block .like-button-dislike {
-          position: relative;
-          width: 40px;
-          height: 20px;
+        .form-elements .Form_Element_1 .text-fields .form-date-dropdown .date-dropdown h3 {
+          padding-bottom: 5px;
+          font-family: Montserrat;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1f2041;
+          text-transform: uppercase; }
+        .form-elements .Form_Element_1 .text-fields .form-date-dropdown .date-dropdown .form-input {
+          padding-left: 14px;
           border: 1px solid rgba(31, 32, 65, 0.25);
-          border-radius: 10px;
-          background-color: white; }
-          .form-elements .form-element-2 .like-buttons .like-buttons-block .like-button-dislike span {
-            margin: auto 0 auto 10px;
-            align-items: center;
-            font-size: 10px;
-            line-height: 12px;
-            letter-spacing: 0em;
-            color: rgba(31, 32, 65, 0.25); }
-            .form-elements .form-element-2 .like-buttons .like-buttons-block .like-button-dislike span::before {
-              position: absolute;
-              content: '';
-              top: 0;
-              left: 0;
-              width: 20px;
-              height: 20px;
-              background: url(.././img/favorite_border.svg) no-repeat;
-              background-position: 3px 5.25px; }
-        .form-elements .form-element-2 .like-buttons .like-buttons-block .like-button-like {
-          position: relative;
-          width: 40px;
-          height: 20px;
-          border: 1px solid #bc9cff;
-          border-radius: 10px;
-          background-color: white; }
-          .form-elements .form-element-2 .like-buttons .like-buttons-block .like-button-like span {
-            margin: auto 0 auto 10px;
-            font-size: 10px;
-            line-height: 12px;
-            letter-spacing: 0em;
-            color: #bc9cff; }
-            .form-elements .form-element-2 .like-buttons .like-buttons-block .like-button-like span::before {
-              position: absolute;
-              content: '';
-              top: 0;
-              left: 0;
-              width: 20px;
-              height: 20px;
-              background: url(.././img/favorite.svg) no-repeat;
-              background-position: 3px 5.25px; }
-    .form-elements .form-element-2 .rate-button h3 {
-      padding-bottom: 15px; }
-    .form-elements .form-element-2 .rate-button .rate-button-stars-form1 {
-      margin-right: 9px; }
-    .form-elements .form-element-2 .rate-button .rate-button-stars-form2 {
-      margin-left: 9px; }
-    .form-elements .form-element-2 .rate-button .rate-button-stars-form1,
-    .form-elements .form-element-2 .rate-button .rate-button-stars-form2 {
-      display: inline-block; }
-      .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-1,
-      .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-2,
-      .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-1,
-      .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-2 {
-        width: 108px;
-        font-size: 24px;
-        line-height: 20.4px;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row-reverse; }
-        .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-1 .rate-button-item,
-        .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-2 .rate-button-item,
-        .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-1 .rate-button-item,
-        .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-2 .rate-button-item {
-          display: none; }
-          .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-1 .rate-button-item:checked,
-          .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-1 .rate-button-item:checked ~ .rate-button-label::before,
-          .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-2 .rate-button-item:checked,
-          .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-2 .rate-button-item:checked ~ .rate-button-label::before,
-          .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-1 .rate-button-item:checked,
-          .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-1 .rate-button-item:checked ~ .rate-button-label::before,
-          .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-2 .rate-button-item:checked,
-          .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-2 .rate-button-item:checked ~ .rate-button-label::before {
-            content: url(.././img/star.svg);
-            cursor: pointer; }
-        .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-1 .rate-button-label::before,
-        .form-elements .form-element-2 .rate-button .rate-button-stars-form1 .rate-button-stars-2 .rate-button-label::before,
-        .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-1 .rate-button-label::before,
-        .form-elements .form-element-2 .rate-button .rate-button-stars-form2 .rate-button-stars-2 .rate-button-label::before {
-          content: url(.././img/star_border.svg);
-          cursor: pointer; }
-    .form-elements .form-element-2 .dropdown {
-      width: 320px; }
-      .form-elements .form-element-2 .dropdown .label-left {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .form-element-2 .dropdown .drop-down-input {
-        width: 320px;
-        height: 44px;
-        padding: 15px;
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        border-radius: 4px 4px 0 0;
-        background: url(.././img/expand_more_75.svg) no-repeat;
-        background-position: 290px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-      .form-elements .form-element-2 .dropdown .drop-down-content {
-        display: grid;
-        grid-template-rows: repeat(4, auto);
-        align-items: center;
-        margin: auto 0;
-        width: 320px;
-        height: 159px;
-        padding: 7px 7px 0px 15px;
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        border-top: none;
-        border-radius: 0 0 4px 4px; }
-        .form-elements .form-element-2 .dropdown .drop-down-content .content-items {
-          display: grid;
-          grid-template-columns: auto auto;
-          align-items: center; }
-          .form-elements .form-element-2 .dropdown .drop-down-content .content-items h3 {
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 16px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #1f2041; }
-          .form-elements .form-element-2 .dropdown .drop-down-content .content-items span {
-            justify-self: end; }
-            .form-elements .form-element-2 .dropdown .drop-down-content .content-items span button {
-              vertical-align: middle;
-              width: 30px;
-              height: 30px;
-              border: 1px solid rgba(31, 32, 65, 0.25);
-              border-radius: 22px;
-              font-family: Montserrat;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 22px;
-              letter-spacing: 0em;
-              text-align: center;
-              color: rgba(31, 32, 65, 0.5);
-              background-color: rgba(255, 255, 255, 0); }
-              .form-elements .form-element-2 .dropdown .drop-down-content .content-items span button:disabled {
-                border: 1px solid rgba(31, 32, 65, 0.1);
-                color: rgba(31, 32, 65, 0.25); }
-            .form-elements .form-element-2 .dropdown .drop-down-content .content-items span input[type="number"] {
-              width: 25px;
-              font-family: Montserrat;
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 15px;
-              letter-spacing: 0em;
-              text-align: center;
-              color: #1f2041; }
-        .form-elements .form-element-2 .dropdown .drop-down-content .button-down {
-          display: grid; }
-          .form-elements .form-element-2 .dropdown .drop-down-content .button-down button[type=submit] {
-            display: inline-block;
-            width: 84px;
-            height: 30px;
-            background-color: rgba(255, 255, 255, 0);
-            justify-self: end;
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 15px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #bc9cff;
-            text-transform: uppercase; }
-    .form-elements .form-element-2 .rich-checkbox-buttons {
-      height: 145px;
-      width: 266px; }
-      .form-elements .form-element-2 .rich-checkbox-buttons h3 {
-        margin-bottom: 16px;
-        vertical-align: middle; }
-      .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list {
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        row-gap: 10px; }
-        .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list {
-          position: relative; }
-          .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list input[type='checkbox'] {
-            width: 20px;
-            height: 20px;
-            vertical-align: top;
-            opacity: 0; }
-          .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list input[type='checkbox']:checked + ::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            border: 1px solid #bc9cff;
-            border-radius: 4px;
-            background: url(.././img/Vector.svg) no-repeat;
-            background-position: 4px 3px;
-            vertical-align: middle;
-            z-index: -1; }
-          .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 4px;
-            vertical-align: middle;
-            z-index: -2; }
-          .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list .checkbox-label-1 {
-            display: inline-block;
-            width: 203px;
-            margin-left: 10px;
-            vertical-align: top; }
-            .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list .checkbox-label-1 label {
-              font-weight: 700;
-              color: rgba(31, 32, 65, 0.75);
-              font-size: 14px;
-              line-height: 18px;
-              letter-spacing: 0em;
-              text-align: left; }
-            .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list .checkbox-label-1 p {
-              font-size: 12px;
-              line-height: 14px;
-              letter-spacing: 0em;
-              text-align: left;
-              color: rgba(31, 32, 65, 0.5); }
-          .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list .checkbox-label-2 {
-            display: inline-block;
-            width: 230px;
-            margin-left: 10px;
-            vertical-align: top; }
-            .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list .checkbox-label-2 label {
-              font-weight: 700;
-              color: rgba(31, 32, 65, 0.75);
-              font-size: 14px;
-              line-height: 18px;
-              letter-spacing: 0em;
-              text-align: left; }
-            .form-elements .form-element-2 .rich-checkbox-buttons .checkbox-list .checkbox-buttons-list .checkbox-label-2 p {
-              font-size: 12px;
-              line-height: 14px;
-              letter-spacing: 0em;
-              text-align: left;
-              color: rgba(31, 32, 65, 0.5); }
-    .form-elements .form-element-2 .reviews .reviews-top {
-      display: flex;
-      margin-bottom: 10px; }
-      .form-elements .form-element-2 .reviews .reviews-top .photo {
-        width: 47.67px;
-        height: 48px;
-        background: url(.././img/image.svg);
-        background-position: -22px -12px;
-        border: 2px solid #ffffff;
-        filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
-        border-radius: 32px; }
-      .form-elements .form-element-2 .reviews .reviews-top .name {
-        display: inline-block;
-        margin-left: 9.93px; }
-        .form-elements .form-element-2 .reviews .reviews-top .name p span {
-          font-weight: bold; }
-    .form-elements .form-element-2 .reviews .reviews-bottom {
-      display: flex; }
-      .form-elements .form-element-2 .reviews .reviews-bottom .like-button .like-button-like {
-        position: relative;
-        width: 40px;
-        height: 20px;
-        border-radius: 10px;
-        background-image: url(.././img/like_border.svg);
-        background-position: -1px 0; }
-        .form-elements .form-element-2 .reviews .reviews-bottom .like-button .like-button-like span {
-          margin: auto 0 auto 10px;
-          font-size: 10px;
-          line-height: 12px;
-          letter-spacing: 0em;
-          color: #bc9cff; }
-          .form-elements .form-element-2 .reviews .reviews-bottom .like-button .like-button-like span::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            background: url(.././img/favorite.svg) no-repeat;
-            background-position: 4px 6px; }
-      .form-elements .form-element-2 .reviews .reviews-bottom .reviews-text {
-        display: inline-block;
-        margin-left: 14.31px;
-        width: 653px; }
-  .form-elements .form-element-3 {
-    display: grid;
-    grid-template-rows: repeat(8, auto);
-    row-gap: 20px; }
-    .form-elements .form-element-3 .multi-range-slider {
-      width: 266px;
-      height: 47.44px;
-      position: relative; }
-      .form-elements .form-element-3 .multi-range-slider h3 {
-        position: absolute; }
-      .form-elements .form-element-3 .multi-range-slider #right-label {
-        position: absolute;
-        right: 0;
-        letter-spacing: 0em;
-        line-height: 14.63px;
-        font-size: 12px;
-        text-align: right;
-        color: rgba(31, 32, 65, 0.5); }
-      .form-elements .form-element-3 .multi-range-slider .range-slider {
-        position: relative; }
-        .form-elements .form-element-3 .multi-range-slider .range-slider input[type="range"] {
-          position: absolute;
-          top: 30px;
-          pointer-events: none;
-          appearance: none;
-          z-index: 2;
-          height: 6px;
-          width: 100%;
-          opacity: 0; }
-        .form-elements .form-element-3 .multi-range-slider .range-slider input[type="range"]::-webkit-slider-thumb {
-          pointer-events: all;
-          cursor: pointer;
-          border-radius: 0;
-          border: 0 none; }
-        .form-elements .form-element-3 .multi-range-slider .range-slider .slider {
-          position: relative;
-          top: 30px;
-          z-index: 1;
-          height: 6px; }
-          .form-elements .form-element-3 .multi-range-slider .range-slider .slider .range {
-            position: absolute;
-            z-index: 2;
-            left: 25%;
-            right: 25%;
-            top: 0;
-            bottom: 0;
-            border-radius: 10px;
-            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
-          .form-elements .form-element-3 .multi-range-slider .range-slider .slider .track {
-            position: absolute;
-            height: 6px;
-            width: 100%;
-            z-index: 1;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 5px;
-            background-color: #ffffff; }
-          .form-elements .form-element-3 .multi-range-slider .range-slider .slider .thumb {
-            position: absolute;
-            z-index: 3;
-            width: 12px;
-            height: 12px;
-            top: -3px;
-            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-            border: 2px solid #fff;
-            border-radius: 50%; }
-    .form-elements .form-element-3 .buttons-group h3 {
-      margin-bottom: 16px; }
-    .form-elements .form-element-3 .buttons-group .buttons {
-      display: grid;
-      grid-template-rows: 44px 44px 15px 44px;
-      row-gap: 30px; }
-      .form-elements .form-element-3 .buttons-group .buttons .button-gradient {
-        display: grid;
-        grid-template-columns: 99px 99px;
-        column-gap: 20px; }
-        .form-elements .form-element-3 .buttons-group .buttons .button-gradient .button-linear-gradient {
-          width: 99px;
+          width: 150px;
           height: 44px;
-          background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-          border-radius: 22px;
+          border-radius: 4px;
+          vertical-align: middle;
           font-family: Montserrat;
-          font-size: 12px;
+          font-size: 14px;
           font-style: normal;
-          font-weight: 700;
-          line-height: 15px;
-          letter-spacing: 0em;
-          text-align: center;
-          color: #ffffff;
-          text-transform: uppercase; }
-          .form-elements .form-element-3 .buttons-group .buttons .button-gradient .button-linear-gradient:disabled {
-            opacity: 0.5; }
-      .form-elements .form-element-3 .buttons-group .buttons .button-border-gradient {
-        display: grid;
-        grid-template-columns: 99px 99px;
-        column-gap: 20px; }
-        .form-elements .form-element-3 .buttons-group .buttons .button-border-gradient .button-border-linear-gradient {
-          width: 99px;
-          height: 44px;
-          font-family: Montserrat;
-          font-size: 12px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 15px;
-          letter-spacing: 0em;
-          text-align: center;
-          color: #bc9cff;
-          text-transform: uppercase;
-          border-radius: 22px;
-          background: #ffffff;
-          background-image: url(.././img/border-gradient.svg); }
-          .form-elements .form-element-3 .buttons-group .buttons .button-border-gradient .button-border-linear-gradient:disabled {
-            background-image: url(.././img/border-gradient-disabled.svg); }
-      .form-elements .form-element-3 .buttons-group .buttons .button-no-border {
-        display: grid;
-        grid-template-columns: 61px 61px;
-        column-gap: 20px; }
-        .form-elements .form-element-3 .buttons-group .buttons .button-no-border .no-border {
-          width: 61px;
-          font-family: Montserrat;
-          font-size: 12px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 15px;
-          letter-spacing: 0em;
-          text-align: center;
-          color: #bc9cff;
-          text-transform: uppercase;
-          background: #ffffff; }
-          .form-elements .form-element-3 .buttons-group .buttons .button-no-border .no-border:disabled {
-            color: rgba(31, 32, 65, 0.5); }
-      .form-elements .form-element-3 .buttons-group .buttons .button-big {
-        position: relative;
-        max-width: 320px; }
-        .form-elements .form-element-3 .buttons-group .buttons .button-big .big {
-          width: 320px;
-          height: 44px;
-          background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-          border-radius: 22px;
-          font-family: Montserrat;
-          font-size: 12px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 15px;
-          letter-spacing: 0em;
-          text-align: center;
-          color: #ffffff;
-          text-transform: uppercase; }
-        .form-elements .form-element-3 .buttons-group .buttons .button-big::after {
-          position: absolute;
-          content: "";
-          width: 20px;
-          height: 20px;
-          background: url(.././img/arrow_forward_white.svg) no-repeat;
-          top: 12px;
-          right: 12px;
-          cursor: pointer; }
-    .form-elements .form-element-3 .pagination {
-      width: 241px; }
-      .form-elements .form-element-3 .pagination h3 {
-        margin-bottom: 16px; }
-      .form-elements .form-element-3 .pagination p {
-        margin-top: 11px; }
-      .form-elements .form-element-3 .pagination ul {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        background: rgba(255, 255, 255, 0); }
-        .form-elements .form-element-3 .pagination ul .number {
-          width: 40px;
-          height: 40px;
-          font-family: Montserrat;
-          line-height: 14.63px;
-          font-size: 12px;
           font-weight: 400;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          cursor: pointer;
-          color: rgba(31, 32, 65, 0.5); }
-          .form-elements .form-element-3 .pagination ul .number.active, .form-elements .form-element-3 .pagination ul .number:hover {
-            font-weight: bold;
-            color: #fff;
-            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-            border-radius: 50%; }
-        .form-elements .form-element-3 .pagination ul .dots {
-          cursor: default;
-          margin: auto; }
-        .form-elements .form-element-3 .pagination ul .btn {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          cursor: pointer;
-          background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%); }
-        .form-elements .form-element-3 .pagination ul .next::after {
-          content: "";
-          position: absolute;
-          top: 8px;
-          right: 9px;
-          width: 24px;
-          height: 24px;
-          background: url(.././img/arrow_forward_white.svg) no-repeat;
-          background-position: 6px 3px;
-          cursor: pointer; }
-        .form-elements .form-element-3 .pagination ul .prev {
-          display: none; }
-    .form-elements .form-element-3 .dropdown-active {
-      width: 320px; }
-      .form-elements .form-element-3 .dropdown-active .label-left {
-        margin-bottom: 5px;
-        float: left; }
-      .form-elements .form-element-3 .dropdown-active .drop-down-input {
-        width: 320px;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.75);
+          background: url(.././img/expand_more.svg) no-repeat;
+          background-position: 120px 18px; }
+          .form-elements .Form_Element_1 .text-fields .form-date-dropdown .date-dropdown .form-input::placeholder {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(31, 32, 65, 0.75); }
+    .form-elements .Form_Element_1 .text-fields .filter-date-dropdown {
+      width: 266px; }
+      .form-elements .Form_Element_1 .text-fields .filter-date-dropdown h3 {
+        padding-bottom: 5px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1f2041;
+        text-transform: uppercase; }
+      .form-elements .Form_Element_1 .text-fields .filter-date-dropdown .form-input {
+        padding-left: 14px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        width: 266px;
         height: 44px;
-        padding: 15px;
-        border: 1px solid rgba(31, 32, 65, 0.5);
         border-radius: 4px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        background: url(.././img/expand_more_75.svg) no-repeat;
-        background-position: 290px 18px;
+        vertical-align: middle;
         font-family: Montserrat;
         font-size: 14px;
         font-style: normal;
@@ -1262,105 +514,57 @@ img {
         line-height: 24px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-      .form-elements .form-element-3 .dropdown-active .drop-down-content {
-        display: grid;
-        grid-template-rows: repeat(4, auto);
-        align-items: center;
-        margin: auto 0;
-        width: 320px;
-        height: 159px;
-        padding: 7px 7px 0px 15px;
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        border-top: none;
-        border-radius: 0 0 4px 4px; }
-        .form-elements .form-element-3 .dropdown-active .drop-down-content .content-items {
-          display: grid;
-          grid-template-columns: auto auto;
-          align-items: center; }
-          .form-elements .form-element-3 .dropdown-active .drop-down-content .content-items h3 {
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 16px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #1f2041; }
-          .form-elements .form-element-3 .dropdown-active .drop-down-content .content-items span {
-            justify-self: end; }
-            .form-elements .form-element-3 .dropdown-active .drop-down-content .content-items span button {
-              vertical-align: middle;
-              width: 30px;
-              height: 30px;
-              border: 1px solid rgba(31, 32, 65, 0.25);
-              border-radius: 22px;
-              font-family: Montserrat;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 22px;
-              letter-spacing: 0em;
-              text-align: center;
-              color: rgba(31, 32, 65, 0.5);
-              background-color: rgba(255, 255, 255, 0); }
-              .form-elements .form-element-3 .dropdown-active .drop-down-content .content-items span button:disabled {
-                border: 1px solid rgba(31, 32, 65, 0.1);
-                color: rgba(31, 32, 65, 0.25); }
-            .form-elements .form-element-3 .dropdown-active .drop-down-content .content-items span input[type="number"] {
-              width: 32px;
-              font-family: Montserrat;
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 15px;
-              letter-spacing: 0em;
-              text-align: center;
-              color: #1f2041; }
-        .form-elements .form-element-3 .dropdown-active .drop-down-content .button-down {
-          display: grid;
-          grid-template-columns: auto auto; }
-          .form-elements .form-element-3 .dropdown-active .drop-down-content .button-down button[type=reset] {
-            display: inline-block;
-            width: 84px;
-            height: 30px;
-            background-color: rgba(255, 255, 255, 0);
-            justify-self: start;
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 15px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #bc9cff;
-            text-transform: uppercase; }
-          .form-elements .form-element-3 .dropdown-active .drop-down-content .button-down button[type=submit] {
-            display: inline-block;
-            width: 84px;
-            height: 30px;
-            background-color: rgba(255, 255, 255, 0);
-            justify-self: end;
-            font-family: Montserrat;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 15px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #bc9cff;
-            text-transform: uppercase; }
-    .form-elements .form-element-3 .bullet-list {
-      width: 292px;
-      height: 147px;
-      display: grid; }
-      .form-elements .form-element-3 .bullet-list ul {
-        display: grid;
-        grid-template-rows: auto auto auto;
-        row-gap: 10px;
-        margin-left: 15px; }
-        .form-elements .form-element-3 .bullet-list ul li {
-          list-style: disc outside url(.././img/Ellipse.svg); }
+        color: rgba(31, 32, 65, 0.75);
+        background: url(.././img/expand_more.svg) no-repeat;
+        background-position: 236px 18px; }
+        .form-elements .Form_Element_1 .text-fields .filter-date-dropdown .form-input::placeholder {
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.25); }
+    .form-elements .Form_Element_1 .text-fields .subscription-text-field {
+      width: 266px; }
+      .form-elements .Form_Element_1 .text-fields .subscription-text-field h3 {
+        padding-bottom: 5px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1f2041;
+        text-transform: uppercase; }
+      .form-elements .Form_Element_1 .text-fields .subscription-text-field .form-input {
+        padding-left: 14px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        width: 266px;
+        height: 44px;
+        border-radius: 4px;
+        vertical-align: middle;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(31, 32, 65, 0.75);
+        background: url(.././img/arrow_forward.svg) no-repeat;
+        background-position: 233px 12px; }
+        .form-elements .Form_Element_1 .text-fields .subscription-text-field .form-input::placeholder {
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(31, 32, 65, 0.25); }
   @media (max-width: 1240px) {
     .form-elements {
       min-width: 768px;
@@ -1371,258 +575,6 @@ img {
       min-width: 320px;
       grid-template-columns: 100%;
       row-gap: 20px; } }
-
-.cards {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  margin: 150px 140px 140px 140px; }
-  .cards .choosing-room-number {
-    padding: 40px 30px 30px 30px;
-    display: grid;
-    row-gap: 20px;
-    width: 380px;
-    height: 374px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px; }
-    .cards .choosing-room-number h2 {
-      font-family: Montserrat;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 29px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #1f2041; }
-    .cards .choosing-room-number .data-dropdown {
-      width: 320px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px; }
-      .cards .choosing-room-number .data-dropdown h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .cards .choosing-room-number .data-dropdown div {
-        width: 150px; }
-      .cards .choosing-room-number .data-dropdown .form-input {
-        width: 150px;
-        background: url(.././img/expand_more.svg) no-repeat;
-        background-position: 120px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-    .cards .choosing-room-number .form-dropdown {
-      max-width: 320px; }
-      .cards .choosing-room-number .form-dropdown h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .cards .choosing-room-number .form-dropdown .form-input {
-        background: url(.././img/expand_more.svg) no-repeat;
-        background-position: 290px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-    .cards .choosing-room-number .button-big {
-      position: relative;
-      max-width: 320px; }
-      .cards .choosing-room-number .button-big .big {
-        width: 320px;
-        height: 44px;
-        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-        border-radius: 22px;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 15px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #ffffff;
-        text-transform: uppercase; }
-      .cards .choosing-room-number .button-big::after {
-        position: absolute;
-        content: "";
-        width: 20px;
-        height: 20px;
-        background: url(.././img/arrow_forward_white.svg) no-repeat;
-        top: 12px;
-        right: 12px;
-        cursor: pointer; }
-  .cards .selected-room-number {
-    position: relative;
-    padding: 40px 30px 30px 30px;
-    display: grid;
-    row-gap: 20px;
-    width: 380px;
-    height: 511px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    line-height: 24px; }
-    .cards .selected-room-number h2 {
-      display: inline;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 17px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #1f2041; }
-      .cards .selected-room-number h2 span {
-        font-family: Montserrat;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 15px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #bc9cff;
-        text-transform: uppercase; }
-    .cards .selected-room-number p {
-      display: inline;
-      float: right;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 18px;
-      letter-spacing: 0em;
-      text-align: right;
-      color: rgba(31, 32, 65, 0.5); }
-    .cards .selected-room-number .data-dropdown {
-      width: 320px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px; }
-      .cards .selected-room-number .data-dropdown h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .cards .selected-room-number .data-dropdown div {
-        width: 150px; }
-      .cards .selected-room-number .data-dropdown .form-input {
-        width: 150px;
-        background: url(.././img/expand_more.svg) no-repeat;
-        background-position: 120px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-    .cards .selected-room-number .form-dropdown {
-      max-width: 320px; }
-      .cards .selected-room-number .form-dropdown h3 {
-        margin-bottom: 5px;
-        float: left; }
-      .cards .selected-room-number .form-dropdown .form-input {
-        background: url(.././img/expand_more.svg) no-repeat;
-        background-position: 290px 18px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-    .cards .selected-room-number .text-content {
-      display: grid;
-      grid-template-rows: repeat(4, auto);
-      row-gap: 10px; }
-      .cards .selected-room-number .text-content li {
-        position: relative;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(31, 32, 65, 0.75); }
-        .cards .selected-room-number .text-content li span {
-          position: absolute;
-          top: 0;
-          right: 0; }
-      .cards .selected-room-number .text-content #total {
-        margin: 30px 0 0 0;
-        position: relative;
-        font-family: Montserrat;
-        font-size: 19px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 23px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #1f2041; }
-        .cards .selected-room-number .text-content #total hr {
-          position: absolute;
-          left: 59px;
-          bottom: 4px;
-          width: 182px;
-          height: 1px;
-          border-top: 1px dashed rgba(31, 32, 65, 0.25);
-          align-items: center; }
-    .cards .selected-room-number .button-big {
-      position: relative;
-      width: 320px;
-      height: 44px; }
-      .cards .selected-room-number .button-big .big {
-        width: 320px;
-        height: 44px;
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        border-radius: 22px;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 15px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #1f2041;
-        text-transform: uppercase;
-        color: #FFFFFF; }
-      .cards .selected-room-number .button-big::after {
-        position: absolute;
-        content: '';
-        width: 20px;
-        height: 20px;
-        background: url(.././img/arrow_forward_white.svg) no-repeat;
-        top: 12px;
-        right: 12px;
-        cursor: pointer; }
-  .cards .calendar {
-    width: 320px;
-    height: 369px;
-    background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    border-radius: 4px; }
-  .cards .account-registration {
-    padding: 40px 30px 30px 30px;
-    display: grid;
-    row-gap: 20px;
-    width: 380px;
-    height: 646px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px; }
 
 
 /*# sourceMappingURL=UI_kit.css.map*/

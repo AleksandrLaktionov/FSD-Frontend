@@ -1,0 +1,5 @@
+mixin formHoverFocus(text_left,text_right)
+    form(action="#" class="form-hover-focus")
+        h3=text_left
+        h3(class="label-right")=text_right
+        +formInput("text","","This is pretty awesome")(class="hover-focus")
